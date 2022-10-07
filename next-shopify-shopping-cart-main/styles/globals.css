@@ -1,0 +1,20 @@
+:root {
+  --primary: #f97316;
+  --text-base: #3d3d3d;
+  --text-primary: #3d3d3d;
+  --text-secondary: #ffffff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* customize nprogress bar */
+#nprogress .bar {
+  height: 3px;
+  background: var(--primary);
+}
+
+#nprogress .spinner-icon {
+  display: none;
+}

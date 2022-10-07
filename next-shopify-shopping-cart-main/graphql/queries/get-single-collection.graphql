@@ -1,0 +1,47 @@
+query GetSingleCollection($handle: String!, $first: Int!, $cursor: String) {
+  collectionByHandle(handle: $handle) {
+    title
+    description
+    handle
+    id
+    description
+    descriptionHtml
+    image {
+      altText
+      src
+    }
+    products(first: $first, after: $cursor) {
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
+      }
+      edges {
+        cursor
+        node {
+          id
+          title
+          handle
+          description
+
+          tags
+
+          priceRange {
+            minVariantPrice {
+              amount
+              currencyCode
+            }
+          }
+
+          images(first: 5) {
+            edges {
+              node {
+                altText
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+query GetProducts($first: Int!, $cursor: String, $query: String) {
+  products(first: $first, after: $cursor, query: $query) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+    edges {
+      cursor
+      node {
+        id
+        title
+        handle
+        description
+        tags
+
+        priceRange {
+          minVariantPrice {
+            amount
+            currencyCode
+          }
+        }
+
+        images(first: 5) {
+          edges {
+            node {
+              altText
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+}

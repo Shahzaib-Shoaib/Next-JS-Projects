@@ -1,0 +1,26 @@
+query GetProductRecommendations($productId: ID!) {
+  productRecommendations(productId: $productId) {
+    id
+    title
+    handle
+    description
+
+    tags
+
+    priceRange {
+      minVariantPrice {
+        amount
+        currencyCode
+      }
+    }
+
+    images(first: 5) {
+      edges {
+        node {
+          altText
+          src
+        }
+      }
+    }
+  }
+}
