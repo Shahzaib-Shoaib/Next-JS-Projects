@@ -5,7 +5,10 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
   ],
+  
   "env": {
     "jest": true
   }
 }
+
+
