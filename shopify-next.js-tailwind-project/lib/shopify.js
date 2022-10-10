@@ -26,6 +26,7 @@ async function ShopifyData(query) {
   }
 }
 
+console.log(storefrontAccessToken);
 export async function getProductsInCollection() {
   const query = `
   {
