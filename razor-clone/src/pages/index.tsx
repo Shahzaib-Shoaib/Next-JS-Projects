@@ -14,12 +14,12 @@ const Home: NextPage = () => {
                 path="/"
             />
                         <Container>
-                        <HeroSliderBlock
+             {/*            <HeroSliderBlock
                     heroBanner={heroBanner}
                     className={`mb-7 mt-6`}
                     contentClassName="p-5 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24"
                 />
-                          </Container>
+ */}                          </Container>
 
     </>
   )
