@@ -354,6 +354,7 @@ export const useUI = () => {
   return context;
 };
 
+
 export const ManagedUIContext: React.FC = ({ children }) => (
   <CartProvider>
     <UIProvider>
