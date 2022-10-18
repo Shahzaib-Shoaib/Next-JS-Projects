@@ -9,7 +9,7 @@ export const API_ENDPOINTS = {
   PRODUCTS: '/products.json',
   PRODUCT: '/product.json',
   RELATED_PRODUCTS: '/related_products.json',
-  BEST_SELLER_PRODUCTS: '/products_best_seller.json',
+  BEST_SELLER_PRODUCTS: '/api/products_best_seller.json', // changed from /products_best_seller.json to /api/products_best_seller.json
   NEW_ARRIVAL_PRODUCTS: '/products_new_arrival.json',
   POPULAR_PRODUCTS: '/products_popular.json',
   COOKIES_PRODUCTS: '/products_cookies.json',

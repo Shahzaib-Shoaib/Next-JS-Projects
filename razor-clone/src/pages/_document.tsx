@@ -18,9 +18,9 @@ export default class CustomDocument extends Document {
    // console.log(this.props.__NEXT_DATA__.props,'dddd');
    // console.log({ locale },'rdfrrgdrg');
     
-    //  if (process.env.NODE_ENV !== 'production') {
-    //    i18n!.reloadResources(locale);
-    //  }
+     if (process.env.NODE_ENV !== 'production') {
+       i18n!.reloadResources(locale);
+     }
         
         
     return (
