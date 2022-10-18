@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { ManagedUIContext } from '../contexts/ui.context';
 import ManagedModal from '../components/common/modal/managed-modal';
 import ManagedDrawer from '../components/common/drawer/managed-drawer';
-import { Children, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { QueryClient, QueryClientProvider ,DehydratedState} from 'react-query';
 import { Hydrate } from 'react-query/hydration';
 import { ToastContainer } from 'react-toastify';
@@ -24,11 +24,13 @@ import '../styles/tailwind.css';
 import '../styles/themes.scss';
 import { getDirection } from '../utils/get-direction';
 
-
+// type Props = {
+//   children?: React.ReactNode
+// };
     
 const Noop: React.FC = ({children}) => <>{children}</>;
+//const Noop: React.FC<Props> = ({children}) => <>{children}</>;
 
-//type PageProps = SSRConfig 
 
 //<{ dehydratedState: DehydratedState}>
 const CustomApp = ({ Component, pageProps }: AppProps) => {

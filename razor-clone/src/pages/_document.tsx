@@ -15,13 +15,12 @@ export default class CustomDocument extends Document {
   
   render() {
     const { locale } = this.props.__NEXT_DATA__;
-    console.log(this.props.__NEXT_DATA__,'dddd');
-    console.log({ locale },'rdfrrgdrg');
+   // console.log(this.props.__NEXT_DATA__.props,'dddd');
+   // console.log({ locale },'rdfrrgdrg');
     
-    // if (process.env.NODE_ENV !== 'production') {
-    //   i18n!.reloadResources(locale);
-    // }
-        //   i18n!.reloadResources(locale);
+    //  if (process.env.NODE_ENV !== 'production') {
+    //    i18n!.reloadResources(locale);
+    //  }
         
         
     return (
