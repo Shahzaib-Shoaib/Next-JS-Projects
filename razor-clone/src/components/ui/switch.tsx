@@ -1,4 +1,5 @@
 import { Switch } from '@headlessui/react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import { getDirection } from '../../utils/get-direction';
 
@@ -39,4 +40,5 @@ const SwitchComponent: React.FC<SwitchProps> = (
   );
 };
 
-export default SwitchComponent;
+//export default SwitchComponent;   changed
+export default React.forwardRef(SwitchComponent);

@@ -4,7 +4,7 @@ import PasswordInput from '../../components/ui/form/password-input';
 import Button from '../../components/ui/button';
 import { useForm } from 'react-hook-form';
 import { useLoginMutation, LoginInputType } from '../../framework/basic-rest/auth/use-login';
-//import Logo from '@components/ui/logo';
+import Logo from '../../components/ui/logo';
 import { useTranslation } from 'next-i18next';
 import Image from '../../components/ui/image';
 import { useModalAction } from '../../components/common/modal/modal.context';
@@ -89,7 +89,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ isPopup = true, className }) => {
               </button>
             </div>
           </div>
-          <form
+           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col justify-center"
             noValidate
@@ -184,3 +184,14 @@ const LoginForm: React.FC<LoginFormProps> = ({ isPopup = true, className }) => {
 };
 
 export default LoginForm;
+
+
+// import React from 'react'
+
+// const LoginForm = () => {
+//   return (
+//     <div>LoginForm</div>
+//   )
+// }
+
+// export default LoginForm

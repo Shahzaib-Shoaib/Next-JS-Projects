@@ -26,3 +26,8 @@
 - _app.tsx
 - index.tsx
 - 404.tsx
+- signup.tsx  // changed switch file
+- signin.tsx
+- faq.tsx
+
+
