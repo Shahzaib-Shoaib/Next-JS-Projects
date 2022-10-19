@@ -32,6 +32,12 @@
 - contact-us.tsx
 - terms.tsx
 - privacy.tsx
+- checkout.tsx
+- complete-order.tsx
+- search.tsx
+- products
+- bundles
+- shops
 
 
 # Some Problems:-

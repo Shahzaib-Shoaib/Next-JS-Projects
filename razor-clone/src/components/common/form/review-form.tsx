@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import Input from '@components/ui/form/input';
-import Button from '@components/ui/button';
+import Input from '../../ui/form/input';
+import Button from '../../ui/button';
 import { useForm } from 'react-hook-form';
-import TextArea from '@components/ui/form/text-area';
+import TextArea from '../../ui/form/text-area';
 import { useTranslation } from 'next-i18next';
-import Heading from '@components/ui/heading';
-import Text from '@components/ui/text';
+import Heading from '../../ui/heading';
+import Text from '../../ui/text';
 import cn from 'classnames';
 import StarRatingComponent from 'react-star-rating-component';
-import StarIcon from '@components/icons/star-icon';
+import StarIcon from '../../icons/star-icon';
 
 interface ReviewFormProps {
   className?: string;

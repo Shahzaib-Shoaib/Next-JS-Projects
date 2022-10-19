@@ -1,4 +1,3 @@
-
 import isEmpty from 'lodash/isEmpty';
 interface Item {
   id: string | number;
