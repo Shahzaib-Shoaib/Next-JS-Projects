@@ -5,8 +5,11 @@ import {QueryClient} from 'react-query';
 import {dehydrate} from 'react-query/hydration';
 import Container from '../components/ui/container'
 import BestSellerProductFeed from '../components/product/feeds/best-seller-product-feed';
-
-
+import BannerGridTwo from "../components/common/banner-grid-two";
+import SupperCategoryElectronicFeed from "../components/product/feeds/suppercategory-electronic-feed";
+import SupperCategoryClothFeed from "../components/product/feeds/suppercategory-cloth-feed";
+import CategoryGridListBlock from "../components/common/category-grid-list-block";
+import BannerAllCarousel from "../components/common/banner-all-carousel";
 import {
     bannerDiscount,
     bannersGridHero as bannerTwo,
@@ -39,6 +42,23 @@ export default function Home()  {
                 /> 
                                   <FeatureCarousel/>
                                   <BestSellerProductFeed/>
+                                  <BannerGridTwo
+                    data={bannerTwo}
+                    className="mb-8 lg:mb-12"
+                    girdClassName="xl:gap-5 "
+                />
+                                <SupperCategoryElectronicFeed />
+                                <BannerGridTwo
+                    data={bannerTwo2}
+                    className="mb-8 lg:mb-12"
+                    girdClassName="xl:gap-5 2xl:grid-cols-[minmax(1130px,_1fr)_1fr] "
+                />
+                <SupperCategoryClothFeed />
+                <CategoryGridListBlock  className="mb-6 lg:mb-8" />
+                <BannerAllCarousel
+                    data={bannerDiscount}
+                    className="mb-8 lg:mb-12"
+                />
 
                         </Container>
 
@@ -52,10 +72,10 @@ Home.Layout = Layout;
 export const getStaticProps: GetStaticProps = async ({locale}) => {
     const queryClient = new QueryClient();
 
-    // await queryClient.prefetchQuery(
-    //     [API_ENDPOINTS.CATEGORIES, {limit: LIMITS.CATEGORIES_LIMITS}],
-    //     fetchCategories
-    // );
+    await queryClient.prefetchQuery(
+        [API_ENDPOINTS.CATEGORIES, {limit: LIMITS.CATEGORIES_LIMITS}],
+        fetchCategories
+    );
 
     await queryClient.prefetchQuery(
         [
@@ -64,10 +84,10 @@ export const getStaticProps: GetStaticProps = async ({locale}) => {
         fetchBestSellerProducts
     );
 
-    // await queryClient.prefetchQuery(
-    //     [API_ENDPOINTS.POPULAR_PRODUCTS, {limit: LIMITS.POPULAR_PRODUCTS_LIMITS}],
-    //     fetchPopularProducts
-    // );
+    await queryClient.prefetchQuery(
+        [API_ENDPOINTS.POPULAR_PRODUCTS, {limit: LIMITS.POPULAR_PRODUCTS_LIMITS}],
+        fetchPopularProducts
+    );
 
     return {
         props: {

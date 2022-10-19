@@ -568,7 +568,14 @@ export const siteSettings = {
         name: 'English',
         value: 'en',
         icon: <USFlag />,
+      },
+      {
+        id: 'de',
+        name: 'Deutsch',
+        value: 'de',
+        icon: <DEFlag />,
       }
+
     ],
   },
 };

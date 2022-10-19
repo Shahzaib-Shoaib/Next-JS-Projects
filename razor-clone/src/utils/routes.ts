@@ -1,4 +1,3 @@
-// 0001
 export const ROUTES = {
     HOME: '/',
     PRODUCT: `/products`,
