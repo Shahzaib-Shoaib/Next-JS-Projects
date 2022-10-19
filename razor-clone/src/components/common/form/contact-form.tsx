@@ -1,6 +1,6 @@
-import Input from '@components/ui/form/input';
-import Button from '@components/ui/button';
-import TextArea from '@components/ui/form/text-area';
+import Input from '../../ui/form/input';
+import Button from '../../ui/button';
+import TextArea from '../../ui/form/text-area';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 

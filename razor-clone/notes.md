@@ -29,5 +29,11 @@
 - signup.tsx  // changed switch file
 - signin.tsx
 - faq.tsx
+- contact-us.tsx
+- terms.tsx
+- privacy.tsx
 
 
+# Some Problems:-
+- the forms do not send data to any backend service 
+- google maps do not work properly
