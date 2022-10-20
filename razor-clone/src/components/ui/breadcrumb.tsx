@@ -1,6 +1,6 @@
 import React from 'react';
 import ActiveLink from './active-link';
-import useBreadcrumb, { convertBreadcrumbTitle } from '@components/utils/use-breadcrumb';
+import useBreadcrumb, { convertBreadcrumbTitle } from '@utils/use-breadcrumb';
 import { useTranslation } from 'next-i18next';
 import { IoChevronForward } from 'react-icons/io5';
 import { IoHomeOutline } from 'react-icons/io5';
