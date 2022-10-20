@@ -1,14 +1,14 @@
-# all routes are coming from [utils/routes.ts] 
+# All routes are coming from [utils/routes.ts] 
 
-# all types of query are included in [framework/types.ts]
+# All types of query are included in [framework/types.ts]
 
-# all api endpoints are in [framework/basic-rest/utils/api-endpoints]
+# All api endpoints are in [framework/basic-rest/utils/api-endpoints]
 
-# axios is used in a file named [http]
+# Axios is used in a file named [http]
 
-# some seo information is placed in [seo/default-seo]
+# Some seo information is placed in [seo/default-seo]
 
-# most of the hard coded messages or text are in [public/locale/common.json]
+# Most of the hard coded messages or text are in [public/locale/common.json]
 
 # The Initial page is coming from [components/layout.tsx]
 
