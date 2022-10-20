@@ -1,10 +1,10 @@
 import dynamic from 'next/dynamic';
-import { useUI } from '../../../contexts/ui.context';
-import { Drawer } from '../drawer/drawer';
+import { useUI } from '@contexts/ui.context';
+import { Drawer } from './drawer';
 import { useRouter } from 'next/router';
-import { getDirection } from '../../../utils/get-direction';
-const Cart = dynamic(() => import('../../cart/cart'));
-const OrderDetails = dynamic(() => import('../../order/order-drawer'));
+import { getDirection } from '@utils/get-direction';
+const Cart = dynamic(() => import('@components/cart/cart'));
+const OrderDetails = dynamic(() => import('@components/order/order-drawer'));
 
 const ManagedDrawer = () => {
   const { displayDrawer, closeDrawer, drawerView } = useUI();

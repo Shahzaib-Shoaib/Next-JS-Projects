@@ -1,5 +1,5 @@
 import { OrderDetailsContent } from './order-details-content';
-import { formatAddress } from '../../utils/format-address';
+import { formatAddress } from '@utils/format-address';
 import OrderStatus from './order-status';
 import {
   DiscountPrice,
@@ -8,7 +8,7 @@ import {
   SubTotalPrice,
 } from '../order/price';
 
-import { useUI } from '../../contexts/ui.context';
+import { useUI } from '@contexts/ui.context';
 
 const OrderDrawer: React.FC = () => {
   const { data, closeDrawer } = useUI();

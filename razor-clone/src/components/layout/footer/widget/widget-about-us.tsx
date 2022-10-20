@@ -1,11 +1,11 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import Logo from '../../../ui/logo';
+import Logo from '@components/ui/logo';
 //import Text from '@components/ui/text';
-import Image from '../../../ui/image';
-import { ROUTES } from '../../../../utils/routes';
+import Image from '@components/ui/image';
+import { ROUTES } from '@utils/routes';
 import {useRouter} from "next/router";
-import {getDirection} from "../../../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 
 interface AboutProps {
   className?: string;

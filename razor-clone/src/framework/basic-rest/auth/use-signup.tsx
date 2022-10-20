@@ -1,4 +1,4 @@
-import { useUI } from '../../../contexts/ui.context';
+import { useUI } from '@contexts/ui.context';
 import Cookies from 'js-cookie';
 import { useMutation } from 'react-query';
 

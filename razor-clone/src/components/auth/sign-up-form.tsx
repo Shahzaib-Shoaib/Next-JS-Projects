@@ -1,19 +1,19 @@
 import { useState } from 'react';
-import Input from '../../components/ui/form/input';
+import Input from '@components/ui/form/input';
 
-import PasswordInput from '../../components/ui/form/password-input';
-import Button from '../../components/ui/button';
+import PasswordInput from '@components/ui/form/password-input';
+import Button from '@components/ui/button';
 import { useForm } from 'react-hook-form';
 //import Logo from '@components/ui/logo';
-import { useSignUpMutation, SignUpInputType } from '../../framework/basic-rest/auth/use-signup';
-import Link from '../../components/ui/link';
+import { useSignUpMutation, SignUpInputType } from '@framework/auth/use-signup';
+import Link from '@components/ui/link';
 import { useTranslation } from 'next-i18next';
-import Image from '../../components/ui/image';
-import { useModalAction } from '../../components/common/modal/modal.context';
-import Switch from '../../components/ui/switch';
-import CloseButton from '../../components/ui/close-button';
+import Image from '@components/ui/image';
+import { useModalAction } from '@components/common/modal/modal.context';
+import Switch from '@components/ui/switch';
+import CloseButton from '@components/ui/close-button';
 import cn from 'classnames';
-import { ROUTES } from '../../utils/routes';
+import { ROUTES } from '@utils/routes';
 
 interface SignUpFormProps {
   isPopup?: boolean;

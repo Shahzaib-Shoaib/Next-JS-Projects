@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import cn from 'classnames';
-import { useSearchQuery } from '../../framework/basic-rest/product/use-search';
-import SearchBox from '../common/search-box';
-import SearchProduct from '../common/search-product';
-import SearchResultLoader from '../ui/loaders/search-result-loader';
-import useFreezeBodyScroll from '../../utils/use-freeze-body-scroll';
-import Scrollbar from '../ui/scrollbar';
-import { useUI } from '../../contexts/ui.context';
+import { useSearchQuery } from '@framework/product/use-search';
+import SearchBox from '@components/common/search-box';
+import SearchProduct from '@components/common/search-product';
+import SearchResultLoader from '@components/ui/loaders/search-result-loader';
+import useFreezeBodyScroll from '@utils/use-freeze-body-scroll';
+import Scrollbar from '@components/ui/scrollbar';
+import { useUI } from '@contexts/ui.context';
 
 type Props = {
   className?: string;

@@ -6,9 +6,9 @@ import Button from '../ui/button';
 import ProductCard from '../product/product-cards/product-card';
 import ProductCardLoader from '../ui/loaders/product-card-loader';
 import cn from 'classnames';
-import { useProductsQuery } from '../../framework/basic-rest/product/get-all-products';
-import { LIMITS } from '../../framework/basic-rest/utils/limits';
-import { Product } from '../../framework/basic-rest/types';
+import { useProductsQuery } from '@framework/product/get-all-products';
+import { LIMITS } from '@framework/utils/limits';
+import { Product } from '@framework/types';
 
 interface ProductGridProps {
   className?: string;

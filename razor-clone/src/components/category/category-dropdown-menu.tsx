@@ -1,10 +1,10 @@
-import Alert from '../ui/alert';
+import Alert from '@components/ui/alert';
 //import Scrollbar from '@components/ui/scrollbar';
 //import SidebarMenu from '@components/ui/sidebar-menu';
-import CategoryListCardLoader from '../ui/loaders/category-list-card-loader';
-import { useCategoriesQuery } from '../../framework/basic-rest/category/get-all-categories';
+import CategoryListCardLoader from '@components/ui/loaders/category-list-card-loader';
+import { useCategoriesQuery } from '@framework/category/get-all-categories';
 import cn from 'classnames';
-import CategoryMenu from '../ui/category-menu';
+import CategoryMenu from '@components/ui/category-menu';
 
 interface CategoryDropdownProps {
   className?: string;

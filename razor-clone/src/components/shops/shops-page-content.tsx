@@ -1,8 +1,8 @@
-import VendorCard from '../cards/vendor-card';
-import { useShopsQuery } from '../../framework/basic-rest/shops/get-shops';
-import Alert from '../ui/alert';
+import VendorCard from '@components/cards/vendor-card';
+import { useShopsQuery } from '@framework/shops/get-shops';
+import Alert from '@components/ui/alert';
 import { useTranslation } from 'next-i18next';
-import Heading from '../ui/heading';
+import Heading from '@components/ui/heading';
 
 const ShopsPageContent: React.FC = () => {
   const { t } = useTranslation('common');

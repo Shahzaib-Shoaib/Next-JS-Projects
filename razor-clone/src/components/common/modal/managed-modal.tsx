@@ -1,29 +1,29 @@
-import Modal from '../modal/modal';
+import Modal from './modal';
 import dynamic from 'next/dynamic';
 import {
   useModalAction,
   useModalState,
 } from '../modal/modal.context';
-const LoginForm = dynamic(() => import('../../auth/login-form'));
-const SignUpForm = dynamic(() => import('../../auth/sign-up-form'));
+const LoginForm = dynamic(() => import('@components/auth/login-form'));
+const SignUpForm = dynamic(() => import('@components/auth/sign-up-form'));
 const ForgetPasswordForm = dynamic(
-  () => import('../../auth/forget-password-form')
+  () => import('@components/auth/forget-password-form')
 );
-const ProductPopup = dynamic(() => import('../../product/product-popup'));
+const ProductPopup = dynamic(() => import('@components/product/product-popup'));
 const AddressPopup = dynamic(
-  () => import('../../common/form/add-address')
+  () => import('@components/common/form/add-address')
 );
 const PaymentPopup = dynamic(
-  () => import('../../common/form/add-payment')
+  () => import('@components/common/form/add-payment')
 );
 const PhoneNumberPopup = dynamic(
-  () => import('../../common/form/add-contact')
+  () => import('@components/common/form/add-contact')
 );
 const DeliveryAddresses = dynamic(
-  () => import('../../address/delivery-addresses')
+  () => import('@components/address/delivery-addresses')
 );
 const CategoryPopup = dynamic(
-  () => import('../../category/category-popup')
+  () => import('@components/category/category-popup')
 );
 const ManagedModal: React.FC = () => {
   const { isOpen, view } = useModalState();

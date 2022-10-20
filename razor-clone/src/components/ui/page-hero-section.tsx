@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import useWindowSize from '../../utils/use-window-size';
+import useWindowSize from '@utils/use-window-size';
 import Breadcrumb from './breadcrumb';
 import cn from 'classnames';
 

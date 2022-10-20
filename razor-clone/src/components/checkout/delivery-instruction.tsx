@@ -1,7 +1,7 @@
-import TextArea from '../ui/form/text-area';
+import TextArea from '@components/ui/form/text-area';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'next-i18next';
-import Text from '../ui/text';
+import Text from '@components/ui/text';
 
 interface ContactFormValues {
   instructionNote: string;

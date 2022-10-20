@@ -1,8 +1,8 @@
-import Image from '../ui/image';
-import Link from '../ui/link';
-import { ROUTES } from '../../utils/routes';
-import { searchProductPlaceholder } from '../../assets/placeholders';
-import usePrice from "../../framework/basic-rest/product/use-price";
+import Image from '@components/ui/image';
+import Link from '@components/ui/link';
+import { ROUTES } from '@utils/routes';
+import { searchProductPlaceholder } from '@assets/placeholders';
+import usePrice from "@framework/product/use-price";
 
 type SearchProductProps = {
   product: any;

@@ -1,5 +1,5 @@
-import StripePaymentForm from '../common/form/stripe-inline-form';
-import { useCart } from '../../contexts/cart/cart.context';
+import StripePaymentForm from '@components/common/form/stripe-inline-form';
+import { useCart } from '@contexts/cart/cart.context';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
 

@@ -1,10 +1,10 @@
 import { useState, Fragment } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import { BsChevronDown } from 'react-icons/bs';
-import { siteSettings } from '../../setting/site-settings';
+import { siteSettings } from '@settings/site-settings';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import {getDirection} from "../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 
 export default function LanguageSwitcher() {
   const { site_header } = siteSettings;

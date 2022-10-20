@@ -1,15 +1,15 @@
-import SectionHeader from '../common/section-header';
+import SectionHeader from '@components/common/section-header';
 import ProductCard from './product-cards/product-card';
-import { Product } from '../../framework/basic-rest/types';
-import Carousel from '../ui/carousel/carousel';
-import { SwiperSlide } from '../ui/carousel/slider';
-import Alert from '../ui/alert';
-import SeeAll from '../ui/see-all';
-import useWindowSize from '../../utils/use-window-size';
-import ProductCardLoader from '../ui/loaders/product-card-loader';
+import { Product } from '@framework/types';
+import Carousel from '@components/ui/carousel/carousel';
+import { SwiperSlide } from '@components/ui/carousel/slider';
+import Alert from '@components/ui/alert';
+import SeeAll from '@components/ui/see-all';
+import useWindowSize from '@utils/use-window-size';
+import ProductCardLoader from '@components/ui/loaders/product-card-loader';
 import cn from 'classnames';
 import { useRouter } from 'next/router';
-import { getDirection } from '../../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 
 interface ProductsCarouselProps {
   sectionHeading: string;

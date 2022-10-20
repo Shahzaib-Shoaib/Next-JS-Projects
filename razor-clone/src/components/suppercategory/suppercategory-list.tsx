@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import {ROUTES} from '../../utils/routes';
+import {ROUTES} from '@utils/routes';
 import Link from "next/link";
 import {useTranslation} from "next-i18next";
 

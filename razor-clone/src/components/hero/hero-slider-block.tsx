@@ -1,6 +1,6 @@
 import HeroBannerCard from './hero-banner-card';
-import Carousel from '../ui/carousel/carousel';
-import { SwiperSlide } from '../ui/carousel/slider';
+import Carousel from '@components/ui/carousel/carousel';
+import { SwiperSlide } from '@components/ui/carousel/slider';
 
 interface Props {
     heroBanner?: any;

@@ -1,12 +1,12 @@
-import Layout from '../components/layout/layout';
-import Container from '../components/ui/container';
-import PageHeroSection from '../components/ui/page-hero-section';
-import { termsAndServices } from '../setting/terms-settings';
+import Layout from '@components/layout/layout';
+import Container from '@components/ui/container';
+import PageHeroSection from '@components/ui/page-hero-section';
+import { termsAndServices } from '@settings/terms-settings';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
-import Heading from '../components/ui/heading';
-import Seo from '../components/seo/seo';
+import Heading from '@components/ui/heading';
+import Seo from '@components/seo/seo';
 
 export default function TermsPage() {
   const { t } = useTranslation('terms');

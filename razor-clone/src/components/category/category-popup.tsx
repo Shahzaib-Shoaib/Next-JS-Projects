@@ -1,5 +1,5 @@
-import CategoryDropdownSidebar from '../category/category-dropdown-sidebar';
-import { useModalAction } from '../common/modal/modal.context';
+import CategoryDropdownSidebar from '@components/category/category-dropdown-sidebar';
+import { useModalAction } from '@components/common/modal/modal.context';
 import { useTranslation } from 'next-i18next';
 
 const CategoryPopup: React.FC = () => {

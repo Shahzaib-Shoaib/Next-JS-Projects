@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import Text from '../ui/text';
-import { ROUTES } from '../../utils/routes';
+import Text from '@components/ui/text';
+import { ROUTES } from '@utils/routes';
 import { useRouter } from 'next/router';
 import {
   FacebookShareButton,

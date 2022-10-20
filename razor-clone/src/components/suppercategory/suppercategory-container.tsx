@@ -1,5 +1,5 @@
-import {ROUTES} from '../../utils/routes';
-import {LIMITS} from "../../framework/basic-rest/utils/limits";
+import {ROUTES} from '@utils/routes';
+import {LIMITS} from "@framework/utils/limits";
 import ProductsCarousel from '../product/products-carousel';
 //import {useFreshVegetablesProductsQuery} from "@framework/product/get-all-fresh-vegetables-products";
 //import {Category} from "@framework/types";

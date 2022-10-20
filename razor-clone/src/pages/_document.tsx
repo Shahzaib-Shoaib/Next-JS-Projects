@@ -6,7 +6,7 @@ import Document, {
   DocumentContext,
 } from 'next/document';
 import  {i18n}  from 'next-i18next';
-import { getDirection } from '../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 
 export default class CustomDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

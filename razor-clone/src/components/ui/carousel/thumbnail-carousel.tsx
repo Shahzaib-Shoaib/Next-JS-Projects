@@ -8,8 +8,8 @@ import {
 import Image from '../image';
 import { useRef, useState } from 'react';
 import cn from 'classnames';
-import { productGalleryPlaceholder } from '../../../assets/placeholders';
-import { getDirection } from '../../../utils/get-direction';
+import { productGalleryPlaceholder } from '@assets/placeholders';
+import { getDirection } from '@utils/get-direction';
 import { useRouter } from 'next/router';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 

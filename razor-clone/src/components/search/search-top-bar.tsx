@@ -1,12 +1,12 @@
 import { Drawer } from '../common/drawer/drawer';
 import FilterIcon from '../icons/filter-icon';
 //import Text from '@components/ui/text';
-import { useUI } from '../../contexts/ui.context';
+import { useUI } from '@contexts/ui.context';
 import FilterSidebar from './filter-sidebar';
 import ListBox from '../ui/filter-list-box';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
-import { getDirection } from '../../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 
 const SearchTopBar = () => {
   const { openFilter, displayFilter, closeFilter } = useUI();

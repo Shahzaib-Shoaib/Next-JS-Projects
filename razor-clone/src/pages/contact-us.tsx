@@ -1,11 +1,11 @@
-import Container from '../components/ui/container';
-import Layout from '../components/layout/layout';
-import Map from '../components/ui/map';
+import Container from '@components/ui/container';
+import Layout from '@components/layout/layout';
+import Map from '@components/ui/map';
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
-import ContactForm from '../components/common/form/contact-form';
-import ContactSupport from '../components/contact/contact-support';
-import Seo from '../components/seo/seo';
-import PageHeroSection from "../components/ui/page-hero-section";
+import ContactForm from '@components/common/form/contact-form';
+import ContactSupport from '@components/contact/contact-support';
+import Seo from '@components/seo/seo';
+import PageHeroSection from "@components/ui/page-hero-section";
 import React from "react";
 
 export default function ContactUsPage() {

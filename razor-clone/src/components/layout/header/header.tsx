@@ -2,30 +2,30 @@ import {useRef, useState} from 'react';
 import dynamic from 'next/dynamic';
 import {useTranslation} from 'next-i18next';
 import cn from 'classnames';
-import {ROUTES} from '../../../utils/routes';
-import {useUI} from '../../../contexts/ui.context';
-import {siteSettings} from '../../../setting/site-settings';
-import {addActiveScroll} from '../../../utils/add-active-scroll';
-import Container from '../../ui/container';
-import Logo from '../../ui/logo';
+import {ROUTES} from '@utils/routes';
+import {useUI} from '@contexts/ui.context';
+import {siteSettings} from '@settings/site-settings';
+import {addActiveScroll} from '@utils/add-active-scroll';
+import Container from '@components/ui/container';
+import Logo from '@components/ui/logo';
 import HeaderMenu from './header-menu';
 import HeaderMenutop from './header-menutop';
-import Search from '../../common/search';
-import LanguageSwitcher from '../../ui/language-switcher';
-import UserIcon from '../../icons/user-icon';
-import SearchIcon from '../../icons/search-icon';
-import {useModalAction} from '../../common/modal/modal.context';
-import useOnClickOutside from '../../../utils/use-click-outside';
+import Search from '@components/common/search';
+import LanguageSwitcher from '@components/ui/language-switcher';
+import UserIcon from '@components/icons/user-icon';
+import SearchIcon from '@components/icons/search-icon';
+import {useModalAction} from '@components/common/modal/modal.context';
+import useOnClickOutside from '@utils/use-click-outside';
 import {FiMenu} from 'react-icons/fi';
 //import Delivery from '@components/layout/header/delivery';
-import CategoryDropdownMenu from '../../category/category-dropdown-menu';
-import {Drawer} from "../../common/drawer/drawer";
-import { getDirection } from '../../../utils/get-direction';
+import CategoryDropdownMenu from '@components/category/category-dropdown-menu';
+import {Drawer} from "@components/common/drawer/drawer";
+import { getDirection } from '@utils/get-direction';
 import {useRouter} from "next/router";
 //import CategoryDropdownSidebar from "@components/category/category-dropdown-sidebar";
-import MobileAllCategories from "../../layout/header/mobile-all-categories";
+import MobileAllCategories from "@components/layout/header/mobile-all-categories";
 const AuthMenu = dynamic(() => import('./auth-menu'), {ssr: false});
-const CartButton = dynamic(() => import('../../cart/cart-button'), {
+const CartButton = dynamic(() => import('@components/cart/cart-button'), {
     ssr: false,
 });
 

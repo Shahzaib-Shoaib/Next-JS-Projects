@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
-import Heading from '../ui/heading';
-import Text from '../ui/text';
-import Input from '../ui/form/input';
+import Heading from '@components/ui/heading';
+import Text from '@components/ui/text';
+import Input from '@components/ui/form/input';
 import { useForm } from 'react-hook-form';
 import cn from 'classnames';
 import CopyToClipboard from 'react-copy-to-clipboard';

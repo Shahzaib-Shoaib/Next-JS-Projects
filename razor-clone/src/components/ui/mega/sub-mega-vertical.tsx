@@ -1,15 +1,15 @@
 import {useTranslation} from 'next-i18next';
 import {useRouter} from "next/router";
-import {getDirection} from "../../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 /*
 import ListMenu from '@components/ui/mega/mega-menu';
 import Container from '@components/ui/container';
 import Image from "@components/ui/image";
 import {productPlaceholder} from "@assets/placeholders";
 */
-import Link from "../../ui/link";
+import Link from "@components/ui/link";
 import cn from "classnames";
-import {ROUTES} from "../../../utils/routes";
+import {ROUTES} from "@utils/routes";
 //import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io";
 
 function SidebarMenuItem({className, item, depth = 0}: any) {

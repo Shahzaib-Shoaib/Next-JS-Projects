@@ -1,13 +1,13 @@
-import Container from '../../components/ui/container';
-import Layout from '../../components/layout/layout';
-import ProductSingleDetails from '../../components/product/product';
-import ElectronicProductFeed from '../../components/product/feeds/electronic-product-feed';
-import RelatedProductFeed from '../../components/product/feeds/related-product-feed';
-import Breadcrumb from '../../components/ui/breadcrumb';
-//import { useUI } from '../../contexts/ui.context';
+import Container from '@components/ui/container';
+import Layout from '@components/layout/layout';
+import ProductSingleDetails from '@components/product/product';
+import ElectronicProductFeed from '@components/product/feeds/electronic-product-feed';
+import RelatedProductFeed from '@components/product/feeds/related-product-feed';
+import Breadcrumb from '@components/ui/breadcrumb';
+//import { useUI } from '@components/contexts/ui.context';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { GetServerSideProps } from 'next';
-import Divider from '../../components/ui/divider';
+import Divider from '@components/ui/divider';
 
 export default function ProductPage() {
   return (

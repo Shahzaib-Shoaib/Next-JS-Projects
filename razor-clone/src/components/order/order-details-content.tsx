@@ -1,5 +1,5 @@
-import usePrice from '../../framework/basic-rest/product/use-price';
-import Image from '../ui/image';
+import usePrice from '@framework/product/use-price';
+import Image from '@components/ui/image';
 
 export const OrderDetailsContent: React.FC<{ item?: any }> = ({ item }) => {
   const { price } = usePrice({

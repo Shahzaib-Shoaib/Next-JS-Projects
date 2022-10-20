@@ -1,4 +1,4 @@
-import { useOrderStatusQuery } from '../../framework/basic-rest/order/order-status';
+import { useOrderStatusQuery } from '@framework/order/order-status';
 import ProgressBox from './progress-box';
 
 interface Props {

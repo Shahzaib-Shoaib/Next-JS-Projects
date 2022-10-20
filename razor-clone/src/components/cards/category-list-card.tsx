@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import Image from '../ui/image';
+import Image from '@components/ui/image';
 //import {IoIosArrowForward} from 'react-icons/io';
-import {Category} from '../../framework/basic-rest/types';
+import {Category} from '@framework/types';
 import cn from 'classnames';
 import {useTranslation} from 'next-i18next';
 import {LinkProps} from 'next/link';
-import {ROUTES} from "../../utils/routes";
+import {ROUTES} from "@utils/routes";
 import {useRouter} from "next/router";
-import {getDirection} from "../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 
 interface Props {
     category: Category;

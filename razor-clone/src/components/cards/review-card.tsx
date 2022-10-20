@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { useTranslation } from 'next-i18next';
-import Heading from '../ui/heading';
-import Text from '../ui/text';
-import StarIcon from '../icons/star-icon';
+import Heading from '@components/ui/heading';
+import Text from '@components/ui/text';
+import StarIcon from '@components/icons/star-icon';
 
 interface ReviewProps {
   item: any;

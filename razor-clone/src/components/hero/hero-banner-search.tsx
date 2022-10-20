@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import SearchIcon from '../icons/search-icon';
+import SearchIcon from '@components/icons/search-icon';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 

@@ -1,7 +1,7 @@
 //import Image from '@components/ui/image';
 import { useTranslation } from 'next-i18next';
-import Text from '../ui/text';
-import Heading from '../ui/heading';
+import Text from '@components/ui/text';
+import Heading from '@components/ui/heading';
 import {IoCartOutline} from 'react-icons/io5';
 const EmptyCart: React.FC = () => {
   const { t } = useTranslation('common');

@@ -1,6 +1,6 @@
-import CartIcon from '../icons/cart-icon';
-import { useCart } from '../../contexts/cart/cart.context';
-import { useUI } from '../../contexts/ui.context';
+import CartIcon from '@components/icons/cart-icon';
+import { useCart } from '@contexts/cart/cart.context';
+import { useUI } from '@contexts/ui.context';
 import { useTranslation } from 'next-i18next';
 import cn from 'classnames';
 

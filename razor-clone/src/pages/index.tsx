@@ -1,29 +1,29 @@
-import Seo from '../components/seo/seo'
+import Seo from '@components/seo/seo'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
 import {GetStaticProps} from 'next';
 import {QueryClient} from 'react-query';
 import {dehydrate} from 'react-query/hydration';
-import Container from '../components/ui/container'
-import BestSellerProductFeed from '../components/product/feeds/best-seller-product-feed';
-import BannerGridTwo from "../components/common/banner-grid-two";
-import SupperCategoryElectronicFeed from "../components/product/feeds/suppercategory-electronic-feed";
-import SupperCategoryClothFeed from "../components/product/feeds/suppercategory-cloth-feed";
-import CategoryGridListBlock from "../components/common/category-grid-list-block";
-import BannerAllCarousel from "../components/common/banner-all-carousel";
+import Container from '@components/ui/container'
+import BestSellerProductFeed from '@components/product/feeds/best-seller-product-feed';
+import BannerGridTwo from "@components/common/banner-grid-two";
+import SupperCategoryElectronicFeed from "@components/product/feeds/suppercategory-electronic-feed";
+import SupperCategoryClothFeed from "@components/product/feeds/suppercategory-cloth-feed";
+import CategoryGridListBlock from "@components/common/category-grid-list-block";
+import BannerAllCarousel from "@components/common/banner-all-carousel";
 import {
     bannerDiscount,
     bannersGridHero as bannerTwo,
     bannersGridHero2 as bannerTwo2,
     homeTwoHeroBanner as heroBanner
-} from '../framework/basic-rest/static/banner';
-import FeatureCarousel from "../components/common/featured-carousel";
-import HeroSliderBlock from '../components/hero/hero-slider-block'
-import {API_ENDPOINTS} from '../framework/basic-rest/utils/api-endpoints';
-import {fetchCategories} from '../framework/basic-rest/category/get-all-categories';
-import {LIMITS} from '../framework/basic-rest/utils/limits';
-import {fetchBestSellerProducts} from "../framework/basic-rest/product/get-all-best-seller-products";
-import {fetchPopularProducts} from '../framework/basic-rest/product/get-all-popular-products';
-import Layout from '../components/layout/layout';
+} from '@framework/static/banner';
+import FeatureCarousel from "@components/common/featured-carousel";
+import HeroSliderBlock from '@components/hero/hero-slider-block'
+import {API_ENDPOINTS} from '@framework/utils/api-endpoints';
+import {fetchCategories} from '@framework/category/get-all-categories';
+import {LIMITS} from '@framework/utils/limits';
+import {fetchBestSellerProducts} from "@framework/product/get-all-best-seller-products";
+import {fetchPopularProducts} from '@framework/product/get-all-popular-products';
+import Layout from '@components/layout/layout';
 
 
 export default function Home()  {

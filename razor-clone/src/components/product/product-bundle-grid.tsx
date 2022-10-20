@@ -1,11 +1,11 @@
-import ProductCard from '../product/product-cards/product-card';
+import ProductCard from '@components/product/product-cards/product-card';
 import type { FC } from 'react';
-import { useProductsQuery } from '../../framework/basic-rest/product/get-all-products';
-import ProductCardLoader from '../ui/loaders/product-card-loader';
-import Alert from '../ui/alert';
+import { useProductsQuery } from '@framework/product/get-all-products';
+import ProductCardLoader from '@components/ui/loaders/product-card-loader';
+import Alert from '@components/ui/alert';
 import cn from 'classnames';
 import slice from 'lodash/slice';
-import { Product } from '../../framework/basic-rest/types';
+import { Product } from '@framework/types';
 interface ProductFeedProps {
   className?: string;
 }

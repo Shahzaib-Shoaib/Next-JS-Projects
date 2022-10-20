@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Layout from '../components/layout/layout';
-import Container from '../components/ui/container';
-import PageHeroSection from '../components/ui/page-hero-section';
+import Layout from '@components/layout/layout';
+import Container from '@components/ui/container';
+import PageHeroSection from '@components/ui/page-hero-section';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { GetStaticProps } from 'next';
-import Accordion from '../components/ui/accordion';
-import { faq } from '../setting/faq-settings';
-import Seo from '../components/seo/seo';
+import Accordion from '@components/ui/accordion';
+import { faq } from '@settings/faq-settings';
+import Seo from '@components/seo/seo';
 
 export default function TermsPage() {
   return (

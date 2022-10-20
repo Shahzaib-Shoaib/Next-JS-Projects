@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import cn from 'classnames';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import { useUI } from '../../contexts/ui.context';
+import { useUI } from '@contexts/ui.context';
 import { useEffect, useState } from 'react';
 import Image from '../ui/image';
 import { useTranslation } from 'next-i18next';

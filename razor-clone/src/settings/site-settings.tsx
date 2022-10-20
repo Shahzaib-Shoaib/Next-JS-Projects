@@ -1,9 +1,9 @@
-import { ILFlag } from '../components/icons/language/ILFlag';
-import { SAFlag } from '../components/icons/language/SAFlag';
-import { CNFlag } from '../components/icons/language/CNFlag';
-import { USFlag } from '../components/icons/language/USFlag';
-import { DEFlag } from '../components/icons/language/DEFlag';
-import { ESFlag } from '../components/icons/language/ESFlag';
+import { ILFlag } from '@components/icons/language/ILFlag';
+import { SAFlag } from '@components/icons/language/SAFlag';
+import { CNFlag } from '@components/icons/language/CNFlag';
+import { USFlag } from '@components/icons/language/USFlag';
+import { DEFlag } from '@components/icons/language/DEFlag';
+import { ESFlag } from '@components/icons/language/ESFlag';
 
 export const siteSettings = {
   name: 'Razor',

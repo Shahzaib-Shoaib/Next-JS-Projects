@@ -1,10 +1,10 @@
-import Layout from '../../components/layout/layout';
+import Layout from '@components/layout/layout';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import ShopsPageContent from '../../components/shops/shops-page-content';
-//import DownloadApps from '../../components/common/download-apps';
-import PageHeroSection from '../../components/ui/page-hero-section';
-import Seo from '../../components/seo/seo';
+import ShopsPageContent from '@components/shops/shops-page-content';
+//import DownloadApps from '@components/common/download-apps';
+import PageHeroSection from '@components/ui/page-hero-section';
+import Seo from '@components/seo/seo';
 
 export default function ShopsPage() {
   return (

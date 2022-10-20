@@ -1,10 +1,10 @@
-import Layout from '../components/layout/layout';
-import CheckoutCard from '../components/checkout/checkout-card';
-import Container from '../components/ui/container';
-import CheckoutDetails from '../components/checkout/checkout-details';
+import Layout from '@components/layout/layout';
+import CheckoutCard from '@components/checkout/checkout-card';
+import Container from '@components/ui/container';
+import CheckoutDetails from '@components/checkout/checkout-details';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Divider from '../components/ui/divider';
-import Seo from '../components/seo/seo';
+import Divider from '@components/ui/divider';
+import Seo from '@components/seo/seo';
 
 export default function CheckoutPage() {
   return (

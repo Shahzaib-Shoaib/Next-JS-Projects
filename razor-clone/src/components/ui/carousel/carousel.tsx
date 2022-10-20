@@ -11,7 +11,7 @@ import {
 } from './slider';
 import { useRouter } from 'next/router';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { getDirection } from '../../../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 import cn from 'classnames';
 
 type CarouselPropsType = {

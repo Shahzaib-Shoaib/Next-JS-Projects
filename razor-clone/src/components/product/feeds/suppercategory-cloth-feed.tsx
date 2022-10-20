@@ -1,10 +1,10 @@
-import { LIMITS } from '../../../framework/basic-rest/utils/limits';
-import SupperCategoryList from "../../suppercategory/suppercategory-list";
-import SupperCategoryContainer from "../../suppercategory/suppercategory-container";
-import {useClothCategoryQuery} from "../../../framework/basic-rest/product/get-cloth-category";
-import {usefashionProductsQuery} from "../../../framework/basic-rest/product/get-all-fashion-products";
+import { LIMITS } from '@framework/utils/limits';
+import SupperCategoryList from "@components/suppercategory/suppercategory-list";
+import SupperCategoryContainer from "@components/suppercategory/suppercategory-container";
+import {useClothCategoryQuery} from "@framework/product/get-cloth-category";
+import {usefashionProductsQuery} from "@framework/product/get-all-fashion-products";
 import {useRouter} from "next/router";
-import {getDirection} from "../../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 
 export default function SupperCategoryElectronicFeed() {
   const { data: category } = useClothCategoryQuery({

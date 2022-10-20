@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { TiPencil } from 'react-icons/ti';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { RadioGroup } from '@headlessui/react';
-import { useModalAction } from '../common/modal/modal.context';
-import { formatAddress } from '../../utils/format-address';
-import Button from '../ui/button';
+import { useModalAction } from '@components/common/modal/modal.context';
+import { formatAddress } from '@utils/format-address';
+import Button from '@components/ui/button';
 import { useTranslation } from 'next-i18next';
 
 const AddressGrid: React.FC<{ address?: any }> = ({ address }) => {

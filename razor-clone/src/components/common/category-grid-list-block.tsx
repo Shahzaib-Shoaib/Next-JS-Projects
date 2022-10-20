@@ -1,13 +1,13 @@
 import SectionHeader from './section-header';
-import CategoryListCardLoader from '../ui/loaders/category-list-card-loader';
-import { useCategoriesQuery } from '../../framework/basic-rest/category/get-all-categories';
-import Alert from '../ui/alert';
-import CategoryListCard from '../cards/category-list-card';
-import Carousel from '../ui/carousel/carousel';
+import CategoryListCardLoader from '@components/ui/loaders/category-list-card-loader';
+import { useCategoriesQuery } from '@framework/category/get-all-categories';
+import Alert from '@components/ui/alert';
+import CategoryListCard from '@components/cards/category-list-card';
+import Carousel from '@components/ui/carousel/carousel';
 import { SwiperSlide } from 'swiper/react';
-import useWindowSize from '../../utils/use-window-size';
+import useWindowSize from '@utils/use-window-size';
 import cn from 'classnames';
-import { ROUTES } from '../../utils/routes';
+import { ROUTES } from '@utils/routes';
 
 interface CategoriesProps {
   className?: string;

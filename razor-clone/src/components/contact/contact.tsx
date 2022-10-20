@@ -1,4 +1,4 @@
-import { useContactQuery } from '../../framework/basic-rest/contact/contact';
+import { useContactQuery } from '@framework/contact/contact';
 import ContactBox from './contact-content';
 
 const ContactPage: React.FC = () => {

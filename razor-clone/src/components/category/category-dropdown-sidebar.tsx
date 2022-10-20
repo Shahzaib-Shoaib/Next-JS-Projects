@@ -1,10 +1,10 @@
-import Alert from '../ui/alert';
-import Scrollbar from '../ui/scrollbar';
-import SidebarMenu from '../ui/sidebar-menu';
-import CategoryListCardLoader from '../ui/loaders/category-list-card-loader';
-import { useCategoriesQuery } from '../../framework/basic-rest/category/get-all-categories';
+import Alert from '@components/ui/alert';
+import Scrollbar from '@components/ui/scrollbar';
+import SidebarMenu from '@components/ui/sidebar-menu';
+import CategoryListCardLoader from '@components/ui/loaders/category-list-card-loader';
+import { useCategoriesQuery } from '@framework/category/get-all-categories';
 import cn from 'classnames';
-import SectionHeader from "../common/section-header";
+import SectionHeader from "@components/common/section-header";
 
 interface CategorySidebarProps {
   className?: string;

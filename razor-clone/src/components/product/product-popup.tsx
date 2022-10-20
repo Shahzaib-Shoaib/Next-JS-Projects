@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import  isEmpty  from 'lodash/isEmpty';
-import { ROUTES } from '../../utils/routes';
+import { ROUTES } from '@utils/routes';
 import Button from '../ui/button';
 import Counter from '../ui/counter';
-import { useCart } from '../../contexts/cart/cart.context';
+import { useCart } from '@contexts/cart/cart.context';
 import ProductAttributes from '../product/product-attributes';
-import { generateCartItem } from '../../utils/generate-cart-item';
-import usePrice from '../../framework/basic-rest/product/use-price';
-import { getVariations } from '../../framework/basic-rest/utils/get-variations';
+import { generateCartItem } from '@utils/generate-cart-item';
+import usePrice from '@framework/product/use-price';
+import { getVariations } from '@framework/utils/get-variations';
 import { useTranslation } from 'next-i18next';
 import ThumbnailCarousel from '../ui/carousel/thumbnail-carousel';
 import Image from '../ui/image';
@@ -22,7 +22,7 @@ import { IoArrowRedoOutline } from 'react-icons/io5';
 import SocialShareBox from '../ui/social-share-box';
 import { IoIosHeart, IoIosHeartEmpty } from 'react-icons/io';
 import { toast } from 'react-toastify';
-import useWindowSize from '../../utils/use-window-size';
+import useWindowSize from '@utils/use-window-size';
 import {
   useModalAction,
   useModalState,
@@ -30,7 +30,7 @@ import {
 import CloseButton from '../ui/close-button';
 import VariationPrice from './variation-price';
 import isEqual from 'lodash/isEqual';
-import { productGalleryPlaceholder } from '../../assets/placeholders';
+import { productGalleryPlaceholder } from '@assets/placeholders';
 
 const breakpoints = {
   '1536': {

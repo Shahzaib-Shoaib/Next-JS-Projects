@@ -1,6 +1,6 @@
 import cn from 'classnames';
-import MinusIcon from '../icons/minus-icon';
-import PlusIcon from '../icons/plus-icon';
+import MinusIcon from '@components/icons/minus-icon';
+import PlusIcon from '@components/icons/plus-icon';
 import { useTranslation } from 'next-i18next';
 
 type ButtonEvent = (

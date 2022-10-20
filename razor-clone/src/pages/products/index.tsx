@@ -1,15 +1,15 @@
-import Container from '../../components/ui/container';
-import Layout from '../../components/layout/layout';
-import { ShopFilters } from '../../components/search/filters';
-import { ProductGrid } from '../../components/product/product-grid';
+import Container from '@components/ui/container';
+import Layout from '@components/layout/layout';
+import { ShopFilters } from '@components/search/filters';
+import { ProductGrid } from '@components/product/product-grid';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-//import DownloadApps from '../../components/common/download-apps';
+//import DownloadApps from '@components/common/download-apps';
 import { GetStaticProps } from 'next';
-import PageHeroSection from '../../components/ui/page-hero-section';
+import PageHeroSection from '@components/ui/page-hero-section';
 import { useTranslation } from 'next-i18next';
-import SearchTopBar from '../../components/search/search-top-bar';
+import SearchTopBar from '@components/search/search-top-bar';
 import { Element } from 'react-scroll';
-import Seo from '../../components/seo/seo';
+import Seo from '@components/seo/seo';
 
 export default function Products() {
   const { t } = useTranslation('common');

@@ -1,11 +1,11 @@
 import {useTranslation} from 'next-i18next';
 import {useRouter} from "next/router";
-import {getDirection} from "../../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 import ListMenu from './mega-menu';
-import Container from '../../ui/container';
-import Image from "../../ui/image";
-import {productPlaceholder} from "../../../assets/placeholders";
-import Link from "../../ui/link";
+import Container from '@components/ui/container';
+import Image from "@components/ui/image";
+import {productPlaceholder} from "@assets/placeholders";
+import Link from "@components/ui/link";
 
 const SubMega = ({item}: any) => {
     const {

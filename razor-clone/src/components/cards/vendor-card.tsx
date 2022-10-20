@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next';
-import Link from '../ui/link';
-import Image from '../ui/image';
-import { ROUTES } from '../../utils/routes';
-import Heading from '../ui/heading';
-import Text from '../ui/text';
+import Link from '@components/ui/link';
+import Image from '@components/ui/image';
+import { ROUTES } from '@utils/routes';
+import Heading from '@components/ui/heading';
+import Text from '@components/ui/text';
 
 type VendorCardProps = {
   shop?: any;

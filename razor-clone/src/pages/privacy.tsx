@@ -1,13 +1,13 @@
-import Layout from '../components/layout/layout';
-import Container from '../components/ui/container';
-import Heading from '../components/ui/heading';
-import PageHeroSection from '../components/ui/page-hero-section';
-import { privacyPolicy } from '../setting/privacy-settings';
+import Layout from '@components/layout/layout';
+import Container from '@components/ui/container';
+import Heading from '@components/ui/heading';
+import PageHeroSection from '@components/ui/page-hero-section';
+import { privacyPolicy } from '../settings/privacy-settings';
 import { Link, Element } from 'react-scroll';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
-import Seo from '../components/seo/seo';
+import Seo from '@components/seo/seo';
 
 function makeTitleToDOMId(title: string) {
   return title.toLowerCase().split(' ').join('_');

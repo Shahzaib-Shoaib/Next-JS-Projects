@@ -1,10 +1,10 @@
 import { useSessionStorage } from 'react-use';
 //import Image from '@components/ui/image';
-import HighlightedBar from '../common/highlighted-bar';
-import Countdown from '../common/countdown';
-import Header from '../layout/header/header';
-import Footer from '../layout/footer/footer';
-import MobileNavigation from '../layout/mobile-navigation/mobile-navigation';
+import HighlightedBar from '@components/common/highlighted-bar';
+import Countdown from '@components/common/countdown';
+import Header from '@components/layout/header/header';
+import Footer from '@components/layout/footer/footer';
+import MobileNavigation from '@components/layout/mobile-navigation/mobile-navigation';
 import { useTranslation } from 'next-i18next';
 
 const Layout: React.FC = ({ children }) => {

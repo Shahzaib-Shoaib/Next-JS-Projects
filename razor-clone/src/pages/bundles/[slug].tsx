@@ -1,9 +1,9 @@
-import Container from '../../components/ui/container';
-import Layout from '../../components/layout/layout';
+import Container from '@components/ui/container';
+import Layout from '@components/layout/layout';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { GetServerSideProps } from 'next';
-import ProductBundleGrid from '../../components/product/product-bundle-grid';
-import BundleHeroSection from '../../components/bundle/bundle-hero-section';
+import ProductBundleGrid from '@components/product/product-bundle-grid';
+import BundleHeroSection from '@components/bundle/bundle-hero-section';
 
 
 export default function Bundles() {

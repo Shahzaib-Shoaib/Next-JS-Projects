@@ -1,10 +1,10 @@
-import { LIMITS } from '../../../framework/basic-rest/utils/limits';
-import SupperCategoryList from "../../suppercategory/suppercategory-list";
-import SupperCategoryContainer from "../../suppercategory/suppercategory-container";
-import {useElectronicProductsQuery} from "../../../framework/basic-rest/product/get-all-electronic-products";
-import { useElectronicCategoryQuery } from '../../../framework/basic-rest/product/get-electronic-category';
+import { LIMITS } from '@framework/utils/limits';
+import SupperCategoryList from "@components/suppercategory/suppercategory-list";
+import SupperCategoryContainer from "@components/suppercategory/suppercategory-container";
+import {useElectronicProductsQuery} from "@framework/product/get-all-electronic-products";
+import { useElectronicCategoryQuery } from '@framework/product/get-electronic-category';
 import {useRouter} from "next/router";
-import {getDirection} from "../../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 //import {IoIosArrowBack} from "react-icons/io";
 
 export default function SupperCategoryElectronicFeed() {

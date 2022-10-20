@@ -1,6 +1,6 @@
-import ProductsCarousel from '../../product/products-carousel';
-import { useRelatedProductsQuery } from '../../../framework/basic-rest/product/get-related-product';
-import { LIMITS } from '../../../framework/basic-rest/utils/limits';
+import ProductsCarousel from '@components/product/products-carousel';
+import { useRelatedProductsQuery } from '@framework/product/get-related-product';
+import { LIMITS } from '@framework/utils/limits';
 
 interface RelatedProductsProps {
   carouselBreakpoint?: {} | any;

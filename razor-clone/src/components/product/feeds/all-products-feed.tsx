@@ -1,17 +1,17 @@
 import { Fragment } from 'react';
-import ProductCard from '../../product/product-cards/product-card';
+import ProductCard from '@components/product/product-cards/product-card';
 import type { FC } from 'react';
-import { useProductsQuery } from '../../../framework/basic-rest/product/get-all-products';
-import ProductCardLoader from '../../ui/loaders/product-card-loader';
-import SectionHeader from '../../common/section-header';
-import { useModalAction } from '../../common/modal/modal.context';
+import { useProductsQuery } from '@framework/product/get-all-products';
+import ProductCardLoader from '@components/ui/loaders/product-card-loader';
+import SectionHeader from '@components/common/section-header';
+import { useModalAction } from '@components/common/modal/modal.context';
 import slice from 'lodash/slice';
-import Alert from '../../ui/alert';
+import Alert from '@components/ui/alert';
 import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import { LIMITS } from '../../../framework/basic-rest/utils/limits';
-import { Product } from '../../../framework/basic-rest/types';
+import { LIMITS } from '@framework/utils/limits';
+import { Product } from '@framework/types';
 interface ProductFeedProps {
   element?: any;
   className?: string;

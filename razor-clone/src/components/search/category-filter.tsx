@@ -4,7 +4,7 @@ import CategoryFilterMenu from '../search/category-filter-menu';
 import Alert from '../ui/alert';
 import Scrollbar from '../ui/scrollbar';
 import CategoryListCardLoader from '../ui/loaders/category-list-card-loader';
-import { useCategoriesQuery } from '../../framework/basic-rest/category/get-all-categories';
+import { useCategoriesQuery } from '@framework/category/get-all-categories';
 
 export const CategoryFilter = () => {
   const { t } = useTranslation('common');

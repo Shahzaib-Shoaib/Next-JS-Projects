@@ -3,7 +3,7 @@ import Link from '../ui/link';
 import { LinkProps } from 'next/link';
 import { useTranslation } from 'next-i18next';
 import {useRouter} from "next/router";
-import {getDirection} from "../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 
 interface Props {
   className?: string;

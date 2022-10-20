@@ -1,7 +1,7 @@
-import { Item } from '../../contexts/cart/cart.utils';
-import Image from '../ui/image';
-import { generateCartItemName } from '../../utils/generate-cart-item-name';
-import usePrice from '../../framework/basic-rest/product/use-price';
+import { Item } from '@contexts/cart/cart.utils';
+import Image from '@components/ui/image';
+import { generateCartItemName } from '@utils/generate-cart-item-name';
+import usePrice from '@framework/product/use-price';
 
 export const CheckoutItem: React.FC<{ item: Item }> = ({ item }) => {
   const { price } = usePrice({

@@ -1,11 +1,11 @@
-import Input from '../ui/input';
+import Input from '@components/ui/input';
 import { useForm } from 'react-hook-form';
-import TextArea from '../ui/form/text-area';
-import { useCheckoutMutation } from '../../framework/basic-rest/checkout/use-checkout';
-import { CheckBox } from '../ui/form/checkbox';
-import Button from '../ui/button';
+import TextArea from '@components/ui/form/text-area';
+import { useCheckoutMutation } from '@framework/checkout/use-checkout';
+import { CheckBox } from '@components/ui/form/checkbox';
+import Button from '@components/ui/button';
 import Router from 'next/router';
-import { ROUTES } from '../../utils/routes';
+import { ROUTES } from '@utils/routes';
 import { useTranslation } from 'next-i18next';
 
 interface CheckoutInputType {

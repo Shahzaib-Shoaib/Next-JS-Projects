@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckBox } from '../ui/form/checkbox';
-import { useDietaryQuery } from '../../framework/basic-rest/dietary/get-all-dietary';
+import { useDietaryQuery } from '@framework/dietary/get-all-dietary';
 import { useRouter } from 'next/router';
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 import { Disclosure } from '@headlessui/react';

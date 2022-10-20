@@ -1,8 +1,8 @@
 import { IoCheckmarkCircle } from 'react-icons/io5';
 import OrderDetails from '../order/order-details';
-import { useOrderQuery } from '../../framework/basic-rest/order/get-order';
+import { useOrderQuery } from '@framework/order/get-order';
 import { useRouter } from 'next/router';
-import usePrice from '../../framework/basic-rest/product/use-price';
+import usePrice from '@framework/product/use-price';
 import { useTranslation } from 'next-i18next';
 
 export default function OrderInformation() {

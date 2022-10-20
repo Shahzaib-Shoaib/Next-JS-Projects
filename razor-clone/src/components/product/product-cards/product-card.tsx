@@ -1,16 +1,16 @@
 import cn from 'classnames';
-import Image from '../../ui/image';
-import Link from '../../ui/link';
-import usePrice from '../../../framework/basic-rest/product/use-price';
-import { Product } from '../../../framework/basic-rest/types';
-import { useModalAction } from '../../common/modal/modal.context';
-import useWindowSize from '../../../utils/use-window-size';
-import SearchIcon from '../../icons/search-icon';
-import { useCart } from '../../../contexts/cart/cart.context';
+import Image from '@components/ui/image';
+import Link from '@components/ui/link';
+import usePrice from '@framework/product/use-price';
+import { Product } from '@framework/types';
+import { useModalAction } from '@components/common/modal/modal.context';
+import useWindowSize from '@utils/use-window-size';
+import SearchIcon from '@components/icons/search-icon';
+import { useCart } from '@contexts/cart/cart.context';
 import { AddToCart } from '../add-to-cart';
 import { useTranslation } from 'next-i18next';
-import { productPlaceholder } from '../../../assets/placeholders';
-import {ROUTES} from "../../../utils/routes";
+import { productPlaceholder } from '@assets/placeholders';
+import {ROUTES} from "@utils/routes";
 
 interface ProductProps {
   product: Product;

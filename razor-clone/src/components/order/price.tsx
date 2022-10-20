@@ -1,5 +1,5 @@
-import usePrice from '../../framework/basic-rest/product/use-price';
-import { calculateTotal } from '../../contexts/cart/cart.utils';
+import usePrice from '@framework/product/use-price';
+import { calculateTotal } from '@contexts/cart/cart.utils';
 
 export const TotalPrice: React.FC<{ items?: any }> = ({ items }) => {
   const { price } = usePrice({

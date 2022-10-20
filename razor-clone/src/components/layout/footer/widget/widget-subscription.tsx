@@ -1,12 +1,12 @@
 import { useForm } from 'react-hook-form';
-import Input from '../../../ui/input';
+import Input from '@components/ui/input';
 import { useTranslation } from 'next-i18next';
-import EmailIcon from '../../../icons/email-icon';
-import SendIcon from '../../../icons/send-icon';
-import Text from '../../../ui/text';
-import Heading from '../../../ui/heading';
+import EmailIcon from '@components/icons/email-icon';
+import SendIcon from '@components/icons/send-icon';
+import Text from '@components/ui/text';
+import Heading from '@components/ui/heading';
 import { useRouter } from 'next/router';
-import { getDirection } from '../../../../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 import cn from 'classnames';
 interface Props {
   className?: string;

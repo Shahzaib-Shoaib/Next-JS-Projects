@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
-import SearchIcon from '../icons/search-icon';
-import CloseIcon from '../icons/search-icon';
+import SearchIcon from '@components/icons/search-icon';
+import CloseIcon from '@components/icons/search-icon';
 import cn from 'classnames';
 
 type SearchProps = {

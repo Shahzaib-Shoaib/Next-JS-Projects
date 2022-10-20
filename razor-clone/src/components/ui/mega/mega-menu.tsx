@@ -1,8 +1,8 @@
 import {useTranslation} from 'next-i18next';
-import Link from '../../ui/link';
+import Link from '@components/ui/link';
 import {useRouter} from "next/router";
-import {getDirection} from "../../../utils/get-direction";
-import Image from "../../ui/image";
+import {getDirection} from "@utils/get-direction";
+import Image from "@components/ui/image";
 
 const ListMenu = ({dept, data, hasSubMenu, menuIndex}: any) => {
     const {t} = useTranslation('menu');

@@ -1,7 +1,7 @@
 import { Switch } from '@headlessui/react';
 import React from 'react';
 import { useRouter } from 'next/router';
-import { getDirection } from '../../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 
 interface SwitchProps {
   srText?: string;

@@ -1,6 +1,6 @@
-import Container from '../../ui/container';
-import Image from '../../ui/image';
-import { siteSettings } from '../../../setting/site-settings';
+import Container from '@components/ui/container';
+import Image from '@components/ui/image';
+import { siteSettings } from '@settings/site-settings';
 import { useTranslation } from 'next-i18next';
 
 interface CopyrightProps {

@@ -1,8 +1,8 @@
-import Layout from '../components/layout/layout';
+import Layout from '@components/layout/layout';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import ErrorInformation from '../components/404/error-information';
-import Seo from '../components/seo/seo';
+import ErrorInformation from '@components/404/error-information';
+import Seo from '@components/seo/seo';
 
 export default function ErrorPage() {
   return (

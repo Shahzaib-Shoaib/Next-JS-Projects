@@ -1,9 +1,9 @@
-import Layout from '../components/layout/layout';
-import LoginForm from '../components/auth/login-form';
+import Layout from '@components/layout/layout';
+import LoginForm from '@components/auth/login-form';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 //import Divider from '@components/ui/divider';
-import Seo from '../components/seo/seo';
+import Seo from '@components/seo/seo';
 
 export default function SignInPage() {
   return (

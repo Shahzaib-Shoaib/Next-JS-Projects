@@ -1,12 +1,12 @@
-import LicenseIcon from '../icons/featured/license-icon';
-import FeedbackIcon from '../icons/featured/feedback-icon';
-import SyncIcon from '../icons/featured/sync-icon';
-import RocketIcon from '../icons/featured/rocket-icon';
-import FeaturedCard from '../cards/featured-card';
-import Carousel from '../ui/carousel/carousel';
-import {SwiperSlide} from '../ui/carousel/slider';
-import ThumbsIcon from '../icons/featured/thumbs-icon';
-import {ROUTES} from "../../utils/routes";
+import LicenseIcon from '@components/icons/featured/license-icon';
+import FeedbackIcon from '@components/icons/featured/feedback-icon';
+import SyncIcon from '@components/icons/featured/sync-icon';
+import RocketIcon from '@components/icons/featured/rocket-icon';
+import FeaturedCard from '@components/cards/featured-card';
+import Carousel from '@components/ui/carousel/carousel';
+import {SwiperSlide} from '@components/ui/carousel/slider';
+import ThumbsIcon from '@components/icons/featured/thumbs-icon';
+import {ROUTES} from "@utils/routes";
 
 const data = [
     {

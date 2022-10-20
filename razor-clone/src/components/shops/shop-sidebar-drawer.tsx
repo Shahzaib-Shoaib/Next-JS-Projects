@@ -1,7 +1,7 @@
-import Scrollbar from '../ui/scrollbar';
-import { useUI } from '../../contexts/ui.context';
+import Scrollbar from '@components/ui/scrollbar';
+import { useUI } from '@contexts/ui.context';
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
-import { getDirection } from '../../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 import { useRouter } from 'next/router';
 import ShopSidebar from './shop-sidebar';
 import { useTranslation } from 'react-i18next';

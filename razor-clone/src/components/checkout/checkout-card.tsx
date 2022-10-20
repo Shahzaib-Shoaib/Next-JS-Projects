@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import usePrice from '../../framework/basic-rest/product/use-price';
-import { useCart } from '../../contexts/cart/cart.context';
-import Text from '../ui/text';
-import Button from '../ui/button';
+import usePrice from '@framework/product/use-price';
+import { useCart } from '@contexts/cart/cart.context';
+import Text from '@components/ui/text';
+import Button from '@components/ui/button';
 import { CheckoutItem } from './checkout-card-item';
 import { CheckoutCardFooterItem } from './checkout-card-footer-item';
 import { useTranslation } from 'next-i18next';
 import Router from 'next/router';
-import { ROUTES } from '../../utils/routes';
+import { ROUTES } from '@utils/routes';
 
 const CheckoutCard: React.FC = () => {
   const { t } = useTranslation('common');

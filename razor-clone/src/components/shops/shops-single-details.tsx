@@ -1,9 +1,9 @@
-import { useShopQuery } from '../../framework/basic-rest/shops/get-shop';
-//import Text from '@components/ui/text';
+import { useShopQuery } from '@framework/shops/get-shop';
+//import Text from '@ui/text';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { useUI } from '../../contexts/ui.context';
-import { getDirection } from '../../utils/get-direction';
+import { useUI } from '@contexts/ui.context';
+import { getDirection } from '@utils/get-direction';
 import { Element } from 'react-scroll';
 import Container from '../ui/container';
 import { Drawer } from '../common/drawer/drawer';
@@ -11,7 +11,7 @@ import ShopSidebar from '../shops/shop-sidebar';
 import ShopSidebarDrawer from '../shops/shop-sidebar-drawer';
 import AllProductFeed from '../product/feeds/all-products-feed';
 import { useTranslation } from 'next-i18next';
-import useWindowSize from '../../utils/use-window-size';
+import useWindowSize from '@utils/use-window-size';
 
 const ShopsSingleDetails: React.FC = () => {
   const {

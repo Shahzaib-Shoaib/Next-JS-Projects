@@ -1,8 +1,8 @@
-import Link from '../../ui/link';
+import Link from '@components/ui/link';
 
 import {BsChevronDown} from 'react-icons/bs';
-import ListMenu from '../../ui/list-menu';
-import SubMega from '../../ui/mega/sub-mega';
+import ListMenu from '@components/ui/list-menu';
+import SubMega from '@components/ui/mega/sub-mega';
 import {useTranslation} from 'next-i18next';
 import cn from 'classnames';
 

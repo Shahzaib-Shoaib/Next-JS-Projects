@@ -1,7 +1,7 @@
-import {useElectronicProductsQuery} from "../../../framework/basic-rest/product/get-all-electronic-products";
-import ProductsCarousel from '../../product/products-carousel';
-import { ROUTES } from '../../../utils/routes';
-import { LIMITS } from '../../../framework/basic-rest/utils/limits';
+import {useElectronicProductsQuery} from "@framework/product/get-all-electronic-products";
+import ProductsCarousel from '@components/product/products-carousel';
+import { ROUTES } from '@utils/routes';
+import { LIMITS } from '@framework/utils/limits';
 
 export default function ElectronicProductFeed() {
   const { data, isLoading, error } = useElectronicProductsQuery({

@@ -1,15 +1,15 @@
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router';
-import { ManagedUIContext } from '../contexts/ui.context';
-import ManagedModal from '../components/common/modal/managed-modal';
-import ManagedDrawer from '../components/common/drawer/managed-drawer';
+import { ManagedUIContext } from '@contexts/ui.context';
+import ManagedModal from '@components/common/modal/managed-modal';
+import ManagedDrawer from '@components/common/drawer/managed-drawer';
 import { useEffect, useRef } from 'react';
 import { QueryClient, QueryClientProvider ,DehydratedState} from 'react-query';
 import { Hydrate } from 'react-query/hydration';
 import { ToastContainer } from 'react-toastify';
 //import { ReactQueryDevtools } from 'react-query/devtools';
 import { appWithTranslation } from 'next-i18next';
-import { DefaultSeo } from '../components/seo/default-seo';
+import { DefaultSeo } from '@components/seo/default-seo';
 
 
 // external
@@ -17,12 +17,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 // base css file
-import '../styles/scrollbar.css';
-import '../styles/swiper-carousel.css';
-import '../styles/custom-plugins.css';
-import '../styles/tailwind.css';
-import '../styles/themes.scss';
-import { getDirection } from '../utils/get-direction';
+import '@styles/scrollbar.css';
+import '@styles/swiper-carousel.css';
+import '@styles/custom-plugins.css';
+import '@styles/tailwind.css';
+import '@styles/themes.scss';
+import { getDirection } from '@utils/get-direction';
 
 // type Props = {
 //   children?: React.ReactNode

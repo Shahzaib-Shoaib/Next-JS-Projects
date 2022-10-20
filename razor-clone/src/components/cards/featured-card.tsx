@@ -1,10 +1,10 @@
-import Heading from '../ui/heading';
-import Link from '../ui/link';
+import Heading from '@components/ui/heading';
+import Link from '@components/ui/link';
 import cn from 'classnames';
 import { LinkProps } from 'next/link';
 import { useTranslation } from 'next-i18next';
 //import { IoCaretForward } from 'react-icons/io5';
-import Text from "../ui/text";
+import Text from "@components/ui/text";
 
 interface ItemProps {
   icon: JSX.Element;

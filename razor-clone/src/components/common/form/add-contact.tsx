@@ -1,11 +1,11 @@
-import CloseButton from '../../ui/close-button';
-import Input from '../../ui/form/input';
-import Button from '../../ui/button';
+import CloseButton from '@components/ui/close-button';
+import Input from '@components/ui/form/input';
+import Button from '@components/ui/button';
 import { useForm } from 'react-hook-form';
 import {
   useModalState,
   useModalAction,
-} from '../../common/modal/modal.context';
+} from '@components/common/modal/modal.context';
 import { useTranslation } from 'next-i18next';
 
 interface ContactFormValues {

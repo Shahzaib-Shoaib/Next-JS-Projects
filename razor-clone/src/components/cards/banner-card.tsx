@@ -1,6 +1,6 @@
-import Link from '../ui/link';
+import Link from '@components/ui/link';
 import Image from 'next/image';
-import useWindowSize from '../../utils/use-window-size';
+import useWindowSize from '@utils/use-window-size';
 import cn from 'classnames';
 
 interface BannerProps {

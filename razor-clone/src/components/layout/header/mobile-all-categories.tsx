@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import Link from '../../ui/link';
-import { siteSettings } from '../../../setting/site-settings';
-import Scrollbar from '../../ui/scrollbar';
+import Link from '@components/ui/link';
+import { siteSettings } from '@settings/site-settings';
+import Scrollbar from '@components/ui/scrollbar';
 import { IoIosArrowDown } from 'react-icons/io';
-import Logo from '../../ui/logo';
-import { useUI } from '../../../contexts/ui.context';
+import Logo from '@components/ui/logo';
+import { useUI } from '@contexts/ui.context';
 import { useTranslation } from 'next-i18next';
 import cn from 'classnames';
 
@@ -15,11 +15,11 @@ import {
   IoLogoYoutube,
   IoClose,
 } from 'react-icons/io5';
-import {useCategoriesQuery} from "../../../framework/basic-rest/category/get-all-categories";
-import Alert from "../../ui/alert";
-import CategoryListCardLoader from "../../ui/loaders/category-list-card-loader";
-import SidebarMenu from "../../ui/sidebar-menu";
-import {ROUTES} from "../../../utils/routes";
+import {useCategoriesQuery} from "@framework/category/get-all-categories";
+import Alert from "@components/ui/alert";
+import CategoryListCardLoader from "@components/ui/loaders/category-list-card-loader";
+import SidebarMenu from "@components/ui/sidebar-menu";
+import {ROUTES} from "@utils/routes";
 
 const social = [
   {

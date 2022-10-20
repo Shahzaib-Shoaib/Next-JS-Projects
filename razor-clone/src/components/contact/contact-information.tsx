@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'next-i18next';
-import LocationIcon from '../icons/contact/location-icon';
-import PhoneIcon from '../icons/contact/phone-icon';
-import MailIcon from '../icons/contact/mail-icon';
-import Text from '../ui/text';
-import Heading from '../ui/heading';
+import LocationIcon from '@components/icons/contact/location-icon';
+import PhoneIcon from '@components/icons/contact/phone-icon';
+import MailIcon from '@components/icons/contact/mail-icon';
+import Text from '@components/ui/text';
+import Heading from '@components/ui/heading';
 
 const data = [
   {

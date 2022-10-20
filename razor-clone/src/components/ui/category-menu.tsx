@@ -3,10 +3,10 @@ import {useTranslation} from 'next-i18next';
 import Link from './link';
 import {IoIosArrowForward, IoIosAddCircleOutline, IoIosRemoveCircleOutline, IoIosArrowBack} from 'react-icons/io';
 import Image from './image';
-import {ROUTES} from '../../utils/routes';
+import {ROUTES} from '@utils/routes';
 import {useState} from "react";
 import {useRouter} from "next/router";
-import {getDirection} from "../../utils/get-direction";
+import {getDirection} from "@utils/get-direction";
 import SubMegaVertical from "../ui/mega/sub-mega-vertical";
 
 function SidebarMenuItem({className, item, depth = 0}: any) {

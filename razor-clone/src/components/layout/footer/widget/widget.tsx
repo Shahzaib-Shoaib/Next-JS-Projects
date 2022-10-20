@@ -1,4 +1,4 @@
-import Container from '../../../ui/container';
+import Container from '@components/ui/container';
 import WidgetLink from './widget-link';
 import WidgetAbout from './widget-about-us';
 import WidgetSubscription from './widget-subscription';

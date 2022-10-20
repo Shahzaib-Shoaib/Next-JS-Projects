@@ -1,17 +1,17 @@
-import Link from '../../ui/link';
-import SearchIcon from '../../icons/search-icon';
-import UserIcon from '../../icons/user-icon';
-import MenuIcon from '../../icons/menu-icon';
-import HomeIcon from '../../icons/home-icon';
-import { useUI } from '../../../contexts/ui.context';
+import Link from '@components/ui/link';
+import SearchIcon from '@components/icons/search-icon';
+import UserIcon from '@components/icons/user-icon';
+import MenuIcon from '@components/icons/menu-icon';
+import HomeIcon from '@components/icons/home-icon';
+import { useUI } from '@contexts/ui.context';
 import { useRouter } from 'next/router';
-import { ROUTES } from '../../../utils/routes';
+import { ROUTES } from '@utils/routes';
 import dynamic from 'next/dynamic';
-import { Drawer } from '../../common/drawer/drawer';
-import { getDirection } from '../../../utils/get-direction';
-import { useModalAction } from '../../common/modal/modal.context';
+import { Drawer } from '@components/common/drawer/drawer';
+import { getDirection } from '@utils/get-direction';
+import { useModalAction } from '@components/common/modal/modal.context';
 import { useTranslation } from 'next-i18next';
-const CartButton = dynamic(() => import('../../cart/cart-button'), {
+const CartButton = dynamic(() => import('@components/cart/cart-button'), {
   ssr: false,
 });
 const AuthMenu = dynamic(() => import('../header/auth-menu'), {

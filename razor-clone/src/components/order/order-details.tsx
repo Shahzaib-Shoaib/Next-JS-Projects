@@ -1,6 +1,6 @@
-import { useOrderQuery } from '../../framework/basic-rest/order/get-order';
-import usePrice from '../../framework/basic-rest/product/use-price';
-import { OrderItem } from '../../framework/basic-rest/types';
+import { useOrderQuery } from '@framework/order/get-order';
+import usePrice from '@framework/product/use-price';
+import { OrderItem } from '@framework/types';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import Heading from '../ui/heading';

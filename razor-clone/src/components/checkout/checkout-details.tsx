@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Button from '../ui/button';
-import Heading from '../ui/heading';
-import Contact from '../contact/contact';
+import Button from '@components/ui/button';
+import Heading from '@components/ui/heading';
+import Contact from '@components/contact/contact';
 import Address from './address';
 import DeliveryNotes from './delivery-instruction';
 import DeliverySchedule from './schedule';

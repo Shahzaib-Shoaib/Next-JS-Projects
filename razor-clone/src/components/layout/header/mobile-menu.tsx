@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import Link from '../../ui/link';
-import { siteSettings } from '../../../setting/site-settings';
-import Scrollbar from '../../ui/scrollbar';
+import Link from '@components/ui/link';
+import { siteSettings } from '@settings/site-settings';
+import Scrollbar from '@components/ui/scrollbar';
 import { IoIosArrowDown } from 'react-icons/io';
-import Logo from '../../ui/logo';
-import { useUI } from '../../../contexts/ui.context';
+import Logo from '@components/ui/logo';
+import { useUI } from '@contexts/ui.context';
 import { useTranslation } from 'next-i18next';
 import cn from 'classnames';
 

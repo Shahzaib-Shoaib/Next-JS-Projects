@@ -1,9 +1,9 @@
 import { ShopFilters } from './filters';
-import Scrollbar from '../../components/ui/scrollbar';
-import { useUI } from '../../contexts/ui.context';
+import Scrollbar from '@components/ui/scrollbar';
+import { useUI } from '@contexts/ui.context';
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
 import { useTranslation } from 'next-i18next';
-import { getDirection } from '../../utils/get-direction';
+import { getDirection } from '@utils/get-direction';
 import { useRouter } from 'next/router';
 import Heading from '../ui/heading';
 
