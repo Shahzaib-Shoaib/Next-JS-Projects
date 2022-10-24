@@ -6,7 +6,7 @@ import ManagedModal from "@components/common/modal/managed-modal";
 import ManagedDrawer from "@components/common/drawer/managed-drawer";
 import { useEffect, useRef } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { Hydrate } from "react-query/hydration";
+// import { Hydrate } from "react-query/hydration";
 import { ToastContainer } from "react-toastify";
 // import { ReactQueryDevtools } from "react-query/devtools";
 import { appWithTranslation } from "next-i18next";
@@ -32,7 +32,18 @@ function handleExitComplete() {
 	}
 }
 
-const Noop: React.FC = ({ children }) => <>{children}</>;
+
+ type Props = {
+   children?: React.ReactNode
+ };
+
+
+    
+// const Noop: React.FC = ({children}) => <>{children}</>;
+const Noop: React.FC<Props> = ({children}) => <>{children}</>;
+
+
+// const Noop: React.FC = ({ children }) => <>{children}</>;
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {
 	const queryClientRef = useRef<any>();
@@ -49,7 +60,7 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
 	return (
 		<AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
 			<QueryClientProvider client={queryClientRef.current}>
-				<Hydrate state={pageProps.dehydratedState}>
+				{/* <Hydrate state={pageProps.dehydratedState}> */}
 					<ManagedUIContext>
 						<Layout pageProps={pageProps}>
 							<DefaultSeo />
@@ -59,7 +70,7 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
 						<ManagedModal />
 						<ManagedDrawer />
 					</ManagedUIContext>
-				</Hydrate>
+				{/* </Hydrate> */}
 				{/* <ReactQueryDevtools /> */}
 			</QueryClientProvider>
 		</AnimatePresence>

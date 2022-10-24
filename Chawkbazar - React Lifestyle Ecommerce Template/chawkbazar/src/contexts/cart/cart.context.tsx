@@ -26,7 +26,16 @@ export const useCart = () => {
   return context;
 };
 
-export const CartProvider: React.FC = (props) => {
+
+ type Props = {
+   children?: React.ReactNode
+ };
+    
+//const Noop: React.FC = ({children}) => <>{children}</>;
+//const Noop: React.FC<Props> = ({children}) => <>{children}</>;
+
+
+export const CartProvider: React.FC <Props>= (props) => {
   const [savedCart, saveCart] = useLocalStorage(
     `chawkbazar-cart`,
     JSON.stringify(initialState)

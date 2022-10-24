@@ -10,7 +10,13 @@ import Link from "@components/ui/link";
 import { ROUTES } from "@utils/routes";
 import { useTranslation } from "next-i18next";
 
-const SignUpForm: React.FC = () => {
+
+type Props = {
+	children?: React.ReactNode
+  };
+
+  
+const SignUpForm: React.FC<Props> = () => {
 	const { t } = useTranslation();
 	const { mutate: signUp, isLoading } = useSignUpMutation();
 	const { setModalView, openModal, closeModal } = useUI();
