@@ -1,10 +1,10 @@
-// all api end points changed from "/_____.json" to "api/____.json"  
 export const API_ENDPOINTS = {
   LOGIN: '/login',
   REGISTER: '/register',
   LOGOUT: '/logout',
   FORGET_PASSWORD: '/forget-password',
   CATEGORIES: '/categories.json',
+  CATEGORIES_SHOPBY: '/categories_shopby.json',
   DIETARY: '/dietary.json',
   BRANDS: '/brands.json',
   PRODUCTS: '/products.json',
@@ -16,6 +16,8 @@ export const API_ENDPOINTS = {
   COOKIES_PRODUCTS: '/products_cookies.json',
   CHIPS_PRODUCTS: '/products_chips.json',
   ELECTRONIC_CATEGORY: '/category_electronic.json',
+  PHONES_CATEGORY: '/category_phones.json',
+  COMPUTER_CATEGORY: '/category_computer.json',
   CLOTH_CATEGORY: '/category_cloth.json',
   FASHION_PRODUCTS: '/products_fashion.json',
   ELETRONIC_PRODUCTS: '/products_electronic.json',
