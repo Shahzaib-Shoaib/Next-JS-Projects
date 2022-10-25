@@ -82,13 +82,13 @@ export default function Home() {
                         <BannerGridTwo
                             data={bannerGridHero}
                             className="mb-8 lg:mb-12"
-                            girdClassName="xl:gap-6 "
+                            gridClassName="xl:gap-6 "
                         />
                        <ListingTabsClothFeed />
                         <BannerGridTwo
                             data={bannerGridHero2}
                             className="mb-8 lg:mb-12"
-                            girdClassName="xl:gap-6 xl:grid-cols-[minmax(654px,_1fr)_1fr] 2xl:grid-cols-[minmax(954px,_1fr)_1fr] "
+                            gridClassName="xl:gap-6 xl:grid-cols-[minmax(654px,_1fr)_1fr] 2xl:grid-cols-[minmax(954px,_1fr)_1fr] "
                         />
                         <CategoryGridListBlock  className="mb-6 lg:mb-8" />
                         <BannerAllCarousel

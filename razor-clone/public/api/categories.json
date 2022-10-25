@@ -5,9 +5,10 @@
       "name": "Audio Music",
       "slug": "audio",
       "type": "mega",
+      "productCount": "125",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/collection_1.jpg",
+        "thumbnail": "/assets/images/category/cate1.jpg",
         "original": "/assets/images/category/collection_1.jpg"
       },
       "children": [
@@ -210,9 +211,10 @@
       "name": "Phones & Tablets",
       "slug": "phone-tablets",
       "type": "mega",
+      "productCount": "255",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/collection_2.jpg",
+        "thumbnail": "/assets/images/category/cate2.jpg",
         "original": "/assets/images/category/collection_2.jpg"
       },
       "children": [
@@ -319,9 +321,10 @@
       "id": 3,
       "name": "Fashion & Clothing",
       "slug": "fashion-clothing",
+      "productCount": "250",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/collection_3.jpg",
+        "thumbnail": "/assets/images/category/cate3.jpg",
         "original": "/assets/images/category/collection_3.jpg"
       },
       "children": [
@@ -523,9 +526,10 @@
       "id": 4,
       "name": "Garden & Kitchen",
       "slug": "garden-kitchen",
+      "productCount": "120",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/collection_4.jpg",
+        "thumbnail": "/assets/images/category/cate4.jpg",
         "original": "/assets/images/category/collection_4.jpg"
       },
       "children": [
@@ -560,9 +564,10 @@
       "id": 5,
       "name": "TV & Video",
       "slug": "tv-video",
+      "productCount": "250",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/collection_5.jpg",
+        "thumbnail": "/assets/images/category/cate5.jpg",
         "original": "/assets/images/category/collection_5.jpg"
       },
       "children": [
@@ -597,9 +602,10 @@
       "id": 6,
       "name": "Beauty & Health",
       "slug": "beauty-health",
+      "productCount": "450",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/collection_6.jpg",
+        "thumbnail": "/assets/images/category/cate6.jpg",
         "original": "/assets/images/category/collection_6.jpg"
       },
       "children": [
@@ -634,9 +640,10 @@
       "id": 7,
       "name": "Jewelry & Watches",
       "slug": "jewelry-watches",
+      "productCount": "320",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/collection_6.jpg",
+        "thumbnail": "/assets/images/category/cate7.jpg",
         "original": "/assets/images/category/collection_6.jpg"
       }
     },
@@ -644,9 +651,10 @@
       "id": 8,
       "name": "Top 10 Offers",
       "slug": "quality-milk",
+      "productCount": "350",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/quality-milk.png",
+        "thumbnail": "/assets/images/category/cate8.jpg",
         "original": "/assets/images/category/quality-milk.png"
       },
       "children": [
@@ -666,9 +674,10 @@
       "id": 9,
       "name": "Accessories",
       "slug": "accessories",
+      "productCount": "350",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/cold-drinks.png",
+        "thumbnail": "/assets/images/category/cate9.jpg",
         "original": "/assets/images/category/cold-drinks.png"
       }
     },
@@ -676,9 +685,10 @@
       "id": 10,
       "name": "Beaf Steak",
       "slug": "beaf-steak",
+      "productCount": "620",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/beaf-steak.png",
+        "thumbnail": "/assets/images/category/cate10.jpg",
         "original": "/assets/images/category/beaf-steak.png"
       }
     },
@@ -686,9 +696,10 @@
       "id": 11,
       "name": "Vitamin Items",
       "slug": "vitamin-items",
+      "productCount": "420",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/vitamin-items.png",
+        "thumbnail": "/assets/images/category/cate11.jpg",
         "original": "/assets/images/category/vitamin-items.png"
       }
     },
@@ -696,9 +707,10 @@
       "id": 12,
       "name": "Raw Chicken mdeo",
       "slug": "raw-chicken",
+      "productCount": "430",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/raw-chicken.png",
+        "thumbnail": "/assets/images/category/cate12.jpg",
         "original": "/assets/images/category/raw-chicken.png"
       }
     },
@@ -706,9 +718,10 @@
       "id": 13,
       "name": "Breakfast Item",
       "slug": "breakfast-item",
+      "productCount": "430",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/breakfast-item.png",
+        "thumbnail": "/assets/images/category/cate2.jpg",
         "original": "/assets/images/category/breakfast-item.png"
       }
     },
@@ -716,9 +729,10 @@
       "id": 14,
       "name": "Fish Items",
       "slug": "fish-items",
+      "productCount": "430",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/fish-items.png",
+        "thumbnail": "/assets/images/category/cate2.jpg",
         "original": "/assets/images/category/fish-items.png"
       }
     },
@@ -726,9 +740,10 @@
       "id": 15,
       "name": "Green Vegetables",
       "slug": "green-vegetables",
+      "productCount": "430",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/green-vegetables.png",
+        "thumbnail": "/assets/images/category/cate2.jpg",
         "original": "/assets/images/category/green-vegetables.png"
       }
     }

@@ -45,13 +45,13 @@ export default function Home()  {
                                   <BannerGridTwo
                     data={bannerTwo}
                     className="mb-8 lg:mb-12"
-                    girdClassName="xl:gap-5 "
+                    gridClassName="xl:gap-5 "
                 />
                                 <SupperCategoryElectronicFeed />
                                 <BannerGridTwo
                     data={bannerTwo2}
                     className="mb-8 lg:mb-12"
-                    girdClassName="xl:gap-5 2xl:grid-cols-[minmax(1130px,_1fr)_1fr] "
+                    gridClassName="xl:gap-5 2xl:grid-cols-[minmax(1130px,_1fr)_1fr] "
                 />
                 <SupperCategoryClothFeed />
                 <CategoryGridListBlock  className="mb-6 lg:mb-8" />

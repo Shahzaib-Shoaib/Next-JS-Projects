@@ -5,8 +5,14 @@ import { siteSettings } from '@settings/site-settings';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import {getDirection} from "@utils/get-direction";
+import HeaderMenutop from "@components/layout/header/header-menutop";
 
-export default function LanguageSwitcher() {
+interface MenuProps {
+  classNameLink?: string;
+}
+
+const LanguageSwitcher: React.FC<MenuProps> = ({classNameLink }) => {
+
   const { site_header } = siteSettings;
   const { t } = useTranslation('common');
   const options = site_header.languageMenu;
@@ -28,9 +34,9 @@ export default function LanguageSwitcher() {
     <Listbox value={selectedItem} onChange={handleItemClick}>
       {({ open }) => (
         <div className="relative z-10 lg:top-[1px]">
-          <Listbox.Button className="text-skin-base relative w-full py-2 px-3 pe-5  text-start  focus:outline-none cursor-pointer">
-            <span className="flex truncate items-center text-gray-300">
-              <span className="me-2 w-5 h-5 rounded-full overflow-hidden flex-shrink-0">
+          <Listbox.Button className="text-skin-base relative w-full py-2 px-5 pe-5  text-start  focus:outline-none cursor-pointer">
+            <span className={`${classNameLink? classNameLink: 'text-gray-300' } flex truncate items-center`}>
+              <span className="me-2 w-4 h-4 rounded-full overflow-hidden flex-shrink-0">
                 {selectedItem.icon}
               </span>
               <span className="leading-5 pb-0.5">{t(selectedItem.name)}</span>
@@ -88,3 +94,4 @@ export default function LanguageSwitcher() {
     </Listbox>
   );
 }
+export default LanguageSwitcher;

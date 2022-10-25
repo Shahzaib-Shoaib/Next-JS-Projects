@@ -6,9 +6,10 @@
 @layer base {
   :root {
     --color-primary: 255, 126, 0;
-    --color-tangerine: 243, 142, 0;
+    --color-purple: 0, 102, 192;
     --color-red: 208, 20, 24;
     --color-red-secondary: 253, 84, 115;
+    --color-tints: 19,78,71;
     --color-cerulean: 0, 149, 231;
     --color-salmon: 255, 123, 123;
     --color-tree: 111, 180, 142;
@@ -26,7 +27,7 @@
     --color-fill-one: 241, 246, 249;
     --color-fill-two: 243, 246, 249;
     --color-fill-three: 242, 242, 242;
-    --color-fill-four: 232, 235, 240;
+    --color-fill-six: 35, 43, 53;
     --color-fill-secondary: 248, 249, 251;
     --color-fill-dropdown-hover: 246, 249, 252;
     --color-border-primary: 2, 178, 144;
@@ -83,15 +84,14 @@
 }
 
 @layer components {
+
   /* Header Menu */
   #siteHeader.is-scrolling .innerSticky {
     @apply shadow-header top-0 transition duration-200 ease-in-out;
   }
 
-  
   #siteHeader.header-four.is-scrolling .innerSticky {
     @apply lg:pb-1.5;
-    background-color: white !important;
   }
 
   .headerMenu .menuItem > a::before {
@@ -294,7 +294,14 @@
     .trendy-main-content {
       width: calc(100% - 420px);
     }
+    .banner-main-content {
+      width: calc(100% - 600px);
+    }
+    .popular-main-content {
+      width: calc(100% - 300px);
+    }
   }
+
   @media (min-width: 768px) and (max-width: 1023px) {
     .hero-banner-six {
       background-position: 15% center;
@@ -342,6 +349,9 @@
 .shadow-md{
   box-shadow: 1px 2px 3px rgb(0 0 0 / 25%);
 }
+.font-light{
+  font-weight:300;
+}
 .category-dropdown-menu > li:after{
   content: "";
   display: block;
@@ -361,6 +371,7 @@
 }
 
 .header-five.sticky-header.is-scrolling .innerSticky .categories-header-button,
+.header-four.sticky-header.is-scrolling .innerSticky .categories-header-button,
 .header-three.sticky-header.is-scrolling .innerSticky .categories-header-button{
   display: none;
 }

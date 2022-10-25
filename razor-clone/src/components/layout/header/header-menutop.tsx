@@ -6,27 +6,28 @@ import cn from 'classnames';
 interface MenuProps {
   data: any;
   className?: string;
+  classNameLink?: string;
 }
 
-const HeaderMenutop: React.FC<MenuProps> = ({ data, className }) => {
+const HeaderMenutop: React.FC<MenuProps> = ({ data, className,classNameLink }) => {
   const { t } = useTranslation('menu');
   return (
       <nav
           className={cn(
-              ' flex relative -mx-3',
+              ' flex relative -mx-2 md:-mx-3',
               className
           )}
       >
         {data?.map((item: any) => (
             <div
-                className={`menuItem group cursor-pointer mx-3 ${
+                className={`menuItem group cursor-pointer mx-2 md:mx-3 ${
                     item.subMenu ? 'relative' : ''
                 }`}
                 key={item.id}
             >
               <Link
                   href={item.path}
-                  className="inline-flex items-center text-gray-300 py-2 font-normal relative group-hover:text-skin-primary"
+                  className={`${classNameLink? classNameLink: 'text-gray-300' } inline-flex items-center py-2 font-normal relative group-hover:text-skin-primary `}
               >
                 {t(item.label)}
                 {(item?.columns || item.subMenu) && (

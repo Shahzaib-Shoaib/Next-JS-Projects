@@ -31,12 +31,14 @@ const breakpoints = {
 interface BannerProps {
   data: any;
   className?: string;
+  layout?: string;
   buttonSize?: 'default' | 'small';
 }
 
 const BannerAllCarousel: React.FC<BannerProps> = ({
   data,
   className = 'mb-6',
+  layout,
   buttonSize = 'default',
 }) => {
   return (

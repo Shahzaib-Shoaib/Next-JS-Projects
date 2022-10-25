@@ -8,6 +8,8 @@ interface BannerProps {
   data: any;
   grid?: number;
   className?: string;
+  gridClassName?: string;
+
 }
 
 const breakpoints = {
@@ -24,6 +26,7 @@ const BannerGrid: React.FC<BannerProps> = ({
   data,
   grid = 3,
   className = 'mb-3 xl:mb-6',
+  gridClassName
 }) => {
   const { width } = useWindowSize();
   return (

@@ -1,15 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [
-//     './pages/**/*.{js,ts,jsx,tsx}',
-//     './components/**/*.{js,ts,jsx,tsx}',
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
-
 function withOpacity(variableName) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
@@ -37,13 +25,13 @@ module.exports = {
           400: '#999999',
           500: '#7e7e7e',
           600: '#3A3A3A',
-          700: '#292929',
+          700: '#222222',
           800: '#707070',
         },
         skin: {
           primary: withOpacity('--color-primary'),
           red: withOpacity('--color-red'),
-          tangerine: withOpacity('--color-tangerine'),
+          purple: withOpacity('--color-purple'),
           cerulean: withOpacity('--color-cerulean'),
           salmon: withOpacity('--color-salmon'),
           tree: withOpacity('--color-tree'),
@@ -63,8 +51,8 @@ module.exports = {
         skin: {
           primary: withOpacity('--color-primary'),
           red: withOpacity('--color-red'),
-          'red-secondary': withOpacity('--color-red-secondary'),
-          tangerine: withOpacity('--color-tangerine'),
+          tints: withOpacity('--color-tints'),
+          purple: withOpacity('--color-purple'),
           cerulean: withOpacity('--color-cerulean'),
           salmon: withOpacity('--color-salmon'),
           tree: withOpacity('--color-tree'),
@@ -80,7 +68,7 @@ module.exports = {
           one: withOpacity('--color-fill-one'),
           two: withOpacity('--color-fill-two'),
           three: withOpacity('--color-fill-three'),
-          four: withOpacity('--color-fill-four'),
+          six: withOpacity('--color-fill-six'),
           secondary: withOpacity('--color-fill-secondary'),
           highlighted: withOpacity('--color-highlighted'),
           'dropdown-hover': withOpacity('--color-fill-dropdown-hover'),
@@ -88,9 +76,6 @@ module.exports = {
           'button-disable': withOpacity('--color-button-disable'),
           'button-hover': withOpacity('--color-button-hover'),
         },
-      },
-      backgroundImage: {
-        'iconPhone': "url('/assets/images/icon-phone.png')",
       },
       borderColor: {
         skin: {
