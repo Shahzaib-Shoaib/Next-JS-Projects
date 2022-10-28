@@ -33,4 +33,6 @@ export const API_ENDPOINTS = {
   WISHLIST: '/wishlist.json',
   BLOGS: '/blog.json',
   BLOGDETAILS: '/blogDetails.json',
+  FLASH_SALE_PRODUCTS: '/products_fashion.json',
+
 };

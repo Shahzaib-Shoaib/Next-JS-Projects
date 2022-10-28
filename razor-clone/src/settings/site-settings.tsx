@@ -18,6 +18,7 @@ export const siteSettings = {
   logo: {
     url: "/assets/images/logo.png",
     urlReverse: "/assets/images/logo-black.png",
+    urlChawk: "/assets/images/logo-black.png",
     alt: "Razor",
     href: "/",
     width: 195,
@@ -89,6 +90,11 @@ export const siteSettings = {
             id: 10,
             path: "/ar",
             label: "menu-rtl",
+          },
+          {
+            id: 11,
+            path: "/chawk1",
+            label: "menu-chawk1",
           },
         ],
       },

@@ -6,6 +6,10 @@
     "testimonial-author-position-one": "Author Position",
     "testimonial-description-one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat orci sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet",
     "testimonial-author-name-two": "Sharon Stone",
+    "support-heading": "Talk To A Real Person",
+    "support-sub-heading": "Are you on the fence? Have a question? Need a recommendation? Member Services is always here to help. Send us a message.",
+    "button-chat-services": "Chat With Member Services",
+
     "testimonial-author-position-two": "Author Position",
     "testimonial-description-two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat orci sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet",
     "collection-title-one": "Feel the thirsty in summer anytime",
@@ -65,6 +69,15 @@
     "account-settings": "Account Settings",
     "text-card-thumbnail": "Card Thumbnail",
     "text-app-thumbnail": "App Thumbnail",
+    "text-featured-products": "Featured Products",
+    "text-top-brands": "Top Brands",
+    "app-sub-heading": "<span> Share Your <strong>Ideas</strong> &amp; Shop Endless <strong>Inspiration</strong> </span>",
+
+    "text-flash-sale": "Flash Sale",
+    "text-shop-by-category": "Shop By Category",
+    "text-on-selling-products": "On Selling Products",
+    "text-new-arrivals": "New Arrivals",
+
     "text-logout": "Logout",
     "text-sign-in": "My Account",
     "text-register": "Register",
@@ -248,6 +261,10 @@
     "text-hotline": "Hotline Free:",
     "link-phone": "(1800)-000-6890 ",
     "feature4-title-one": "Free Delivery",
+    "text-subscribe-heading": "Get Expert Tips In Your Inbox",
+    "text-subscribe-description": "Subscribe to our newsletter and stay updated.",
+    "button-subscribe": "Subscribe",
+
     "feature4-title-one-description": "For all orders over $120",
     "feature4-title-two": "Safe Payment",
     "feature4-title-two-description": "100% secure payment",

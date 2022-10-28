@@ -52,6 +52,7 @@
   "placeholder-order-notes": "Notes about your order, e.g. special notes for delivery",
   "label-contact-number": "Contact Number",
   "label-contact-title": "Contact Title",
+  
   "contact-title-required": "Contact title is required",
   "default-type-required": "Default type Required",
   "contact-number-required": "Contact number is required"

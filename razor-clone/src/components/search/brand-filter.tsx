@@ -47,7 +47,7 @@ export const BrandFilter = () => {
       { scroll: false }
     );
   }
-  const items = data?.brands?.data;
+  const items = data?.brands;
 
   return (
     <div className="block">
