@@ -93,6 +93,11 @@ export const siteSettings = {
             path: '/contemporary',
             label: 'menu-contemporary',
           },
+          {
+            id: 10,
+            path: '/razor1',
+            label: 'menu-razor1',
+          },
         ],
       },
       {
@@ -766,6 +771,11 @@ export const siteSettings = {
             id: 8,
             path: '/refined',
             label: 'menu-refined',
+          },
+          {
+            id: 9,
+            path: '/razor1',
+            label: 'menu-razor1',
           },
         ],
       },
