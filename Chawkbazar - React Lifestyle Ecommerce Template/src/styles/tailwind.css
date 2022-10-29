@@ -4,6 +4,47 @@
 
 /* Write your own custom base styles here */
 @layer base {
+  :root {
+    --color-primary: 255, 126, 0;
+    --color-purple: 0, 102, 192;
+    --color-red: 208, 20, 24;
+    --color-red-secondary: 253, 84, 115;
+    --color-tints: 19,78,71;
+    --color-cerulean: 0, 149, 231;
+    --color-salmon: 255, 123, 123;
+    --color-tree: 111, 180, 142;
+    --color-yellow: 243, 184, 31;
+    --color-yellow-two: 249, 143, 20;
+    --color-yellow-three: 255, 195, 60;
+    --color-carnation: 243, 92, 92;
+    --color-text-base: 58, 58, 58;
+    --color-text-inverted: 255, 255, 255;
+    --color-text-muted: 89, 89, 89;
+    --color-text-secondary: 11, 70, 53;
+    --color-text-countdown: 20, 113, 95;
+    --color-fill: 255, 255, 255;
+    --color-fill-thumbnail: 243, 246, 250;
+    --color-fill-one: 241, 246, 249;
+    --color-fill-two: 243, 246, 249;
+    --color-fill-three: 242, 242, 242;
+    --color-fill-six: 35, 43, 53;
+    --color-fill-secondary: 248, 249, 251;
+    --color-fill-dropdown-hover: 246, 249, 252;
+    --color-border-primary: 2, 178, 144;
+    --color-border-base: 231, 236, 240;
+    --color-border-one: 227, 232, 236;
+    --color-border-two: 226, 232, 240;
+    --color-border-three: 230, 230, 230;
+    --color-border-four: 222, 229, 234;
+    --color-button-secondary: 243, 245, 249;
+    --color-button-disable: 238, 238, 238;
+    --color-button-hover: 229, 234, 241;
+    --color-highlighted: 237, 197, 55;
+    --color-footer: 35, 47, 63;
+    --box-shadow-card: '0px 0px 6px rgba(79, 95, 120, 0.1)';
+    --box-shadow-card-hover: '0px 0px 6px rgba(79, 95, 120, 0.2)';
+    --box-shadow-counter: '0px 4px 20px rgba(79, 95, 120, 0.15)';
+  }
   html {
     -webkit-tap-highlight-color: transparent;
   }

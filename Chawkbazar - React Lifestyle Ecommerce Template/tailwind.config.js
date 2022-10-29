@@ -1,9 +1,102 @@
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgba(var(${variableName}))`;
+  };
+}
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false,
   theme: {
     extend: {
+      textColor: {
+        gray: {
+          50: '#FBFBFB',
+          100: '#F1F1F1',
+          150: '#F4F4F4',
+          200: '#F9F9F9',
+          300: '#E6E6E6',
+          350: '#E9ECEF',
+          400: '#999999',
+          500: '#7e7e7e',
+          600: '#3A3A3A',
+          700: '#222222',
+          800: '#707070',
+        },
+        skin: {
+          primary: withOpacity('--color-primary'),
+          red: withOpacity('--color-red'),
+          purple: withOpacity('--color-purple'),
+          cerulean: withOpacity('--color-cerulean'),
+          salmon: withOpacity('--color-salmon'),
+          tree: withOpacity('--color-tree'),
+          yellow: withOpacity('--color-yellow'),
+          'yellow-two': withOpacity('--color-yellow-two'),
+          'yellow-three': withOpacity('--color-yellow-three'),
+          carnation: withOpacity('--color-carnation'),
+          base: withOpacity('--color-text-base'),
+          inverted: withOpacity('--color-text-inverted'),
+          muted: withOpacity('--color-text-muted'),
+          secondary: withOpacity('--color-text-secondary'),
+          countdown: withOpacity('--color-text-countdown'),
+
+        },
+      },
+      backgroundColor: {
+        skin: {
+          primary: withOpacity('--color-primary'),
+          red: withOpacity('--color-red'),
+          tints: withOpacity('--color-tints'),
+          purple: withOpacity('--color-purple'),
+          cerulean: withOpacity('--color-cerulean'),
+          salmon: withOpacity('--color-salmon'),
+          tree: withOpacity('--color-tree'),
+          yellow: withOpacity('--color-yellow'),
+          footer: withOpacity('--color-footer'),
+          'yellow-two': withOpacity('--color-yellow-two'),
+          'yellow-three': withOpacity('--color-yellow-three'),
+          base: withOpacity('--color-text-base'),
+          carnation: withOpacity('--color-carnation'),
+          fill: withOpacity('--color-fill'),
+          thumbnail: withOpacity('--color-fill-thumbnail'),
+          inverted: withOpacity('--color-text-inverted'),
+          one: withOpacity('--color-fill-one'),
+          two: withOpacity('--color-fill-two'),
+          three: withOpacity('--color-fill-three'),
+          six: withOpacity('--color-fill-six'),
+          secondary: withOpacity('--color-fill-secondary'),
+          highlighted: withOpacity('--color-highlighted'),
+          'dropdown-hover': withOpacity('--color-fill-dropdown-hover'),
+          'button-secondary': withOpacity('--color-button-secondary'),
+          'button-disable': withOpacity('--color-button-disable'),
+          'button-hover': withOpacity('--color-button-hover'),
+        },
+      },
+      borderColor: {
+        skin: {
+          primary: withOpacity('--color-primary'),
+          red: withOpacity('--color-red'),
+          yellow: withOpacity('--color-yellow'),
+          base: withOpacity('--color-border-base'),
+          one: withOpacity('--color-border-one'),
+          two: withOpacity('--color-border-two'),
+          three: withOpacity('--color-border-three'),
+          four: withOpacity('--color-border-four'),
+          form: withOpacity('--color-borfont-der-form'),
+          'yellow-three': withOpacity('--color-yellow-three'),
+        },
+      },
+      ringColor: {
+        skin: {
+          red: withOpacity('--color-red'),
+          base: withOpacity('--color-border-base'),
+          form: withOpacity('--color-border-form'),
+          primary: withOpacity('--color-primary'),
+        },
+      },
       colors: {
         body: '#5A5A5A',
         heading: '#212121',
@@ -89,6 +182,8 @@ module.exports = {
       body: ["'Open Sans', sans-serif"],
       satisfy: ["'Satisfy', cursive"],
       segoe: ["'Segoe UI', sans-serif"],
+      razor: ["'Rubik',Arial,Helvetica,sans-serif"],// added
+
     },
   },
   plugins: [
