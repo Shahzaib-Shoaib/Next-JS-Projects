@@ -15,10 +15,12 @@ import SocialShareThis from "@components/ui/share-this";
 interface BlogProps {
     blog: Blog;
     className?: string;
+    Link?:any;
+
 }
 
 
-const BlogPostCard: React.FC<BlogProps> = ({blog, className}) => {
+const BlogPostCard: React.FC<BlogProps> = ({blog, className,Link}) => {
     const {
         title, image, totalWatchCount, slug, date, category, tags,
         authorName, content, titleTwo, contentTwo, contentThree, quote

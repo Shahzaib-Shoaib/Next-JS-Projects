@@ -16,6 +16,7 @@ import {getDirection} from "@utils/get-direction";
 
 interface blogGridProps {
     className?: string;
+    Link?:any;
 }
 
 export const BlogBig: FC<blogGridProps> = ({className = ''}) => {

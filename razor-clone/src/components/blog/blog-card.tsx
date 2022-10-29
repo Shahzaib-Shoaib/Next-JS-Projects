@@ -14,10 +14,12 @@ import {getCountview} from "@utils/get-countview";
 interface BlogProps {
     blog: Blog;
     className?: string;
+    Link?:any;
+
 }
 
 
-const BlogCard: React.FC<BlogProps> = ({blog, className}) => {
+const BlogCard: React.FC<BlogProps> = ({blog, className,Link}) => {
     const {title, image, totalWatchCount, slug, date, category} = blog ?? {};
     const {t} = useTranslation('common');
     const {width} = useWindowSize();

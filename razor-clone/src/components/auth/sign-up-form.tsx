@@ -15,12 +15,16 @@ import CloseButton from '@components/ui/close-button';
 import cn from 'classnames';
 import { ROUTES } from '@utils/routes';
 
+
+
 interface SignUpFormProps {
   isPopup?: boolean;
-  className?: string;
+  className?: string; 
+  Link?:any;
 }
 
 const SignUpForm: React.FC<SignUpFormProps> = ({
+  Link,
   isPopup = true,
   className,
 }) => {

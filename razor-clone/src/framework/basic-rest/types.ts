@@ -63,6 +63,8 @@ export type Brand = {
   name: string;
   slug: string;
   image?: Attachment;
+  background_image?: any
+
   [key: string]: unknown;
 };
 export type Dietary = {

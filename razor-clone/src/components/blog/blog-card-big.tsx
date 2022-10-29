@@ -13,9 +13,11 @@ import {getDirection} from "@utils/get-direction";
 interface BlogProps {
     blog: Blog;
     className?: string;
+    Link?:any;
+
 }
 
-const BlogCardBig: React.FC<BlogProps> = ({blog, className}) => {
+const BlogCardBig: React.FC<BlogProps> = ({blog, className,Link}) => {
     const {title, image, totalWatchCount, slug, date, shortDescription} = blog ?? {};
     const {t} = useTranslation('common');
     const {width} = useWindowSize();
