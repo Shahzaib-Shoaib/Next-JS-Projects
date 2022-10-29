@@ -5,7 +5,8 @@
 /* Write your own custom base styles here */
 @layer base {
   :root {
-    --color-primary: 255, 126, 0;
+    --color-primary: 255, 126, 0; 
+   /* --color-primary: 0, 0, 0; */
     --color-purple: 0, 102, 192;
     --color-red: 208, 20, 24;
     --color-red-secondary: 253, 84, 115;
