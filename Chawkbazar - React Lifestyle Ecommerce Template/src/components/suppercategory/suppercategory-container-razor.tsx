@@ -1,3 +1,4 @@
+// razor
 import {ROUTES} from '@utils/routes';
 import {LIMITS} from "@framework/utils/limits-razor";
 import ProductsCarousel from '../product/products-carousel-razor';
@@ -37,7 +38,7 @@ const SupperCategoryContainer: React.FC<Props> = ({data, isLoading, error}) => {
     return (
         <ProductsCarousel
             sectionHeading=""
-            categorySlug={ROUTES.PRODUCTS}
+            categorySlug={ROUTES.PRODUCT}
             products={data}
             loading={isLoading}
             error={error?.message}
