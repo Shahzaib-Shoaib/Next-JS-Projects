@@ -34,7 +34,7 @@ const CartButton: React.FC<CartButtonProps> = ({
   return (
     <button
       className={cn(
-        'flex items-center justify-center flex-shrink-0 h-auto focus:outline-none transform',
+        'flex items-center justify-center flex-shrink-0 h-auto focus:outline-none transform ',
         className
       )}
       onClick={handleCartOpen}

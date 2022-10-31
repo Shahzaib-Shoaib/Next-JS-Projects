@@ -15,7 +15,7 @@ export default function SupperCategoryElectronicFeed() {
   });
   const { locale } = useRouter();
   const dir = getDirection(locale);
-  const backgroundThumbnail = dir === 'ltr' ? '/assets/images/collection/cate_2.jpg' : '/assets/images/collection/cate_2_rtl.jpg';
+  const backgroundThumbnail = dir === 'ltr' ? '/assets-razor/images/collection/cate_2.jpg' : '/assets/images/collection/cate_2_rtl.jpg';
 
   return (
       <div className="mb-8 lg:mb-12">

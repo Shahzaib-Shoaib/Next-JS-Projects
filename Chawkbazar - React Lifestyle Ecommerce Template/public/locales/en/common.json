@@ -21,9 +21,10 @@
   "feature-title-five-description-razor": "All Cards Accepted",
   "text-out-stock": "Out Of Stock",
   "text-on-sale": "On sale",
-  "text-view-all-categories": " View All Categoies",
+  "text-view-all-categories": " View All Categories",
   "text-product-details": "Product Details",
-  "text-choose-categories": "Shop By <span class=\"font-light\">Categories</span>",
+  "text-choose-categories": "Shop By Categories",
+  "text-see-all": "See All",
 
   "error-heading": "Looks like you are lost",
   "error-sub-heading": "We can't find the page you're looking for",

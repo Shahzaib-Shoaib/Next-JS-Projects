@@ -11,7 +11,8 @@ import Container from "@components/ui/container-razor";
 import Logo from "@components/ui/logo";
 import HeaderMenu from "./header-menu-razor";
 import HeaderMenutop from "./header-menutop-razor";
-import Search from "@components/common/search"; // didn't change
+import Search from "@components/common/search"; 
+import SearchTop from "@components/common/search-razor"; 
 import LanguageSwitcher from "@components/ui/language-switcher-razor";
 import UserIcon from "@components/icons-razor/user-icon"; // idk
 import SearchIcon from "@components/icons-razor/search-icon"; // idk
@@ -132,7 +133,7 @@ const Header: React.FC = () => {
             <Logo className="logo ps-3 md:ps-0 lg:mx-0" />
             {/* End of logo */}
 
-            <Search
+            <SearchTop
               searchId="top-bar-search"
               className="hidden lg:flex lg:max-w-[450px] xl:max-w-[650px] 2xl:max-w-[900px] lg:mx-10"
               variant="fill"

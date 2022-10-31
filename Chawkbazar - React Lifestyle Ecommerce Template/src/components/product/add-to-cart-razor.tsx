@@ -17,7 +17,6 @@ export const AddToCart = ({ data, variation, disabled }: Props) => {
   const {
     addItemToCart,
     removeItemFromCart,
-    isInStock,
     getItemFromCart,
     isInCart,
   } = useCart();
@@ -32,7 +31,7 @@ export const AddToCart = ({ data, variation, disabled }: Props) => {
     e.stopPropagation();
     removeItemFromCart(item.id);
   };
-  const outOfStock = isInCart(item?.id) && !isInStock(item.id);
+  const outOfStock = isInCart(item?.id) ;
   const iconSize = width! > 480 ? '19' : '17';
   return !isInCart(item?.id) ? (
     <button

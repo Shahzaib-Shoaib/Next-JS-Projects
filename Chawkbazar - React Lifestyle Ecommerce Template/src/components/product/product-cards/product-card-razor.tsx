@@ -25,12 +25,12 @@ function RenderPopupOrAddToCart({ data }: { data: Product }) {
   const { id, quantity, product_type } = data ?? {};
   const { width } = useWindowSize();
  // const { openModal } = useModalAction();
-  const { isInCart, isInStock } = useCart();
-  const outOfStock = isInCart(id) && !isInStock(id);
+  // const { isInCart, isInStock } = useCart();
+  // const outOfStock = isInCart(id) && !isInStock(id);
   function handlePopupView() {
     openModal('PRODUCT_VIEW', data);
   }
-  if (Number(quantity) < 1 || outOfStock) {
+  if (Number(quantity) < 1 ) {
     return (
       <span className="text-[11px] text-skin-inverted uppercase inline-block bg-skin-red rounded-full px-2.5 pt-1 pb-[3px] mx-0.5 sm:mx-1">
         {t('text-out-stock')}
@@ -131,7 +131,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           )}
 
         </div>
-        <div className="inline-block product-cart-button">
+        <div className="inline-block">
           <RenderPopupOrAddToCart data={product} />
         </div>
       </div>

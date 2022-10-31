@@ -267,6 +267,8 @@
       min-height: 300px;
     }
   }
+ 
+
 
   /* Your own custom utilities */
   .productColor.active {
@@ -407,4 +409,28 @@
     background: transparent;
     display: none;
   }
+  .scroll-snap-type-y-mandatory {
+    scroll-snap-type: y mandatory;
+  }
+  .scroll-snap-align-start {
+    scroll-snap-align: start;
+  }
+  @media (min-width: 1024px) {
+    .minimal-main-content {
+      width: calc(100% - 320px);
+    }
+  }
+  @media (min-width: 1280px) {
+    .minimal-main-content,
+    .trendy-main-content {
+      width: calc(100% - 420px);
+    }
+    .banner-main-content {
+      width: calc(100% - 600px);
+    }
+    .popular-main-content {
+      width: calc(100% - 300px);
+    }
+  }
 }
+

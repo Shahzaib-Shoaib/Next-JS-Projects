@@ -10,14 +10,14 @@ import {getDirection} from "@utils/get-direction";
 
 export default function SupperCategoryElectronicFeed() {
   const { data: category } = useElectronicCategoryQuery({
-    limit: LIMITS.ELETRONIC_PRODUCTS_LIMITS,
+    limit: LIMITS.ELECTRONIC_PRODUCTS_LIMITS,
   });
   const { data: products, isLoading, error } = useElectronicProductsQuery({
-    limit: LIMITS.ELETRONIC_PRODUCTS_LIMITS,
+    limit: LIMITS.ELECTRONIC_PRODUCTS_LIMITS,
   });
   const { locale } = useRouter();
   const dir = getDirection(locale);
-  const backgroundThumbnail = dir === 'ltr' ? '/assets/images/collection/cate_1.jpg' : '/assets/images/collection/cate_1_rtl.jpg';
+  const backgroundThumbnail = dir === 'ltr' ? '/assets-razor/images/collection/cate_1.jpg' : '/assets/images/collection/cate_1_rtl.jpg';
 
   return (
       <div className="mb-8 lg:mb-12">

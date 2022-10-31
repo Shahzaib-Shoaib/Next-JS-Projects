@@ -18,7 +18,6 @@ export const API_ENDPOINTS = {
   ELECTRONIC_CATEGORY: '/category_electronic.json',
   CLOTH_CATEGORY: '/category_cloth.json',
   FASHION_PRODUCTS: '/products_fashion.json',
-
   RELATED_PRODUCTS: '/related_products.json',
   BEST_SELLER_PRODUCTS: '/products_best_seller.json',
   NEW_ARRIVAL_PRODUCTS: '/products_new_arrival.json',

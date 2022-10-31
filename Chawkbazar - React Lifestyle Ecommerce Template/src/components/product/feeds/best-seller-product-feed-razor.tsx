@@ -7,7 +7,7 @@ import { ROUTES } from '@utils/routes';
 export default function BestSellerProductFeed() {
   const { data, isLoading, error } = useBestSellerProductsQuery({
     limit: LIMITS.BEST_SELLER_PRODUCTS_LIMITS,
-   // id: 'pbs1',
+    id: 1,
   });
   return (
     <ProductsCarousel

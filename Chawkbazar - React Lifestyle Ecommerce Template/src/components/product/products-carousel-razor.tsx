@@ -84,8 +84,9 @@ const ProductsCarousel: React.FC<ProductsCarouselProps> = ({
         <div className="2xl:pe-10">
           <Alert message={error} />
         </div>
+        
       ) : (
-        <div className="heightFull xl:-me-40 2xl:-me-28 4xl:me-0 relative after-item-opacity">
+        <div className="heightFull  4xl:me-0 relative after-item-opacity">
           <Carousel
             breakpoints={carouselBreakpoint ? carouselBreakpoint : breakpoints}
             className=" "
