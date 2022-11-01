@@ -1,14 +1,14 @@
-// 2
-import SectionHeader from '@components/common/section-header';
-import ProductList from '@components/product/product-cards/product-list';
-import ProductCardLoader from '@components/ui/loaders/product-card-loader';
+// razor 2
+import SectionHeader from '@components/common/section-header-razor';
+import ProductList from '@components/product/product-cards/product-list-razor';
+import ProductCardLoader from '@components/ui/loaders/product-card-loader-razor';
 import {Product} from '@framework/types';
 import Alert from '@components/ui/alert';
-import Carousel from "@components/ui/carousel/carousel";
-import {SwiperSlide} from "@components/ui/carousel/slider";
+import Carousel from "@components/ui/carousel/carousel-razor";
+import {SwiperSlide} from "@components/ui/carousel/slider-razor";
 //import SeeAll from "@components/ui/see-all";
 import {getDirection} from "@utils/get-direction";
-import useWindowSize from "@utils/use-window-size";
+import {useWindowSize} from "@utils/use-window-size";
 import {useRouter} from "next/router";
 
 interface ProductsProps {

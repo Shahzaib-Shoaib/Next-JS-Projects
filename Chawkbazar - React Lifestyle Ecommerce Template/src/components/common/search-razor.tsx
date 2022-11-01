@@ -16,7 +16,7 @@ type Props = {
   variant?: 'border' | 'fill';
 };
 
-const SearchRazor = React.forwardRef<HTMLDivElement, Props>(
+const SearchTop = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       className = 'md:w-[730px] 2xl:w-[800px]',
@@ -123,5 +123,5 @@ const SearchRazor = React.forwardRef<HTMLDivElement, Props>(
     );
   }
 );
-SearchRazor.displayName = 'Search';
-export default SearchRazor;
+SearchTop.displayName = 'Search';
+export default SearchTop;

@@ -24,6 +24,8 @@ import "@styles/scrollbar.css";
 import "@styles/swiper-carousel.css";
 import "@styles/custom-plugins.css";
 import "@styles/tailwind.css";
+import '@styles/themes.scss';
+
 import { getDirection } from "@utils/get-direction";
 
 function handleExitComplete() {

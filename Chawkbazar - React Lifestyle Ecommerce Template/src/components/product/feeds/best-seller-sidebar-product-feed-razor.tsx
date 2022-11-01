@@ -1,7 +1,7 @@
-// 2
+// razor 2
 import type { FC } from 'react';
-import ProductsListBlock from '../products-list-block';
-import { LIMITS } from '@framework/utils/limits';
+import ProductsListBlock from '../products-list-block-razor';
+import { LIMITS } from '@framework/utils/limits-razor';
 import {useBestSellerProductsQuery} from "@framework/product/get-all-best-seller-products";
 
 interface ProductFeedProps {
