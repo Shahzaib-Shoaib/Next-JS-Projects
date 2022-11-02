@@ -112,8 +112,7 @@ export const siteSettings = {
             id: 13,
             path: '/razor4',
             label: 'menu-razor4',
-          },
-          
+          }, 
         ],
       },
       {
