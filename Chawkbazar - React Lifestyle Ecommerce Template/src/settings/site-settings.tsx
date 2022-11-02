@@ -103,6 +103,16 @@ export const siteSettings = {
             path: '/razor2',
             label: 'menu-razor2',
           },
+          {
+            id: 12,
+            path: '/razor3',
+            label: 'menu-razor3',
+          },
+          {
+            id: 13,
+            path: '/razor4',
+            label: 'menu-razor4',
+          },
           
         ],
       },
@@ -787,6 +797,16 @@ export const siteSettings = {
             id: 10,
             path: '/razor2',
             label: 'menu-razor2',
+          },
+          {
+            id: 11,
+            path: '/razor3',
+            label: 'menu-razor3',
+          },
+          {
+            id: 12,
+            path: '/razor4',
+            label: 'menu-razor4',
           },
         ],
       },

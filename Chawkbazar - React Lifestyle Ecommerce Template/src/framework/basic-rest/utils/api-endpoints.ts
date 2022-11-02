@@ -24,6 +24,8 @@ export const API_ENDPOINTS = {
   FLASH_SALE_PRODUCTS: '/products_flash_sale.json',
   SHOPS: '/shops.json',
   SHOP: '/shop.json',
+  BLOGS: '/blog.json',
+
   SEARCH: '/search.json',
   ORDERS: '/orders.json',
   ORDER: '/order.json',

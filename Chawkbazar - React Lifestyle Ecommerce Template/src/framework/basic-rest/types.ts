@@ -133,3 +133,30 @@ export type Shop = {
   created_at: string
   updated_at: string
 }
+
+
+export type Blog = {
+  id: number | string;
+  title: string;
+  subTitle: string;
+  shortDescription: string;
+  authorName: string;
+  date: {
+    month: string;
+    date: number;
+    year: number;
+  };
+  totalWatchCount?: number;
+  totalCommentCount?: number;
+  category: string;
+  image: string;
+  sku?: string;
+  content?: string;
+  contentTwo?: string;
+  contentThree?: string;
+  postList?: object;
+  discount?: object;
+  tags?: object;
+  comments?: object;
+  [key: string]: unknown;
+};
