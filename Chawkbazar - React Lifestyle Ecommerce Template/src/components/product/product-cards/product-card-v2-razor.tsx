@@ -7,7 +7,6 @@ import { Product } from '@framework/types';
 //import { useModalAction } from '@components/common/modal/modal.context';
 import {useWindowSize} from '@utils/use-window-size';
 import SearchIcon from '@components/icons-razor/search-icon';
-import { useCart } from '@contexts/cart/cart.context';
 import { AddToCart } from '@components/product/add-to-cart-razor';
 import { useTranslation } from 'next-i18next';
 import { productPlaceholder } from '@assets/placeholders';
@@ -23,12 +22,10 @@ function RenderPopupOrAddToCart({ data }: { data: Product }) {
   const { id, quantity, product_type } = data ?? {};
   const { width } = useWindowSize();
   const { openModal } = useUI();
-  const { isInCart } = useCart();
-  const outOfStock = isInCart(id) ;
   function handlePopupView() {
     openModal('PRODUCT_VIEW', data);
   }
-  if (Number(quantity) < 1 || outOfStock) {
+  if (Number(quantity) < 1) {
     return (
       <span className="text-[11px] text-skin-inverted uppercase inline-block bg-skin-red rounded px-2.5 pt-1 pb-[3px] mx-0.5 sm:mx-1">
         {t('text-out-stock')}
@@ -50,7 +47,7 @@ function RenderPopupOrAddToCart({ data }: { data: Product }) {
 }
 const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
   const { name, image, unit, slug, product_type } = product ?? {};
-  const { openModal } = useUI();
+  const { openModal, setModalView, setModalData } = useUI()
   const { t } = useTranslation('common');
   const { width } = useWindowSize();
   const iconSize = width! > 1024 ? '20' : '17';
@@ -69,7 +66,9 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
   });
 
   function handlePopupView() {
-    openModal('PRODUCT_VIEW', product);
+    setModalData({ data: product })
+    setModalView('PRODUCT_VIEW')
+    return openModal()
   }
   return (
     <article

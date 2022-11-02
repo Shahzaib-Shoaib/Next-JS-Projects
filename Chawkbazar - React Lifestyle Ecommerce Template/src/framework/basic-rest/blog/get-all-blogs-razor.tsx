@@ -1,4 +1,4 @@
-// razor4
+// razor 4
 import { QueryOptionsType, Blog} from '@framework/types';
 import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
 import http from '@framework/utils/http';

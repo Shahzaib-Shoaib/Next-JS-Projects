@@ -1,4 +1,4 @@
-// 4
+// razor 4
 import SectionHeader from '@components/common/section-header-razor';
 import ProductCard from '@components/product/product-cards/product-card-v2-razor';
 import { Product } from '@framework/types';

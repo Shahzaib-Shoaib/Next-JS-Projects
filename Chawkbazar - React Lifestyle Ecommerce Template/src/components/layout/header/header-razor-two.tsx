@@ -25,8 +25,8 @@ import {Drawer} from "@components/common/drawer/drawer";
 import {useRouter} from "next/router";
 import {getDirection} from "@utils/get-direction";
 
-const AuthMenu = dynamic(() => import('./auth-menu'), {ssr: false});
-const CartButton = dynamic(() => import('@components/cart/cart-button'), {
+const AuthMenu = dynamic(() => import('./auth-menu-razor'), {ssr: false});
+const CartButton = dynamic(() => import('@components/cart/cart-button-razor'), {
   ssr: false,
 });
 

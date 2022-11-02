@@ -1,16 +1,15 @@
-// razor 4 
-
+// razor 7
 import Seo from '@components/seo/seo-razor';
 import FeatureCarousel from "@components/common/featured-carousel-four-razor";
-import Layout from '@components/layout/layout-razor-four';
+import Layout from '@components/layout/layout-razor-seven';
 import Container from '@components/ui/container-razor';
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
 import {
-    homeFourHeroCarousel as bannerHeroCarousel,
-    homeFourHeroSlider as heroSlider,
+    homeSevenHeroSlider as heroSlider,
     homeFourGridHero as bannerGrid,
     bannerDiscount as brandCarousel,
     homeFourGridHero2 as bannerGrid2,
+    homeSevenHeroCarousel as bannerHeroCarousel,
 } from '@framework/static/banner-razor';
 import {GetStaticProps} from 'next';
 import {QueryClient} from 'react-query';
@@ -21,10 +20,15 @@ import {fetchBestSellerProducts} from '@framework/product/get-all-best-seller-pr
 import {LIMITS} from '@framework/utils/limits-razor';
 import HeroSliderBlock from "@components/hero/hero-slider-block-razor";
 import BannerGrid from "@components/common/banner-grid-razor";
-import CategoryGridBlock from "@components/common/category-grid-block-razor";
+import ListingTabsElectronicFeed from "@components/product/feeds/listingtabs-electronic-v2-razor";
+// import ListingTabsPhonesFeed from "@components/product/feeds/listingtabs-phones-v2";
+// import ListingTabsComputerFeed from "@components/product/feeds/listingtabs-computer-v2";
+import ListingTabsClothFeed from "@components/product/feeds/listingtabs-cloth-v2-razor";
+import SuppercategoryPopular from "@components/product/feeds/suppercategory-popular-razor";
+
+import CategoryGridBlock from "@components/common/category-grid-block";
 import BannerAllCarousel from "@components/common/banner-all-carousel-razor";
 import NewProductFeed from "@components/product/feeds/new-product-feed-razor";
-import SuppercategoryPopular from "@components/product/feeds/suppercategory-popular-razor";
 import BestSellerProductFeed from "@components/product/feeds/best-seller-top-product-razor";
 
 export default function Home() {
@@ -33,39 +37,38 @@ export default function Home() {
             <Seo
                 title="Electronics Store Store React Template"
                 description="Fastest E-commerce template built with React, NextJS, TypeScript, React-Query and Tailwind CSS."
-                path="home4"
+                path="home7"
             />
+
             <Container className={"sm:max-w-[1730px]"}>
-                <div className="grid gap-4 grid-cols-1 xl:gap-5 lg:grid-cols-[minmax(70%,1fr)1fr] 2xl:grid-cols-[minmax(73%,1fr)1fr]">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
                     <HeroSliderBlock
                         heroBanner={heroSlider}
                         heroContent={false}
-                        className={`lg:mb-7 mt-6`}
-                        contentClassName="p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[360px] xl:min-h-[410px] 2xl:min-h-[450px]"
+                        className={`lg:mb-7 mt-6 border border-black/10 border-r-0 rounded-l overflow-hidden`}
+                        contentClassName="p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 min-h-[260px] md:min-h-[260px] xl:min-h-[342px] 2xl:min-h-[421px]"
                     />
                     <BannerGrid
                         data={bannerHeroCarousel}
-                        grid={1}
-                        className="mb-7 mt-0 lg:mt-6 staticBanner--slider"
-                        gridClassName={"xl:gap-5"}
+                        grid={2}
+                        className="mb-7 mt-6 md:mt-6 staticBanner--slider"
+                        gridClassName={"gap-px 2xl:gap-px border border-black/5 bg-black/5"}
                     />
                 </div>
                 <FeatureCarousel className={"home4-featuredCarousel"} classNameCarousel={"bg-white"}/>
-                <BannerGrid
-                    data={bannerGrid}
-                    grid={3}
-                    className="mb-8 lg:mb-12"
-                />
-                <CategoryGridBlock  className="mb-8 lg:mb-12" />
-                <SuppercategoryPopular className="mb-8 lg:mb-12"/>
-                <BestSellerProductFeed  />
+
+                {/* <ListingTabsPhonesFeed showBanner={'left'} />
+                <ListingTabsComputerFeed showBanner={'right'} /> */}
+
                 <BannerGrid
                     data={bannerGrid2}
                     grid={3}
                     className="mb-8 lg:mb-12"
                 />
 
-                <NewProductFeed className="mb-8 lg:mb-12"/>
+                <ListingTabsElectronicFeed showBanner={'left'}/>
+                <ListingTabsClothFeed showBanner={'right'}/>
+
                 <LatestblogCarousel className="mb-8 lg:mb-12"/>
                 <BannerAllCarousel
                     data={brandCarousel}
