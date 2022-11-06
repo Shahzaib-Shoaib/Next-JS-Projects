@@ -4,7 +4,7 @@ import SectionHeader from '@components/common/section-header-razor';
 import Carousel from '@components/ui/carousel/carousel-razor';
 import {SwiperSlide} from '@components/ui/carousel/slider-razor';
 import {ROUTES} from '@utils/routes';
-import {useBlogsQuery} from "@framework/blog/get-all-blogs-RAZOR";
+import {useBlogsQuery} from "@framework/blog/get-all-blogs-razor";
 
 interface Props {
     className?: string;
