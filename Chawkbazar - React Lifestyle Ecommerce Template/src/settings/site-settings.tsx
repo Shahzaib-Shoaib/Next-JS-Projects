@@ -113,6 +113,22 @@ export const siteSettings = {
             path: '/razor4',
             label: 'menu-razor4',
           }, 
+          {
+            id: 14,
+            path: '/razor5',
+            label: 'menu-razor5',
+          }, 
+          {
+            id: 15,
+            path: '/razor6',
+            label: 'menu-razor6',
+          }, 
+          {
+            id: 16,
+            path: '/razor7',
+            label: 'menu-razor7',
+          }, 
+        
         ],
       },
       {
@@ -806,6 +822,21 @@ export const siteSettings = {
             id: 12,
             path: '/razor4',
             label: 'menu-razor4',
+          },
+          {
+            id: 13,
+            path: '/razor5',
+            label: 'menu-razor5',
+          },
+          {
+            id: 14,
+            path: '/razor6',
+            label: 'menu-razor6',
+          },
+          {
+            id: 15,
+            path: '/razor7',
+            label: 'menu-razor7',
           },
         ],
       },
