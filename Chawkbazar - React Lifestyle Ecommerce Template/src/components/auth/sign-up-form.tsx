@@ -9,14 +9,17 @@ import { ImGoogle2, ImFacebook2 } from "react-icons/im";
 import Link from "@components/ui/link";
 import { ROUTES } from "@utils/routes";
 import { useTranslation } from "next-i18next";
+import React from "react";
 
 
-type Props = {
-	children?: React.ReactNode
-  };
+// type Props = {
+// 	children?: React.ReactNode
+	
+//   };
+
 
   
-const SignUpForm: React.FC<Props> = () => {
+const SignUpForm: React.FC = () => {
 	const { t } = useTranslation();
 	const { mutate: signUp, isLoading } = useSignUpMutation();
 	const { setModalView, openModal, closeModal } = useUI();

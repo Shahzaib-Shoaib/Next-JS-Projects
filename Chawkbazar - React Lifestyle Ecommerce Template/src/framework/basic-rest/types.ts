@@ -52,6 +52,7 @@ export type Category = {
   image?: Attachment
   icon?: string
   products?: Product[]
+  children?: [Category];
   productCount?: number
 }
 export type Collection = {

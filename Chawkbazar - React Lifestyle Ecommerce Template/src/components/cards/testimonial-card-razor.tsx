@@ -24,7 +24,7 @@ const TestimonialCard: React.FC<Props> = ({
   collection,
   imgWidth = 80,
   imgHeight = 80,
-  href,
+  // href,
 }) => {
   const { image, author_name, author_position, description } = collection;
   const { t } = useTranslation('common');

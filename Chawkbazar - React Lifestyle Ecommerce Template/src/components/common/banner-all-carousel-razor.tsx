@@ -39,7 +39,7 @@ interface BannerProps {
 const BannerAllCarousel: React.FC<BannerProps> = ({
   data,
   className = 'mb-6',
-  layout,
+  // layout,
   buttonSize = 'default',
 }) => {
   return (

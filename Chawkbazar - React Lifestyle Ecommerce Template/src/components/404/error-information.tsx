@@ -4,7 +4,14 @@ import Text from "@components/ui/text";
 import Link from "@components/ui/link";
 import { useTranslation } from "next-i18next";
 
-const ErrorInformation: React.FC = () => {
+
+
+type Props = {
+	children?: React.ReactNode
+  };
+ 
+ 
+const ErrorInformation: React.FC<Props> = () => {
 	const { t } = useTranslation("common");
 	return (
 		<div className="border-t border-b border-gray-300 text-center px-16 py-16 sm:py-20 lg:py-24 xl:py-32 flex items-center justify-center">

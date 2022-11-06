@@ -3,8 +3,8 @@ import Link from '@components/ui/link';
 import Image from '@components/ui/image-razor';
 import {LinkProps} from 'next/link';
 import {useTranslation} from 'next-i18next';
-import {useRouter} from 'next/router';
-import {getDirection} from '@utils/get-direction';
+// import {useRouter} from 'next/router';
+// import {getDirection} from '@utils/get-direction';
 import cn from 'classnames';
 import {categoryPlaceholder} from '@assets/placeholders';
 
@@ -17,8 +17,8 @@ interface Props {
 const CategoryCard: React.FC<Props> = ({item, href, className}) => {
     const {t} = useTranslation('common');
     const {name, image, productCount} = item ?? {};
-    const {locale} = useRouter();
-    const dir = getDirection(locale);
+    // const {locale} = useRouter();
+    // const dir = getDirection(locale);
     return (
         <Link
             href={href}

@@ -15,6 +15,9 @@ type Variant =
   | 'body'
   | 'pageHeading'
   | 'subHeading'
+  | 'small'
+
+
 
 const Text: React.FC<Props> = ({
   style,

@@ -21,7 +21,7 @@ const CategoryListCard: React.FC<Props> = ({
                                                category,
                                                className,
                                                href,
-                                               variant = 'default',
+                                            //    variant = 'default',
                                            }) => {
     const {name, image,children} = category;
     const {t} = useTranslation('common');

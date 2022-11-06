@@ -16,7 +16,7 @@ const CartButton: React.FC<CartButtonProps> = ({
   className,
   iconClassName = 'text-skin-primary ',
   hideLabel,
-  isShowing,
+  // isShowing,
 }) => {
   const { t } = useTranslation('common');
   //const { openDrawer, setDrawerView } = useUI();
