@@ -50,6 +50,8 @@ const Header: React.FC = () => {
     setDrawerView,
     openSearch,
     closeSearch,
+    setModalView,
+
     isAuthorized,
   } = useUI();
   //const {openModal} = useModalAction();
@@ -62,8 +64,12 @@ const Header: React.FC = () => {
   addActiveScroll(siteHeaderRef, 130);
   useOnClickOutside(siteSearchRef, () => closeSearch());
 
+  // function handleLogin() {
+  //   openModal('LOGIN_VIEW');
+  // }
   function handleLogin() {
-    openModal('LOGIN_VIEW');
+    setModalView('LOGIN_VIEW')
+    return openModal()
   }
 
   function handleCategoryMenu() {

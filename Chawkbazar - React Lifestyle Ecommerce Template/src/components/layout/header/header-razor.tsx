@@ -40,16 +40,16 @@ const Header: React.FC = () => {
     openSidebar,
     displaySearch,
     displayMobileSearch,
-    openMobileAllCategories,
+    // openMobileAllCategories,
     closeMobileAllCategories,
     displayMobileAllCategories,
-    displaySidebar,
-    closeSidebar,
+    // displaySidebar,
+    // closeSidebar,
     openSearch,
     closeSearch,
     isAuthorized,
   } = useUI();
-  const { setModalView, setDrawerView, openModal, closeModal } = useUI();
+  const { setModalView, setDrawerView, openModal } = useUI();
 
   // const {openModal} = useModalAction();
   const siteHeaderRef = useRef() as DivElementRef;
@@ -61,10 +61,13 @@ const Header: React.FC = () => {
   addActiveScroll(siteHeaderRef, 130);
   useOnClickOutside(siteSearchRef, () => closeSearch());
 
+  // function handleLogin() {
+  //   openModal("LOGIN_VIEW");
+  // }
   function handleLogin() {
-    openModal("LOGIN_VIEW");
+    setModalView('LOGIN_VIEW')
+    return openModal()
   }
-
   function handleCategoryMenu() {
     setCategoryMenu(!categoryMenu);
   }

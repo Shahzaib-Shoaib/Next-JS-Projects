@@ -1,10 +1,13 @@
 import Link from "@components/ui/link";
+import React from "react";
 interface Props {
 	href: string;
 	className?: string;
 	btnProps: React.ButtonHTMLAttributes<any>;
 	isAuthorized: boolean;
+	children?:React.ReactNode;
 }
+
 
 const AuthMenu: React.FC<Props> = ({
 	isAuthorized,
