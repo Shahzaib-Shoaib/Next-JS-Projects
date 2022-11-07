@@ -102,8 +102,8 @@ const FeatureCarousel: React.FC<Props> = ({
                 breakpoints={breakpoints}
                 prevActivateId="featured-carousel-button-prev"
                 nextActivateId="featured-carousel-button-next"
-                prevButtonClassName="start-5  3xl:top-auto 3xl:-translate-y-2 4xl:-translate-y-10"
-                nextButtonClassName={`end-5  3xl:top-auto transform 2xl:translate-x-0 3xl:-translate-y-2 `}
+                prevButtonClasses="start-5  3xl:top-auto 3xl:-translate-y-2 4xl:-translate-y-10"
+                nextButtonClasses={`end-5  3xl:top-auto transform 2xl:translate-x-0 3xl:-translate-y-2 `}
                 className={'rounded-md border border-black/10 py-5 '}
             >
                 {data?.map((item) => (

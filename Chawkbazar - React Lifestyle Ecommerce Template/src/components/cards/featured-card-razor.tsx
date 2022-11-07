@@ -11,7 +11,7 @@ interface ItemProps {
   icon: JSX.Element;
   title: string;
   href: LinkProps['href'];
-  bgColor: string;
+  // bgColor: string;
 }
 
 interface Props {

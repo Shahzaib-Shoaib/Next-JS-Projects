@@ -11,6 +11,7 @@ import 'swiper/css/autoplay'
 import 'swiper/css/scrollbar'
 
 type CarouselPropsType = {
+  children?:any;
   className?: string
   buttonGroupClassName?: string
   prevActivateId?: string
