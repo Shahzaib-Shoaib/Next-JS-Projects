@@ -1,9 +1,0 @@
-overwrite: true
-schema: './shopify-schema.json'
-documents: 'graphql/**/*.graphql'
-generates:
-  generated/graphql.tsx:
-    plugins:
-      - 'typescript'
-      - 'typescript-operations'
-      - 'typescript-react-apollo'
