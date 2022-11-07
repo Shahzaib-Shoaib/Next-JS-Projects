@@ -30,10 +30,12 @@ const data = {
 
 interface Props {
   className?: string
-  variant?: 'modern'
+  variant?: 'modern'| 'ancient';
+  disableBorderRadius?: boolean;
+
 }
 
-const DownloadApps: React.FC<Props> = ({ className, variant }) => {
+const DownloadApps: React.FC<Props> = ({ className, variant, disableBorderRadius = false  }) => {
   const { appButtons, title, subTitle, appImage, appImage2 } = data
   const { t } = useTranslation('common')
   return (
@@ -67,7 +69,7 @@ const DownloadApps: React.FC<Props> = ({ className, variant }) => {
                 <img
                   src={item.appButton}
                   alt={t(`${item.altText}`)}
-                  className='w-36 lg:w-44 xl:w-auto'
+                  className={`w-36 lg:w-44 xl:w-auto ${!disableBorderRadius && 'rounded-md'}`}
                   width={item.buttonWidth}
                   height={item.buttonHeight}
                 />

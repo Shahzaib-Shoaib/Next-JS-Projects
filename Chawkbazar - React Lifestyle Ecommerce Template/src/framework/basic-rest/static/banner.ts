@@ -1450,3 +1450,133 @@ export const contemporaryBanner3 = {
     },
   },
 }
+
+export const ancientHeroBanner = [
+  {
+    id: 1,
+    title: 'Winter Collection of Kid Items',
+    slug: 'winter-collection',
+    image: {
+      mobile: {
+        url: '/assets/images/banner/ancient/hero-banner-mobile-1.png',
+        width: 375,
+        height: 220,
+      },
+      desktop: {
+        url: '/assets/images/banner/ancient/hero-banner-1.jpg',
+        width: 1920,
+        height: 900,
+      },
+    },
+  },
+  {
+    id: 2,
+    title: 'Winter Collection of Kid Items',
+    slug: 'winter-collection',
+    image: {
+      mobile: {
+        url: '/assets/images/banner/ancient/hero-banner-mobile-2.png',
+        width: 375,
+        height: 220,
+      },
+      desktop: {
+        url: '/assets/images/banner/ancient/hero-banner-2.jpg',
+        width: 1920,
+        height: 900,
+      },
+    },
+  },
+  {
+    id: 3,
+    title: 'Winter Collection of Kid Items',
+    slug: 'winter-collection',
+    image: {
+      mobile: {
+        url: '/assets/images/banner/ancient/hero-banner-mobile-3.png',
+        width: 375,
+        height: 220,
+      },
+      desktop: {
+        url: '/assets/images/banner/ancient/hero-banner-3.jpg',
+        width: 1920,
+        height: 900,
+      },
+    },
+  },
+];
+
+
+export const ancientBanner1 = [
+  {
+    id: 1,
+    title: 'Winter Collection of Kid Items',
+    slug: 'winter-collection',
+    image: {
+      mobile: {
+        url: '/assets/images/banner/ancient/banner-1-mobile-m.png',
+        width: 1100,
+        height: 590,
+      },
+      desktop: {
+        url: '/assets/images/banner/ancient/banner-1.png',
+        width: 900,
+        height: 380,
+      },
+    },
+  },
+  {
+    id: 2,
+    title: 'Winter Collection of Kid Items',
+    slug: 'winter-collection',
+    image: {
+      mobile: {
+        url: '/assets/images/banner/ancient/banner-2-mobile-m.png',
+        width: 1100,
+        height: 590,
+      },
+      desktop: {
+        url: '/assets/images/banner/ancient/banner-2.png',
+        width: 990,
+        height: 380,
+      },
+    },
+  },
+];
+
+export const ancientBanner2 = [
+  {
+    id: 1,
+    title: 'Winter Collection of Kid Items',
+    slug: 'winter-collection',
+    image: {
+      mobile: {
+        url: '/assets/images/banner/ancient/banner-3-mobile-m.png',
+        width: 1100,
+        height: 590,
+      },
+      desktop: {
+        url: '/assets/images/banner/ancient/banner-3.png',
+        width: 1190,
+        height: 380,
+      },
+    },
+  },
+  {
+    id: 2,
+    title: 'Winter Collection of Kid Items',
+    slug: 'winter-collection',
+    image: {
+      mobile: {
+        url: '/assets/images/banner/ancient/banner-4-mobile-m.png',
+        width: 1100,
+        height: 590,
+      },
+      desktop: {
+        url: '/assets/images/banner/ancient/banner-4.png',
+        width: 690,
+        height: 380,
+      },
+    },
+  },
+];
+

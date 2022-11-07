@@ -12,6 +12,8 @@ export type CategoriesQueryOptionsType = {
   category?: string
   status?: string
   limit?: number
+  demoVariant?: 'ancient';
+
 }
 export type ProductsQueryOptionsType = {
   type: string
@@ -26,6 +28,8 @@ export type QueryOptionsType = {
   status?: string
   limit?: number
   id?: number,
+  demoVariant?: 'ancient';
+
 }
 
 export type ShopsQueryOptionsType = {

@@ -12,6 +12,8 @@ interface BannerProps {
   className?: string
   classNameInner?: string
   href: LinkProps['href']
+  disableBorderRadius?: boolean;
+
 }
 
 function getImage(deviceWidth: number, imgObj: any) {
@@ -25,6 +27,8 @@ const BannerCard: FC<BannerProps> = ({
   effectActive = false,
   classNameInner,
   href,
+  disableBorderRadius = false,
+
 }) => {
   const { width } = useWindowSize()
   const { title, image } = banner
@@ -45,7 +49,7 @@ const BannerCard: FC<BannerProps> = ({
           alt={title}
           quality={100}
           className={cn('bg-gray-300 object-cover w-full', {
-            'rounded-md': variant === 'rounded',
+            'rounded-md': variant === 'rounded' && !disableBorderRadius,
           })}
         />
         {effectActive && (
