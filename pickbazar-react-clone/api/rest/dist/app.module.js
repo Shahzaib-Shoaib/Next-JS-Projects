@@ -28,6 +28,14 @@ const addresses_module_1 = require("./addresses/addresses.module");
 const imports_module_1 = require("./imports/imports.module");
 const auth_module_1 = require("./auth/auth.module");
 const refunds_module_1 = require("./refunds/refunds.module");
+const authors_module_1 = require("./authors/authors.module");
+const manufacturers_module_1 = require("./manufacturers/manufacturers.module");
+const newsletters_module_1 = require("./newsletters/newsletters.module");
+const reviews_module_1 = require("./reviews/reviews.module");
+const questions_module_1 = require("./questions/questions.module");
+const wishlists_module_1 = require("./wishlists/wishlists.module");
+const reports_module_1 = require("./reports/reports.module");
+const feedbacks_module_1 = require("./feedbacks/feedbacks.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -53,6 +61,14 @@ AppModule = __decorate([
             imports_module_1.ImportsModule,
             auth_module_1.AuthModule,
             refunds_module_1.RefundsModule,
+            authors_module_1.AuthorsModule,
+            manufacturers_module_1.ManufacturersModule,
+            newsletters_module_1.NewslettersModule,
+            reviews_module_1.ReviewModule,
+            questions_module_1.QuestionModule,
+            wishlists_module_1.WishlistsModule,
+            reports_module_1.ReportsModule,
+            feedbacks_module_1.FeedbackModule,
         ],
         controllers: [],
         providers: [],
