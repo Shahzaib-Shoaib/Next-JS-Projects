@@ -11,6 +11,9 @@ const common_1 = require("@nestjs/common");
 const users_module_1 = require("./users/users.module");
 const common_module_1 = require("./common/common.module");
 const products_module_1 = require("./products/products.module");
+const orders_module_1 = require("./orders/orders.module");
+const categories_module_1 = require("./categories/categories.module");
+const analytics_module_1 = require("./analytics/analytics.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -19,6 +22,9 @@ AppModule = __decorate([
             users_module_1.UsersModule,
             common_module_1.CommonModule,
             products_module_1.ProductsModule,
+            orders_module_1.OrdersModule,
+            categories_module_1.CategoriesModule,
+            analytics_module_1.AnalyticsModule,
         ],
         controllers: [],
         providers: [],
