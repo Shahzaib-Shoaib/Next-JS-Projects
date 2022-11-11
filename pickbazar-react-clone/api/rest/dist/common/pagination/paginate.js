@@ -31,4 +31,3 @@ function paginate(totalItems, current_page = 1, pageSize = 10, count = 0, url = 
     };
 }
 exports.paginate = paginate;
-//# sourceMappingURL=paginate.js.map

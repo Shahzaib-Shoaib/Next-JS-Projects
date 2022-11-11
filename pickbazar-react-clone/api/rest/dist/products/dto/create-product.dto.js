@@ -19,4 +19,3 @@ class CreateProductDto extends (0, swagger_1.OmitType)(product_entity_1.Product,
 ]) {
 }
 exports.CreateProductDto = CreateProductDto;
-//# sourceMappingURL=create-product.dto.js.map

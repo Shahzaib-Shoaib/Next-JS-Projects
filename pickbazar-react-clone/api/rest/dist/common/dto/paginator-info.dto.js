@@ -4,4 +4,3 @@ exports.PaginatorInfo = void 0;
 class PaginatorInfo {
 }
 exports.PaginatorInfo = PaginatorInfo;
-//# sourceMappingURL=paginator-info.dto.js.map

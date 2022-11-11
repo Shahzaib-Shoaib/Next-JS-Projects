@@ -13,4 +13,3 @@ var QueryAttributesOrderByColumn;
     QueryAttributesOrderByColumn["NAME"] = "NAME";
     QueryAttributesOrderByColumn["UPDATED_AT"] = "UPDATED_AT";
 })(QueryAttributesOrderByColumn = exports.QueryAttributesOrderByColumn || (exports.QueryAttributesOrderByColumn = {}));
-//# sourceMappingURL=get-attributes.dto.js.map

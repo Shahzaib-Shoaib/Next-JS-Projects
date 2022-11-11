@@ -8,4 +8,3 @@ exports.Profile = Profile;
 class Social {
 }
 exports.Social = Social;
-//# sourceMappingURL=profile.entity.js.map

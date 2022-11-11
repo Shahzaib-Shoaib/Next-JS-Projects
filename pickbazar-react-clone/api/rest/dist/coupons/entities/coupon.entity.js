@@ -12,4 +12,3 @@ var CouponType;
 class Coupon extends core_entity_1.CoreEntity {
 }
 exports.Coupon = Coupon;
-//# sourceMappingURL=coupon.entity.js.map

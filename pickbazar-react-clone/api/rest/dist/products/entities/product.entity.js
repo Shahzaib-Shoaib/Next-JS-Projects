@@ -27,4 +27,3 @@ exports.VariationOption = VariationOption;
 class File extends core_entity_1.CoreEntity {
 }
 exports.File = File;
-//# sourceMappingURL=product.entity.js.map

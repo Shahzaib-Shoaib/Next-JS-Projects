@@ -4,4 +4,3 @@ exports.Paginator = void 0;
 class Paginator {
 }
 exports.Paginator = Paginator;
-//# sourceMappingURL=paginator.dto.js.map

@@ -100,4 +100,3 @@ PopularProductsController = __decorate([
     __metadata("design:paramtypes", [products_service_1.ProductsService])
 ], PopularProductsController);
 exports.PopularProductsController = PopularProductsController;
-//# sourceMappingURL=products.controller.js.map

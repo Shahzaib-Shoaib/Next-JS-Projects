@@ -19,4 +19,3 @@ CategoriesModule = __decorate([
     })
 ], CategoriesModule);
 exports.CategoriesModule = CategoriesModule;
-//# sourceMappingURL=categories.module.js.map

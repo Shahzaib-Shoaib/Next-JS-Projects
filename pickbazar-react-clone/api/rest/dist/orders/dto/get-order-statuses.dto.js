@@ -16,4 +16,3 @@ var QueryOrderStatusesOrderByColumn;
     QueryOrderStatusesOrderByColumn["UPDATED_AT"] = "UPDATED_AT";
     QueryOrderStatusesOrderByColumn["SERIAL"] = "SERIAL";
 })(QueryOrderStatusesOrderByColumn = exports.QueryOrderStatusesOrderByColumn || (exports.QueryOrderStatusesOrderByColumn = {}));
-//# sourceMappingURL=get-order-statuses.dto.js.map

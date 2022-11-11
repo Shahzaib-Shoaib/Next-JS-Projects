@@ -14,6 +14,20 @@ const products_module_1 = require("./products/products.module");
 const orders_module_1 = require("./orders/orders.module");
 const categories_module_1 = require("./categories/categories.module");
 const analytics_module_1 = require("./analytics/analytics.module");
+const attributes_module_1 = require("./attributes/attributes.module");
+const shippings_module_1 = require("./shippings/shippings.module");
+const taxes_module_1 = require("./taxes/taxes.module");
+const tags_module_1 = require("./tags/tags.module");
+const shops_module_1 = require("./shops/shops.module");
+const types_module_1 = require("./types/types.module");
+const withdraws_module_1 = require("./withdraws/withdraws.module");
+const uploads_module_1 = require("./uploads/uploads.module");
+const settings_module_1 = require("./settings/settings.module");
+const coupons_module_1 = require("./coupons/coupons.module");
+const addresses_module_1 = require("./addresses/addresses.module");
+const imports_module_1 = require("./imports/imports.module");
+const auth_module_1 = require("./auth/auth.module");
+const refunds_module_1 = require("./refunds/refunds.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -25,10 +39,23 @@ AppModule = __decorate([
             orders_module_1.OrdersModule,
             categories_module_1.CategoriesModule,
             analytics_module_1.AnalyticsModule,
+            attributes_module_1.AttributesModule,
+            shippings_module_1.ShippingsModule,
+            taxes_module_1.TaxesModule,
+            tags_module_1.TagsModule,
+            shops_module_1.ShopsModule,
+            types_module_1.TypesModule,
+            withdraws_module_1.WithdrawsModule,
+            uploads_module_1.UploadsModule,
+            settings_module_1.SettingsModule,
+            coupons_module_1.CouponsModule,
+            addresses_module_1.AddressesModule,
+            imports_module_1.ImportsModule,
+            auth_module_1.AuthModule,
+            refunds_module_1.RefundsModule,
         ],
         controllers: [],
         providers: [],
     })
 ], AppModule);
 exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map

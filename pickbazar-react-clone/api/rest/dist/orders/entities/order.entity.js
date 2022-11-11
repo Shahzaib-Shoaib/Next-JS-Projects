@@ -13,4 +13,3 @@ exports.Order = Order;
 class OrderFiles extends core_entity_1.CoreEntity {
 }
 exports.OrderFiles = OrderFiles;
-//# sourceMappingURL=order.entity.js.map

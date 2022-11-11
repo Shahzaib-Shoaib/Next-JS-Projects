@@ -151,4 +151,3 @@ ProfilesController = __decorate([
     __metadata("design:paramtypes", [users_service_1.UsersService])
 ], ProfilesController);
 exports.ProfilesController = ProfilesController;
-//# sourceMappingURL=users.controller.js.map

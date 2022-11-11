@@ -21,4 +21,3 @@ var SQLOperator;
     SQLOperator["NEQ"] = "NEQ";
     SQLOperator["GT"] = "GT";
 })(SQLOperator = exports.SQLOperator || (exports.SQLOperator = {}));
-//# sourceMappingURL=generic-conditions.dto.js.map

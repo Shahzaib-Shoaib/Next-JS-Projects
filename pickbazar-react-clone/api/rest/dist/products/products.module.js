@@ -19,4 +19,3 @@ ProductsModule = __decorate([
     })
 ], ProductsModule);
 exports.ProductsModule = ProductsModule;
-//# sourceMappingURL=products.module.js.map

@@ -29,4 +29,3 @@ exports.ShopSocials = ShopSocials;
 class Location {
 }
 exports.Location = Location;
-//# sourceMappingURL=setting.entity.js.map

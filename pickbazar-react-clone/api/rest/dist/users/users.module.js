@@ -19,4 +19,3 @@ UsersModule = __decorate([
     })
 ], UsersModule);
 exports.UsersModule = UsersModule;
-//# sourceMappingURL=users.module.js.map

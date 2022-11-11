@@ -25,4 +25,3 @@ OrdersModule = __decorate([
     })
 ], OrdersModule);
 exports.OrdersModule = OrdersModule;
-//# sourceMappingURL=orders.module.js.map

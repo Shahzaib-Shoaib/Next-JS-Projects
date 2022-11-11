@@ -6,4 +6,3 @@ const create_profile_dto_1 = require("./create-profile.dto");
 class UpdateProfileDto extends (0, swagger_1.PartialType)(create_profile_dto_1.CreateProfileDto) {
 }
 exports.UpdateProfileDto = UpdateProfileDto;
-//# sourceMappingURL=update-profile.dto.js.map

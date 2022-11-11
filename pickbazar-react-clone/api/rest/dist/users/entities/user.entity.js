@@ -9,4 +9,3 @@ class User extends core_entity_1.CoreEntity {
     }
 }
 exports.User = User;
-//# sourceMappingURL=user.entity.js.map

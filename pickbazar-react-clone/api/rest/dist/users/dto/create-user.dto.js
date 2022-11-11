@@ -21,4 +21,3 @@ class CreateUserDto extends (0, swagger_1.PickType)(user_entity_1.User, [
     }
 }
 exports.CreateUserDto = CreateUserDto;
-//# sourceMappingURL=create-user.dto.js.map

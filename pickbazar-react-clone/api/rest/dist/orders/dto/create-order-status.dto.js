@@ -14,4 +14,3 @@ exports.CreateOrderStatusDto = CreateOrderStatusDto;
 class UpdateOrderStatusDto extends (0, swagger_1.PartialType)(CreateOrderStatusDto) {
 }
 exports.UpdateOrderStatusDto = UpdateOrderStatusDto;
-//# sourceMappingURL=create-order-status.dto.js.map

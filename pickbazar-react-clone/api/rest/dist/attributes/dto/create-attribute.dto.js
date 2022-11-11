@@ -13,4 +13,3 @@ exports.CreateAttributeDto = CreateAttributeDto;
 class AttributeValueDto {
 }
 exports.AttributeValueDto = AttributeValueDto;
-//# sourceMappingURL=create-attribute.dto.js.map

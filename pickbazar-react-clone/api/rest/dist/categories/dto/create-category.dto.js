@@ -14,4 +14,3 @@ class CreateCategoryDto extends (0, swagger_1.PickType)(category_entity_1.Catego
 ]) {
 }
 exports.CreateCategoryDto = CreateCategoryDto;
-//# sourceMappingURL=create-category.dto.js.map

@@ -80,4 +80,3 @@ CategoriesController = __decorate([
     __metadata("design:paramtypes", [categories_service_1.CategoriesService])
 ], CategoriesController);
 exports.CategoriesController = CategoriesController;
-//# sourceMappingURL=categories.controller.js.map

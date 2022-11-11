@@ -7,4 +7,3 @@ exports.CheckoutVerificationDto = CheckoutVerificationDto;
 class VerifiedCheckoutData {
 }
 exports.VerifiedCheckoutData = VerifiedCheckoutData;
-//# sourceMappingURL=verify-checkout.dto.js.map

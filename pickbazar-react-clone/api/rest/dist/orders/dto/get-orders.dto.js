@@ -9,4 +9,3 @@ exports.OrderPaginator = OrderPaginator;
 class GetOrdersDto extends pagination_args_dto_1.PaginationArgs {
 }
 exports.GetOrdersDto = GetOrdersDto;
-//# sourceMappingURL=get-orders.dto.js.map

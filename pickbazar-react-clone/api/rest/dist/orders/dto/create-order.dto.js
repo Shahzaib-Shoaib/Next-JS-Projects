@@ -13,4 +13,3 @@ exports.ConnectProductOrderPivot = ConnectProductOrderPivot;
 class CardInput {
 }
 exports.CardInput = CardInput;
-//# sourceMappingURL=create-order.dto.js.map

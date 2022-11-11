@@ -19,4 +19,3 @@ AttributesModule = __decorate([
     })
 ], AttributesModule);
 exports.AttributesModule = AttributesModule;
-//# sourceMappingURL=attributes.module.js.map

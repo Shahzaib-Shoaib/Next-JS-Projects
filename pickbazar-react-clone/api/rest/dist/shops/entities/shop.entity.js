@@ -14,4 +14,3 @@ exports.PaymentInfo = PaymentInfo;
 class ShopSettings {
 }
 exports.ShopSettings = ShopSettings;
-//# sourceMappingURL=shop.entity.js.map

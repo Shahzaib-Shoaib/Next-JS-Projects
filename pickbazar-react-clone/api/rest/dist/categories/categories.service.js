@@ -64,4 +64,3 @@ CategoriesService = __decorate([
     (0, common_1.Injectable)()
 ], CategoriesService);
 exports.CategoriesService = CategoriesService;
-//# sourceMappingURL=categories.service.js.map

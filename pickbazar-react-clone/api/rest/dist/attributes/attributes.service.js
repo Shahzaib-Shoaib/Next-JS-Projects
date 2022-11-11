@@ -39,4 +39,3 @@ AttributesService = __decorate([
     (0, common_1.Injectable)()
 ], AttributesService);
 exports.AttributesService = AttributesService;
-//# sourceMappingURL=attributes.service.js.map

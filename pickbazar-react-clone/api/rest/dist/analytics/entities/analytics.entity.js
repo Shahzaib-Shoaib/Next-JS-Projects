@@ -8,4 +8,3 @@ exports.Analytics = Analytics;
 class TotalYearSaleByMonth {
 }
 exports.TotalYearSaleByMonth = TotalYearSaleByMonth;
-//# sourceMappingURL=analytics.entity.js.map

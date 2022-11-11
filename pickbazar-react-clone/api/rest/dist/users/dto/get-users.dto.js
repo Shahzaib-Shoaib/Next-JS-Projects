@@ -16,4 +16,3 @@ var QueryUsersOrderByColumn;
     QueryUsersOrderByColumn["UPDATED_AT"] = "updated_at";
     QueryUsersOrderByColumn["IS_ACTIVE"] = "IS_ACTIVE";
 })(QueryUsersOrderByColumn = exports.QueryUsersOrderByColumn || (exports.QueryUsersOrderByColumn = {}));
-//# sourceMappingURL=get-users.dto.js.map

@@ -15,4 +15,3 @@ var QueryOrderFilesOrderByColumn;
     QueryOrderFilesOrderByColumn["NAME"] = "NAME";
     QueryOrderFilesOrderByColumn["UPDATED_AT"] = "UPDATED_AT";
 })(QueryOrderFilesOrderByColumn = exports.QueryOrderFilesOrderByColumn || (exports.QueryOrderFilesOrderByColumn = {}));
-//# sourceMappingURL=get-downloads.dto.js.map

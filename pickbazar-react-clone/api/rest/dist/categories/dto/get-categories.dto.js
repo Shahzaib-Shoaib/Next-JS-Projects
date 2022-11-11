@@ -19,4 +19,3 @@ var QueryCategoriesOrderByColumn;
     QueryCategoriesOrderByColumn["NAME"] = "NAME";
     QueryCategoriesOrderByColumn["UPDATED_AT"] = "UPDATED_AT";
 })(QueryCategoriesOrderByColumn = exports.QueryCategoriesOrderByColumn || (exports.QueryCategoriesOrderByColumn = {}));
-//# sourceMappingURL=get-categories.dto.js.map

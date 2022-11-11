@@ -11,4 +11,3 @@ exports.Banner = Banner;
 class TypeSettings {
 }
 exports.TypeSettings = TypeSettings;
-//# sourceMappingURL=type.entity.js.map

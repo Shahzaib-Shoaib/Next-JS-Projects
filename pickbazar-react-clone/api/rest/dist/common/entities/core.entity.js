@@ -22,4 +22,3 @@ __decorate([
     __metadata("design:type", Date)
 ], CoreEntity.prototype, "updated_at", void 0);
 exports.CoreEntity = CoreEntity;
-//# sourceMappingURL=core.entity.js.map

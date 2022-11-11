@@ -235,4 +235,3 @@ DownloadInvoiceController = __decorate([
     __metadata("design:paramtypes", [orders_service_1.OrdersService])
 ], DownloadInvoiceController);
 exports.DownloadInvoiceController = DownloadInvoiceController;
-//# sourceMappingURL=orders.controller.js.map

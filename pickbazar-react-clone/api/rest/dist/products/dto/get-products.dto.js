@@ -15,4 +15,3 @@ var QueryProductsOrderByColumn;
     QueryProductsOrderByColumn["NAME"] = "NAME";
     QueryProductsOrderByColumn["UPDATED_AT"] = "UPDATED_AT";
 })(QueryProductsOrderByColumn = exports.QueryProductsOrderByColumn || (exports.QueryProductsOrderByColumn = {}));
-//# sourceMappingURL=get-products.dto.js.map

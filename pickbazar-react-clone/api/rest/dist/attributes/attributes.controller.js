@@ -77,4 +77,3 @@ AttributesController = __decorate([
     __metadata("design:paramtypes", [attributes_service_1.AttributesService])
 ], AttributesController);
 exports.AttributesController = AttributesController;
-//# sourceMappingURL=attributes.controller.js.map
