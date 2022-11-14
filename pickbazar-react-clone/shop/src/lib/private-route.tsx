@@ -1,4 +1,4 @@
-import Loader from '@/components/ui/loaders/spinners/spinner';
+import Loader from '@/components/ui/loaders/spinner/spinner';
 import { useRouter } from 'next/router';
 import { BackArrowRound } from '@/components/icons/back-arrow-round';
 import { useUser } from '@/framework/user';
