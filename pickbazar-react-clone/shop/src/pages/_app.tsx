@@ -6,12 +6,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import { ModalProvider } from '@/components/ui/modal/modal.context';
 import ManagedModal from '@/components/ui/modal/managed-modal';
-// import ManagedDrawer from '@/components/ui/drawer/managed-drawer';
+import ManagedDrawer from '@/components/ui/drawer/managed-drawer';
 import DefaultSeo from '@/components/seo/default-seo';
 import { SearchProvider } from '@/components/ui/search/search.context';
 import PrivateRoute from '@/lib/private-route';
-// import { CartProvider } from '@/store/quick-cart/cart.context';
-// import SocialLogin from '@/components/auth/social-login';
+import { CartProvider } from '@/store/quick-cart/cart.context';
+import SocialLogin from '@/components/auth/social-login';
 import { NextPageWithLayout } from '@/types';
 import QueryProvider from '@/framework/client/query-provider';
 import { getDirection } from '@/lib/constants';
@@ -37,7 +37,7 @@ function CustomApp({
         <QueryProvider pageProps={pageProps}>
           <SearchProvider>
             <ModalProvider>
-              {/* <CartProvider> */}
+              <CartProvider>
                 <>
                   <DefaultSeo />
                   {authenticationRequired ? (
@@ -47,12 +47,12 @@ function CustomApp({
                   ) : (
                     getLayout(<Component {...pageProps} />)
                   )}
-                  {/* <ManagedModal /> */}
-                  {/* <ManagedDrawer /> */}
+                  <ManagedModal />
+                  <ManagedDrawer />
                   <ToastContainer autoClose={2000} theme="colored" />
-                  {/* <SocialLogin /> */}
+                  <SocialLogin />
                 </>
-              {/* </CartProvider> */}
+              </CartProvider>
             </ModalProvider>
           </SearchProvider>
         </QueryProvider>
