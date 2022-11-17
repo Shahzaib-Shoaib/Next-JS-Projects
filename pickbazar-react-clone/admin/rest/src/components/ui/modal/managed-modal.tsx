@@ -70,7 +70,7 @@ const ReviewDeleteView = dynamic(
 );
 
 const AcceptAbuseReportView = dynamic(
-  () => import('@/components/reviews/acccpt-report-confirmation')
+  () => import('@/components/reviews/accept-report-confirmation')
 );
 
 const DeclineAbuseReportView = dynamic(

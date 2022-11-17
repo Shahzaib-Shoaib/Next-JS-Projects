@@ -1,5 +1,5 @@
 import { Author } from '../entities/author.entity';
-declare const CreateAuthorDto_base: import("@nestjs/common").Type<Omit<Author, "id" | "slug" | "name" | "cover_image" | "image" | "products_count" | "socials" | "translated_languages" | "bio" | "born" | "death" | "languages" | "quote">>;
+declare const CreateAuthorDto_base: import("@nestjs/common").Type<Omit<Author, "id" | "name" | "bio" | "socials" | "slug" | "translated_languages" | "image" | "cover_image" | "products_count" | "born" | "death" | "languages" | "quote">>;
 export declare class CreateAuthorDto extends CreateAuthorDto_base {
     shop_id?: string;
 }

@@ -7,8 +7,8 @@ export declare class WithdrawsService {
     create(createWithdrawDto: CreateWithdrawDto): {
         shop_id: number;
         amount: number;
-        note: string;
         details: string;
+        note: string;
         payment_method: string;
         id: number;
     };

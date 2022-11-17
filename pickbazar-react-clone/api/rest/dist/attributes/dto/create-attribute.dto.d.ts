@@ -1,5 +1,5 @@
 import { Attribute } from '../entities/attribute.entity';
-declare const CreateAttributeDto_base: import("@nestjs/common").Type<Pick<Attribute, "language" | "shop_id" | "name">>;
+declare const CreateAttributeDto_base: import("@nestjs/common").Type<Pick<Attribute, "name" | "shop_id" | "language">>;
 export declare class CreateAttributeDto extends CreateAttributeDto_base {
     values: AttributeValueDto[];
 }
