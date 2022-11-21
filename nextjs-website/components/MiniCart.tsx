@@ -8,6 +8,10 @@ import { formatter } from "../utils/helper";
 
 export default function MiniCart({ cart }:any) {
   const cancelButtonRef = useRef();
+// const cancelButtonRef = useRef<HTMLDivElement>(null);
+const cancelButtonRef = useRef<HTMLButtonElement>(null);
+
+
   // const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } =
   //   useContext(CartContext);
 
@@ -82,7 +86,7 @@ export default function MiniCart({ cart }:any) {
                             role='list'
                             className='-my-6 divide-y divide-gray-200'
                           >
-                            {cart.map((product) => (
+                            {cart.map((product:any) => (
                               <li key={product.id} className='py-6 flex'>
                                 <div className='relative flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden'>
                                   <Image

@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import ShopProvider from "../context/shopContext";
 import { useRouter } from "next/router";
 

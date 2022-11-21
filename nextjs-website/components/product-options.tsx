@@ -5,12 +5,12 @@ export default function ProductOptions({
   values,
   selectedOptions,
   setOptions,
-}) {
+}:any) {
   return (
     <fieldset className='mt-3'>
       <legend className='text-xl font-semibold '>{name}</legend>
       <div className='inline-flex items-center flex-wrap'>
-        {values.map((value) => {
+        {values.map((value:any) => {
           const id = `option-${name}-${value}`;
           const checked = selectedOptions[name] === value;
 

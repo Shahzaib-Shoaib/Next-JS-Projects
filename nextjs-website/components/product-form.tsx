@@ -1,15 +1,15 @@
 import { useState, useContext } from "react";
 import { formatter } from "../utils/helper";
-import ProductOptions from "./ProductOptions";
+import ProductOptions from "./product-options";
 import { CartContext } from "../context/shopContext";
 
-export default function ProductForm({ product }) {
+export default function ProductForm({ product }: any) {
   const { addToCart }:any = useContext(CartContext);
 
-  const allVariantOptions = product.variants.edges?.map((variant) => {
-    const allOptions = {};
+  const allVariantOptions = product.variants.edges?.map((variant:any) => {
+    const allOptions:any = {};
 
-    variant.node.selectedOptions.map((item) => {
+    variant.node.selectedOptions.map((item:any) => {
       allOptions[item.name] = item.value;
     });
 
@@ -25,16 +25,16 @@ export default function ProductForm({ product }) {
     };
   });
 
-  const defaultValues = {};
-  product.options.map((item) => {
+  const defaultValues:any = {};
+  product.options.map((item:any) => {
     defaultValues[item.name] = item.values[0];
   });
 
   const [selectedVariant, setSelectedVariant] = useState(allVariantOptions[0]);
   const [selectedOptions, setSelectedOptions] = useState(defaultValues);
 
-  function setOptions(name, value) {
-    setSelectedOptions((prevState) => {
+  function setOptions(name:any, value:any) {
+    setSelectedOptions((prevState:any) => {
       return { ...prevState, [name]: value };
     });
 
@@ -43,7 +43,7 @@ export default function ProductForm({ product }) {
       [name]: value,
     };
 
-    allVariantOptions.map((item) => {
+    allVariantOptions.map((item:any) => {
       if (JSON.stringify(item.options) === JSON.stringify(selection)) {
         setSelectedVariant(item);
       }
@@ -56,7 +56,7 @@ export default function ProductForm({ product }) {
       <span className='pb-3'>
         {formatter.format(product.variants.edges[0].node.priceV2.amount)}
       </span>
-      {product.options.map(({ name, values }) => (
+      {product.options.map(({ name, values }:any) => (
         <ProductOptions
           key={`key-${name}`}
           name={name}

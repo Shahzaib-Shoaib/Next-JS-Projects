@@ -1,5 +1,5 @@
 import { getProductsInCollection } from "../lib/shopify";
-import ProductList from "../components/ProductList";
+import ProductList from "../components/product-list";
 
 export default function productpage({ products }:any) {
   return (
