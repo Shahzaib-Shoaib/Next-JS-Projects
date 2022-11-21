@@ -1,5 +1,5 @@
-import ProductPageContent from "../../components/product-page-content";
-import { getAllProducts, getProduct } from "../../lib/shopify";
+import ProductPageContent from "@components/product/product-page-content";
+import { getAllProducts, getProduct } from "@lib/shopify";
 
 export default function ProductPage({ product }:any) {
   return (

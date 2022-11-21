@@ -1,5 +1,5 @@
-import { getProductsInSecondCollection } from "../lib/shopify";
-import ProductList from "../components/product-list";
+import { getProductsInSecondCollection } from "@lib/shopify";
+import ProductList from "@components/product/product-list";
 
 export default function productpage({ products }:any) {
   return (

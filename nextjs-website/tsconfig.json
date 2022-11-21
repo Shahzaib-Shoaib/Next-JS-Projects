@@ -22,8 +22,8 @@
       "@components/*": ["src/components/*"],
       "@containers/*": ["src/containers/*"],
       "@contexts/*": ["src/contexts/*"],
-      "@framework/*": ["src/framework/basic-rest/*"],
-      "@settings/*": ["src/settings/*"],
+      "@framework/*": ["src/framework/*"],
+      "@lib/*": ["src/lib/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"]
     },

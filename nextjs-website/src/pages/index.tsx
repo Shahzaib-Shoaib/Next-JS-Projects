@@ -1,11 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { getProductsInCollection } from "../lib/shopify";
-import Hero from "../components/hero";
-import ProductList from "../components/product-list";
+import { getProductsInCollection } from "@lib/shopify";
+// import Hero from "@components/layout/header/";
+import ProductList from "@components/product/product-list";
 import Image from "next/legacy/image";
+import HeroSlider from '@containers/hero-slider';
+import { HomePage } from '@framework/static/banner';
+
 
 const Home: NextPage = ({ products }:any) => {
+  const sectionCommonStyle = 'mb-7 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-[75px]';
 
   console.log(products);
 
@@ -37,7 +41,14 @@ const Home: NextPage = ({ products }:any) => {
         <meta property='og:site_name' content='Modern eCommerce Course' />
       </Head>
 
-      <Hero />
+      {/* <Hero /> */}
+      <HeroSlider
+        data={HomePage}
+        variantRounded="default"
+        variant="fullWidth"
+        className={sectionCommonStyle}
+        buttonGroupClassName="hidden"
+      />
       <ProductList products={products} />
     </div>
   );
