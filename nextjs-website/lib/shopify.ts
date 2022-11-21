@@ -87,7 +87,7 @@ export async function getAllProducts() {
   return slugs;
 }
 
-export async function getProduct(handle) {
+export async function getProduct(handle:any) {
   const query = `
   {
     productByHandle(handle: "${handle}") {

@@ -1,18 +1,24 @@
 import { Fragment, useContext, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { XIcon } from "@heroicons/react/outline";
+import  XMarkIcon  from "@heroicons/react/24/outline/XMarkIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { CartContext } from "../context/shopContext";
 import { formatter } from "../utils/helper";
 
-export default function MiniCart({ cart }) {
+export default function MiniCart({ cart }:any) {
   const cancelButtonRef = useRef();
-  const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } =
-    useContext(CartContext);
+  // const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } =
+  //   useContext(CartContext);
+
+  
+  const {cartOpen}:any = useContext(CartContext) ;
+  const {setCartOpen}:any = useContext(CartContext) ;
+  const {checkoutUrl}:any = useContext(CartContext) ;
+  const {removeCartItem}:any = useContext(CartContext) ;
 
   let cartTotal = 0;
-  cart.map((item) => {
+  cart.map((item:any) => {
     cartTotal += item?.variantPrice * item?.variantQuantity;
   });
 
@@ -64,7 +70,7 @@ export default function MiniCart({ cart }) {
                           onClick={() => setCartOpen(false)}
                         >
                           <span className='sr-only'>Close panel</span>
-                          {/* <XIcon className='h-6 w-6' aria-hidden='true' /> */}
+                          <XMarkIcon className='h-6 w-6' aria-hidden='true' />
                         </button>
                       </div>
                     </div>
