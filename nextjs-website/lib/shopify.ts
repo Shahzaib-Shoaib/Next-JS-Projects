@@ -286,3 +286,43 @@ export async function recursiveCatalog(cursor = "", initialRequest = true) {
     }
   }
 }
+
+
+export async function getProductsInSecondCollection() {
+  const query = `
+  {
+    collectionByHandle(handle: "ziti") {
+      title
+      products(first: 25) {
+        edges {
+          node {
+            id
+            title
+            handle
+            priceRange {
+              minVariantPrice {
+                amount
+              }
+            }
+            images(first: 5) {
+              edges {
+                node {
+                  originalSrc
+                  altText
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }`;
+
+  const response = await ShopifyData(query);
+
+  const allProducts = response.data.collectionByHandle.products.edges
+    ? response.data.collectionByHandle.products.edges
+    : [];
+
+  return allProducts;
+}
