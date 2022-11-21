@@ -6,12 +6,12 @@ export const HomePage = [
       slug: 'winter-collection',
       image: {
         mobile: {
-          url: '/assets/images/banner/ancient/hero-banner-mobile-1.png',
+          url: '/assets/images/banner/homepage-mobile.webp',
           width: 375,
           height: 220,
         },
         desktop: {
-          url: '/assets/images/banner/ancient/hero-banner-1.jpg',
+          url: '/assets/images/banner/homepage-desktop.webp',
           width: 1920,
           height: 900,
         },
@@ -23,33 +23,17 @@ export const HomePage = [
       slug: 'winter-collection',
       image: {
         mobile: {
-          url: '/assets/images/banner/ancient/hero-banner-mobile-2.png',
+          url: '/assets/images/banner/homepage-mobile.webp',
           width: 375,
           height: 220,
         },
         desktop: {
-          url: '/assets/images/banner/ancient/hero-banner-2.jpg',
+          url: '/assets/images/banner/homepage-desktop.webp',
           width: 1920,
           height: 900,
         },
       },
     },
-    {
-      id: 3,
-      title: 'Winter Collection of Kid Items',
-      slug: 'winter-collection',
-      image: {
-        mobile: {
-          url: '/assets/images/banner/ancient/hero-banner-mobile-3.png',
-          width: 375,
-          height: 220,
-        },
-        desktop: {
-          url: '/assets/images/banner/ancient/hero-banner-3.jpg',
-          width: 1920,
-          height: 900,
-        },
-      },
-    },
+   
   ];
   

@@ -5,6 +5,7 @@ import MiniCart from "@components/cart/minicart";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import   XMarkIcon  from "@heroicons/react/24/outline/XMarkIcon";
+import   Bars3Icon  from "@heroicons/react/24/outline/Bars3Icon";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -29,8 +30,8 @@ export default function Nav() {
   });
 
   return (
-    <header className='border-b sticky top-0 z-20 bg-white'>
-      <div className='flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto lg:max-w-screen-xl'>
+    <header className='border-b sticky top-0 z-20 bg-[#282828]'>
+      <div className='flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto lg:max-w-screen-xl mb-1'>
         <Link legacyBehavior href='/' passHref>
           <a className='cursor-pointer'>
             {/* <span className='text-lg pt-1 font-bold'>Fester Store</span> */}
@@ -57,9 +58,9 @@ export default function Nav() {
                     />
                   </a> */}
                   <div className='-mr-2 flex items-center md:hidden'>
-                    <Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+                    <Popover.Button className=' rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-inset'>
                       <span className='sr-only'>Open main menu</span>
-                      {/* <MenuIcon className='h-6 w-6' aria-hidden='true' /> */}
+                      <Bars3Icon className='h-6 w-6' aria-hidden='true' />
                     </Popover.Button>
                   </div>
                 </div>
@@ -67,12 +68,12 @@ export default function Nav() {
               <div className='hidden md:block md:ml-10 md:pr-4 md:space-x-8'>
                 <a
                   href='/'
-                  className='font-medium text-gray-500 hover:text-gray-900'
+                  className='font-medium text-[#ffffff] '
                 >
                   Home
                 </a>
                 <Link legacyBehavior href='./productpage'>
-                  <a className='font-medium text-gray-500 hover:text-gray-900'>
+                  <a className='font-medium text-[#ffffff] '>
                     Products
                   </a>
                 </Link>
@@ -138,7 +139,7 @@ export default function Nav() {
         </Popover>
 
         <a
-          className='text-md font-bold cursor-pointer'
+          className='text-md font-semibold cursor-pointer text-white'
           onClick={() => setCartOpen(!cartOpen)}
         >
           Cart({cartQuantity})

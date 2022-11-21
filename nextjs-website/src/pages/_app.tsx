@@ -1,5 +1,7 @@
 import type { AppProps } from 'next/app'
 import "@styles/globals.css";
+import "@styles/swiper-carousel.css";
+
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";

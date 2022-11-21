@@ -6,8 +6,8 @@ const Link: React.FC<NextLinkProps & { className?: string, children?:any }> = ({
   ...props
 }) => {
   return (
-    <NextLink href={href}>
-      <a {...props}>{children}</a>
+    <NextLink href={href} {...props}>
+      {children}
     </NextLink>
   );
 };
