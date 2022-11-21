@@ -7,7 +7,7 @@ import { CartContext } from "../context/shopContext";
 import { formatter } from "../utils/helper";
 
 export default function MiniCart({ cart }:any) {
-  const cancelButtonRef = useRef();
+//   const cancelButtonRef = useRef();
 // const cancelButtonRef = useRef<HTMLDivElement>(null);
 const cancelButtonRef = useRef<HTMLButtonElement>(null);
 
