@@ -1,7 +1,7 @@
 import { Fragment, useContext, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import  XMarkIcon  from "@heroicons/react/24/outline/XMarkIcon";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { CartContext } from "../context/shopContext";
 import { formatter } from "../utils/helper";

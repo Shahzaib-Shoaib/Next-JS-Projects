@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { getProductsInCollection } from "../lib/shopify";
 import Hero from "../components/Hero";
 import ProductList from "../components/ProductList";
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 const Home: NextPage = ({ products }:any) => {
 
