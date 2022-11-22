@@ -220,9 +220,13 @@ export async function updateCheckout(id, lineItems) {
   const checkout = response.data.checkoutLineItemsReplace.checkout
     ? response.data.checkoutLineItemsReplace.checkout
     : [];
+    console.log(response);
+
 
   return checkout;
+
 }
+
 
 export async function recursiveCatalog(cursor = "", initialRequest = true) {
   let data;

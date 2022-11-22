@@ -25,7 +25,8 @@
       "@framework/*": ["src/framework/*"],
       "@lib/*": ["src/lib/*"],
       "@styles/*": ["src/styles/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@settings/*": ["src/settings/*"]
     },
     "incremental": true
   },

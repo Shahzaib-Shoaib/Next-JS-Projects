@@ -1,8 +1,7 @@
-
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
 
-async function ShopifyData(query:any) {
+async function ShopifyData(query:string) {
   const URL = `https://${domain}/api/2022-10/graphql.json`;
 
   const options:any = {
@@ -87,7 +86,7 @@ export async function getAllProducts() {
   return slugs;
 }
 
-export async function getProduct(handle:any) {
+export async function getProduct(handle:string) {
   const query = `
   {
     productByHandle(handle: "${handle}") {
@@ -221,9 +220,13 @@ export async function updateCheckout(id:any, lineItems:any) {
   const checkout = response.data.checkoutLineItemsReplace.checkout
     ? response.data.checkoutLineItemsReplace.checkout
     : [];
+    console.log(response);
+
 
   return checkout;
+
 }
+
 
 export async function recursiveCatalog(cursor = "", initialRequest = true) {
   let data;
@@ -285,44 +288,4 @@ export async function recursiveCatalog(cursor = "", initialRequest = true) {
       return data;
     }
   }
-}
-
-
-export async function getProductsInSecondCollection() {
-  const query = `
-  {
-    collectionByHandle(handle: "ziti") {
-      title
-      products(first: 25) {
-        edges {
-          node {
-            id
-            title
-            handle
-            priceRange {
-              minVariantPrice {
-                amount
-              }
-            }
-            images(first: 5) {
-              edges {
-                node {
-                  originalSrc
-                  altText
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }`;
-
-  const response = await ShopifyData(query);
-
-  const allProducts = response.data.collectionByHandle.products.edges
-    ? response.data.collectionByHandle.products.edges
-    : [];
-
-  return allProducts;
 }

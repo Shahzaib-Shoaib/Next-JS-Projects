@@ -9,7 +9,7 @@ const ProductCard = ({ product }:any) => {
 
   const price = product.node.priceRange.minVariantPrice.amount;
   return (
-    <Link href={`/products/${handle}`} legacyBehavior>
+    <Link legacyBehavior href={`/products/${handle}`} >
       <div className='group'>
         <div className='w-full bg-gray-200 rounded-3xl overflow-hidden '>
           <div className='relative object-fill group-hover:opacity-75 h-72 '>
