@@ -3,8 +3,8 @@ import { createCheckout, updateCheckout } from "../lib/shopify";
 
 const CartContext = createContext();
 
-export default function ShopProvider({ children }) {
-  const [cart, setCart] = useState([]);
+export default function ShopProvider({ children }:any) {
+  const [cart, setCart] :any= useState([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [checkoutId, setCheckoutId] = useState("");
   const [checkoutUrl, setCheckoutUrl] = useState("");
@@ -24,7 +24,7 @@ export default function ShopProvider({ children }) {
     }
   }, []);
 
-  async function addToCart(newItem) {
+  async function addToCart(newItem:any) {
     setCartOpen(true);
     if (cart.length === 0) {
       setCart([newItem]);
@@ -41,7 +41,7 @@ export default function ShopProvider({ children }) {
     } else {
       let newCart = [...cart];
 
-      cart.map((item) => {
+      cart.map((item:any) => {
         if (item.id === newItem.id) {
           item.variantQuantity++;
           newCart = [...cart];
@@ -59,8 +59,8 @@ export default function ShopProvider({ children }) {
     }
   }
 
-  async function removeCartItem(itemToRemove) {
-    const updatedCart = cart.filter((item) => item.id !== itemToRemove);
+  async function removeCartItem(itemToRemove:any) {
+    const updatedCart = cart.filter((item:any) => item.id !== itemToRemove);
     setCart(updatedCart);
 
     const newCheckout = await updateCheckout(checkoutId, updatedCart);

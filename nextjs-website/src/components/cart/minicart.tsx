@@ -5,8 +5,6 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { CartContext } from "@contexts/shopContext";
 import { formatter } from "@utils/helper";
-import CartIcon from "@components/icons/cart-icon";
-
 
 export default function MiniCart({ cart }:any) {
 //   const cancelButtonRef = useRef();

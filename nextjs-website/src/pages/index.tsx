@@ -1,17 +1,17 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { getProductsInCollection } from "@lib/shopify";
-// import Hero from "@components/layout/header/";
 import ProductList from "@components/product/product-list";
 import Image from "next/legacy/image";
 import HeroSlider from '@containers/hero-slider';
 import { HomePage } from '@framework/static/banner';
+import Layout from "@components/layout/layout";
 
 
-const Home: NextPage = ({ products }:any) => {
+export default function Home ({ products }:any) {
   const sectionCommonStyle = 'mb-7 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-[75px]';
 
-  console.log(products);
+  // console.log(products);
 
   return (
     <div className=''>
@@ -53,8 +53,10 @@ const Home: NextPage = ({ products }:any) => {
     </div>
   );
 }
+Home.Layout = Layout;
 
-export default Home
+
+// export default Home
 
 export async function getStaticProps() {
   const products = await getProductsInCollection();

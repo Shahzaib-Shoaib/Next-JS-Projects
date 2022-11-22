@@ -1,26 +1,39 @@
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
 import "@styles/globals.css";
-import "@styles/swiper-carousel.css";
+import "@fontsource/open-sans";
+import "@fontsource/open-sans/600.css";
+import "@fontsource/open-sans/700.css";
+import "@fontsource/satisfy";
+import "@styles/scrollbar.css";
 import "@styles/tailwind.css";
+// base css file
+import "@styles/swiper-carousel.css";
 import "@styles/custom-plugins.css";
-
+import "@styles/themes.scss";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import Layout from "@components/layout/layout";
-import ShopProvider from "@contexts/shopContext";
 import { useRouter } from "next/router";
+import { ManagedUIContext } from "@contexts/ui.context";
 
+type Props = {
+  children?: React.ReactNode;
+};
+const Noop: React.FC<Props> = ({ children }) => <>{children}</>;
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
+  const Layout = (Component as any).Layout || Noop;
+
   return (
-    <ShopProvider>
-      <Layout>
+    <ManagedUIContext>
+      <Layout pageProps={pageProps}>
         <Component {...pageProps} key={router.asPath} />
       </Layout>
-     </ShopProvider>
-  );}
+    </ManagedUIContext>
+  );
+}
 
-export default MyApp
+export default MyApp;

@@ -99,7 +99,8 @@ module.exports = {
       },
       colors: {
         body: '#5A5A5A',
-        heading: '#212121',
+        // heading: '#212121',
+        heading: '#fff',
         input: '#1D1E1F',
         black: '#000',
         white: '#fff',

@@ -1,0 +1,66 @@
+import React from "react";
+import Link from "@components/ui/link";
+import Image from "next/legacy/image"
+
+interface MenuItem {
+	id: number | string;
+	path: string;
+	label: string;
+	columnItemItems?: MenuItem[];
+	img:string;
+}
+type MegaMenuProps = {
+	columns: {
+		id: number | string;
+		columnItems: MenuItem[];
+	}[];
+};
+
+const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
+	return (
+		<div className="absolute bg-gray-200 megaMenu shadow-header -start-28 xl:start-0">
+			<div className="grid grid-cols-4">
+				{columns?.map((column) => (
+					<ul
+						className="pt-6 even:bg-gray-150 pb-7 2xl:pb-8 2xl:pt-7"
+						key={column.id}
+					>
+						{column?.columnItems?.map((columnItem) => (
+							<React.Fragment key={columnItem.id}>
+								<li className="mb-1.5">
+									<Link
+										href={columnItem.path}
+										className="block text-sm py-1.5 text-black font-semibold px-5 xl:px-8 2xl:px-10 hover:text-heading hover:bg-gray-300"
+									>
+										{(columnItem.label)}
+									</Link>
+								</li>
+								{columnItem?.columnItemItems?.map((item: any) => (
+									<li
+										key={item.id}
+										className={
+											columnItem?.columnItemItems?.length === item.id
+												? "border-b border-gray-300 pb-3.5 mb-3"
+												: ""
+										}
+									>
+										<Link
+											href={item.path}
+											className="text-body text-sm block py-1.5 px-5 xl:px-8 2xl:px-10 hover:text-heading hover:bg-gray-300"
+										>
+											{(item.label)}
+											<Image src={item.imgSrc}  alt="" width={item.imgWidth} height={item.imgHeight}/>
+										</Link>
+
+									</li>
+								))} 
+							</React.Fragment>
+						))}
+					</ul>
+				))}
+			</div>
+		</div>
+	);
+};
+
+export default MegaMenu;
