@@ -1,5 +1,8 @@
 import ProductPageContent from "@components/product/product-page-content";
 import { getAllProducts, getProduct } from "@lib/shopify";
+import Layout from "@components/layout/layout";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 
 export default function ProductPage({ product }:any) {
   return (
@@ -25,12 +28,21 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }:any) {
+ProductPage.Layout = Layout;
+
+
+export async function getStaticProps({ params,locale }:any) {
   const product = await getProduct(params.product);
 
   return {
     props: {
-      product,
+      ...(await serverSideTranslations(locale!, [
+				"common",
+				"forms",
+				"menu",
+				"footer",
+			])),
+      product
     },
   };
 }

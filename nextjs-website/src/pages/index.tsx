@@ -6,6 +6,8 @@ import Image from "next/legacy/image";
 import HeroSlider from '@containers/hero-slider';
 import { HomePage } from '@framework/static/banner';
 import Layout from "@components/layout/layout";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticProps } from "next";
 
 
 export default function Home ({ products }:any) {
@@ -55,13 +57,19 @@ export default function Home ({ products }:any) {
 }
 Home.Layout = Layout;
 
-
-// export default Home
-
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const products = await getProductsInCollection();
 
   return {
-    props: { products }, // will be passed to the page component as props..
-  };
-}
+		props: {
+			...(await serverSideTranslations(locale!, [
+				"common",
+				"forms",
+				"menu",
+				"footer",
+			])),
+      products
+		},
+
+	};
+};

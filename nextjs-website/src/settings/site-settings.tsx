@@ -1,3 +1,9 @@
+import { ILFlag } from '@components/icons/ILFlag'
+import { SAFlag } from '@components/icons/SAFlag'
+import { CNFlag } from '@components/icons/CNFlag'
+import { USFlag } from '@components/icons/USFlag'
+import { DEFlag } from '@components/icons/DEFlag'
+import { ESFlag } from '@components/icons/ESFlag'
 export const siteSettings = {
   name: 'ChawkBazar',
   description:
@@ -363,6 +369,315 @@ export const siteSettings = {
           
         ],
       },
+      {
+        id: 4,
+        path: '',
+        label: 'Surfaces',
+        columns: [
+          {
+            id: 1,
+            columnItems: [
+              {
+                id: 1,
+                path: '',
+                label: 'Painting Surfaces',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '',
+                    label: 'Rocks',
+                  },
+                  {
+                    id: 2,
+                    path: '',
+                    label: 'Wood Slices',
+                  },
+                  {
+                    id: 3,
+                    path: '',
+                    label: 'View All',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            id: 2,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: 'Wood Painting',
+                columnItemItems: [
+                
+                      {
+                        id: 1,
+                        path: '',
+                        imgSrc: "/assets/images/mega-menu/5.avif",
+                        imgWidth:300 ,
+                        imgHeight:220 ,
+                      },     
+                ],
+              },
+            ],
+          },
+          {
+            id: 3,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: 'Rock Painting',
+                columnItemItems: [
+                      {
+                        id: 1,
+                        path: '',
+                        imgSrc: "/assets/images/mega-menu/6.avif",
+                        imgWidth:300 ,
+                        imgHeight:220 ,
+                      },
+                ],
+              },
+            
+            ],
+          },
+          
+        ],
+      },
+      {
+        id: 5,
+        path: '',
+        label: 'Bundles',
+        columns: [
+          {
+            id: 1,
+            columnItems: [
+              {
+                id: 1,
+                path: '',
+                label: 'View All Bundles',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '',
+                    label: 'Pen Bundles',
+                  },
+                  {
+                    id: 2,
+                    path: '',
+                    label: 'Pen & Surfaces',
+                  },
+                  {
+                    id: 3,
+                    path: '',
+                    label: 'Paint & Surfaces',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            id: 2,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: 'Save 10%',
+                columnItemItems: [
+                
+                      {
+                        id: 1,
+                        path: '',
+                        imgSrc: "/assets/images/mega-menu/7.jpg",
+                        imgWidth:300 ,
+                        imgHeight:220 ,
+                      },     
+                ],
+              },
+            ],
+          },
+          {
+            id: 3,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: 'Save 11%',
+                columnItemItems: [
+                      {
+                        id: 1,
+                        path: '',
+                        imgSrc: "/assets/images/mega-menu/8.jpg",
+                        imgWidth:300 ,
+                        imgHeight:220 ,
+                      },
+                ],
+              },
+            
+            ],
+          },
+          
+        ],
+      },
+      {
+        id: 6,
+        path: '',
+        label: 'Gifts',
+        columns: [
+          {
+            id: 1,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: '',
+                columnItemItems: [
+                
+                ],
+              },
+            ],
+          },
+          {
+            id: 2,
+            columnItems: [
+              {
+                id: 1,
+                path: '',
+                label: 'By Interest & Recipients',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '',
+                    label: 'Gifts For Kids & Teens',
+                  },
+                  {
+                    id: 2,
+                    path: '',
+                    label: 'Gifts For Rock Painters',
+                  },
+                  {
+                    id: 3,
+                    path: '',
+                    label: 'Gifts For Watercolor Artists',
+                  },
+                  {
+                    id: 4,
+                    path: '',
+                    label: 'Gifts for Illustrators',
+                  },
+                  {
+                    id: 5,
+                    path: '',
+                    label: 'Gift Packaging',
+                  },
+                  {
+                    id: 6,
+                    path: '',
+                    label: 'View All',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            id: 3,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: 'Paint On Any Surface',
+                columnItemItems: [
+                
+                      {
+                        id: 1,
+                        path: '',
+                        imgSrc: "/assets/images/mega-menu/9.avif",
+                        imgWidth:300 ,
+                        imgHeight:220 ,
+                      },     
+                ],
+              },
+            ],
+          },
+
+          
+        ],
+      },
+      {
+        id: 7,
+        path: '',
+        label: 'Resources',
+        columns: [
+          {
+            id: 1,
+            columnItems: [
+              {
+                id: 1,
+                path: '',
+                label: 'All Resources',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '',
+                    label: 'Blog & Tutorials',
+                  },
+                  {
+                    id: 2,
+                    path: '',
+                    label: 'Coloring Pages',
+                  },
+                  {
+                    id: 3,
+                    path: '',
+                    label: 'Stencils',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            id: 2,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: '125+ Easy Things To Draw',
+                columnItemItems: [
+                
+                      {
+                        id: 1,
+                        path: '',
+                        imgSrc: "/assets/images/mega-menu/10.jpg",
+                        imgWidth:300 ,
+                        imgHeight:220 ,
+                      },     
+                ],
+              },
+            ],
+          },
+          {
+            id: 3,
+            columnItems: [
+              {
+                id: 1,
+                path: '/',
+                label: 'Beginners Drawing Guide',
+                columnItemItems: [
+                      {
+                        id: 1,
+                        path: '',
+                        imgSrc: "/assets/images/mega-menu/11.jpg",
+                        imgWidth:300 ,
+                        imgHeight:220 ,
+                      },
+                ],
+              },
+            
+            ],
+          },
+          
+        ],
+      },
      
 
     ],
@@ -492,8 +807,52 @@ export const siteSettings = {
         ],
       },
     ],
- 
+    languageMenu: [
+      {
+        id: 'ar',
+        name: 'عربى - AR',
+        value: 'ar',
+        icon: <SAFlag width='20px' height='15px' />,
+      },
+      {
+        id: 'zh',
+        name: '中国人 - ZH',
+        value: 'zh',
+        icon: <CNFlag width='20px' height='15px' />,
+      },
+      {
+        id: 'en',
+        name: 'English - EN',
+        value: 'en',
+        icon: <USFlag width='20px' height='15px' />,
+      },
+      {
+        id: 'de',
+        name: 'Deutsch - DE',
+        value: 'de',
+        icon: <DEFlag width='20px' height='15px' />,
+      },
+      {
+        id: 'he',
+        name: 'rעברית - HE',
+        value: 'he',
+        icon: <ILFlag width='20px' height='15px' />,
+      },
+      {
+        id: 'es',
+        name: 'Español - ES',
+        value: 'es',
+        icon: <ESFlag width='20px' height='15px' />,
+      },
+    ],
    
    
   },
 }
+
+
+// English
+// Français
+// Deutsch
+// Italiano
+// Español

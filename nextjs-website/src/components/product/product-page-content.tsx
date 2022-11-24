@@ -29,8 +29,8 @@ export default function ProductPageContent({ product }:any) {
           <div className='relative h-96 w-full'>
             <Swiper
               style={{
-                "--swiper-navigation-color": "#000",
-                "--swiper-pagination-color": "#000",
+                "--swiper-navigation-color": "#262626",
+                "--swiper-pagination-color": "#262626",
               }}
               navigation
               pagination={{ clickable: true }}

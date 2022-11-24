@@ -20,7 +20,7 @@
 }
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-  display: none;
+  display: block;
 }
 .carouselWrapper .swiper-button-disabled {
   opacity: 0.5;

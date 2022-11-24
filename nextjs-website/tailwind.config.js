@@ -75,6 +75,7 @@ module.exports = {
           'button-hover': withOpacity('--color-button-hover'),
         },
       },
+      
       borderColor: {
         skin: {
           primary: withOpacity('--color-primary'),

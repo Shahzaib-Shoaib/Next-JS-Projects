@@ -18,7 +18,7 @@ type MegaMenuProps = {
 
 const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
 	return (
-		<div className="absolute bg-gray-200 megaMenu shadow-header -start-28 xl:start-0">
+		<div className="absolute bg-gray-200 megaMenu shadow-header left-28 xl:start-0">
 			<div className="grid grid-cols-4">
 				{columns?.map((column) => (
 					<ul

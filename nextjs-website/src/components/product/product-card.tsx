@@ -1,15 +1,31 @@
-import Link from "next/link";
+import Link from "@components/ui/link";
 import Image from "next/legacy/image";
+import { useRouter } from "next/router";
+import {ROUTES} from "@utils/routes";
+
+
 import { formatter } from "@utils/helper";
 
 const ProductCard = ({ product }:any) => {
   const { handle, title } = product.node;
+	const router = useRouter();
 
   const { altText, originalSrc } = product.node.images.edges[0].node;
 
   const price = product.node.priceRange.minVariantPrice.amount;
+
+  
+	function navigateToProductPage() {
+		router.push(`${ROUTES.PRODUCT}/${handle}`, undefined, {
+			locale: router.locale,
+      
+		});
+    // console.log("dd");
+
+    
+	}
   return (
-    <Link legacyBehavior href={`/products/${handle}`} >
+    <Link legacyBehavior href={`${ROUTES.PRODUCT}/${handle}`}  >
       <div className='group'>
         <div className='w-full bg-gray-200 rounded-3xl overflow-hidden '>
           <div className='relative object-fill group-hover:opacity-75 h-72 '>
@@ -18,6 +34,7 @@ const ProductCard = ({ product }:any) => {
               alt={altText}
               layout='fill'
               objectFit='cover'
+              
             />
           </div>
         </div>
