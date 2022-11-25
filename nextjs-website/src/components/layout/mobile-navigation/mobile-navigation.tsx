@@ -82,7 +82,7 @@ const BottomNavigation: React.FC = () => {
 				placement={dir === "rtl" ? "right" : "left"}
 				open={displaySidebar}
 				onClose={closeSidebar}
-				handler= {false}
+				handler = {false}
 				showMask={true}
 				level={null}
 				contentWrapperStyle={contentWrapperCSS}

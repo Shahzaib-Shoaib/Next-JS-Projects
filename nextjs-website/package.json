@@ -23,7 +23,7 @@
     "next-seo": "^5.14.1",
     "overlayscrollbars": "^1.13.1",
     "overlayscrollbars-react": "^0.2.3",
-    "rc-drawer": "^6.0.1",
+		"rc-drawer": "^4.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.39.5",
