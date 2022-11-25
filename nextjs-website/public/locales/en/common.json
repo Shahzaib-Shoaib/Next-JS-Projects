@@ -1,6 +1,17 @@
 {
   
   "text-sign-in": "Sign In",
-  "text-products": "Products"
+  "text-products": "Products",
+  "text-account": "Account",
+  "text-page-explore": "explore",
+  "login-helper": "Login with your email & password",
+  "text-forgot-password": "Forgot password?",
+  "text-login": "Login",
+  "text-or": "Or",
+  "text-login-with-facebook": "Login With Facebook"
+
+
+
+
 
 }

@@ -87,6 +87,7 @@ const Header: React.FC = () => {
                     onClick: handleLogin,
                 }}
               >
+                {t('text-account')}
               </AuthMenu>
             </div>
             <CartButton />

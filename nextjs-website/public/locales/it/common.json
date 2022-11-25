@@ -1,6 +1,19 @@
 {
 
   "text-sign-in": "Registrazione",
-  "text-products": "Prodotti"
+  "text-products": "Prodotti",
+  "text-account": "Account",
+  "text-page-explore": "Esplorare",
+  "login-helper": "Accedi con la tua email e password",
+  "text-forgot-password": "dimenticato la password ?",
+  "text-login": "Login",
+  "text-or": "O",
+  "text-login-with-facebook": "Fai il login con facebook"
+
+
+
+
+
+
 
 }

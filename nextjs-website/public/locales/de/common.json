@@ -1,6 +1,20 @@
 {
   
   "text-sign-in": "Einloggen",
-  "text-products": "Produkte"
+  "text-products": "Produkte",
+  "text-account": "Konto",
+  "text-page-explore": "erkunden",
+  "login-helper": "Melden Sie sich mit Ihrer E-Mail und Ihrem Passwort an",
+  "text-forgot-password": "Passwort vergessen?",
+  "text-login": "Einloggen",
+  "text-or": "Oder",
+  "text-login-with-facebook": "Mit Facebook einloggen"
+
+
+
+
+
+
+
   
 }

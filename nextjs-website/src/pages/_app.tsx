@@ -19,6 +19,8 @@ import { useRouter } from "next/router";
 import { ManagedUIContext } from "@contexts/ui.context";
 import { getDirection } from "@utils/get-direction";
 import { appWithTranslation } from "next-i18next";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { useRef } from "react";
 
 type Props = {
   children?: React.ReactNode;
@@ -27,20 +29,26 @@ type Props = {
 const Noop: React.FC<Props> = ({ children }) => <>{children}</>;
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {
+  const queryClientRef = useRef<any>();
+  if (!queryClientRef.current) {
+    queryClientRef.current = new QueryClient();
+  }
   const router = useRouter();
   const dir = getDirection(router.locale);
   useEffect(() => {
     document.documentElement.dir = dir;
   }, [dir]);
   const Layout = (Component as any).Layout || Noop;
-//   console.log(router,"ddddddd");
+  //   console.log(router,"ddddddd");
 
   return (
-    <ManagedUIContext>
-      <Layout pageProps={pageProps}>
-        <Component {...pageProps} />
-      </Layout>
-    </ManagedUIContext>
+    <QueryClientProvider client={queryClientRef.current}>
+      <ManagedUIContext>
+        <Layout pageProps={pageProps}>
+          <Component {...pageProps} />
+        </Layout>
+      </ManagedUIContext>
+    </QueryClientProvider>
   );
 };
 
