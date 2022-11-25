@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "@components/ui/link";
 import Image from "next/legacy/image"
+import { useTranslation } from "next-i18next";
 
 interface MenuItem {
 	id: number | string;
@@ -17,6 +18,8 @@ type MegaMenuProps = {
 };
 
 const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
+	const { t } = useTranslation("menu");
+
 	return (
 		<div className="absolute bg-gray-200 megaMenu shadow-header left-28 xl:start-0">
 			<div className="grid grid-cols-4">
@@ -32,7 +35,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
 										href={columnItem.path}
 										className="block text-sm py-1.5 text-black font-semibold px-5 xl:px-8 2xl:px-10 hover:text-heading hover:bg-gray-300"
 									>
-										{(columnItem.label)}
+										{t(columnItem.label)}
 									</Link>
 								</li>
 								{columnItem?.columnItemItems?.map((item: any) => (
@@ -48,7 +51,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
 											href={item.path}
 											className="text-body text-sm block py-1.5 px-5 xl:px-8 2xl:px-10 hover:text-heading hover:bg-gray-300"
 										>
-											{(item.label)}
+											{t(item.label)}
 											<Image src={item.imgSrc}  alt="" width={item.imgWidth} height={item.imgHeight}/>
 										</Link>
 

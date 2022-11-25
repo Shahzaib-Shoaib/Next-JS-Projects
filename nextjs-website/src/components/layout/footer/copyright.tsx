@@ -3,6 +3,8 @@ import { siteSettings } from '@settings/site-settings'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 import cn from 'classnames'
 import Link from '@components/ui/link'
+import { useTranslation } from 'next-i18next'
+
 
 interface CopyrightProps {
   payment?: {
@@ -17,6 +19,8 @@ interface CopyrightProps {
 }
 const year = new Date().getFullYear()
 const Copyright: React.FC<CopyrightProps> = ({ payment, variant }) => {
+  const { t } = useTranslation('footer')
+
   return (
     <div className='border-t border-gray-800 pt-5 pb-16 sm:pb-20 md:pb-5 mb-2 sm:mb-0'>
       <Container
@@ -32,14 +36,14 @@ const Copyright: React.FC<CopyrightProps> = ({ payment, variant }) => {
             'p-0 m-0': variant === 'contemporary',
           })}
         >
-          {('text-copyright')} &copy; {year}&nbsp;
+          {t('text-copyright')} &copy; {year}&nbsp;
           <a
             className='font-semibold text-gray-700 transition-colors duration-200 ease-in-out hover:text-body'
             href={siteSettings.author.websiteUrl}
           >
             {siteSettings.author.name}
           </a>
-          &nbsp; {('text-all-rights-reserved')}
+          &nbsp; {t('text-all-rights-reserved')}
         </p>
 
         {payment && (
@@ -52,7 +56,7 @@ const Copyright: React.FC<CopyrightProps> = ({ payment, variant }) => {
                 <a href={item.path ? item.path : '/#'} target='_blank'>
                   <img
                     src={item.image}
-                    alt={(`${item.name}`)}
+                    alt={t(`${item.name}`)}
                     height={item.height}
                     width={item.width}
                   />

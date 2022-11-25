@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 import Link from 'next/link'
 import Logo from '@components/ui/logo'
+import { useTranslation } from 'next-i18next'
 
 interface Props {
   className?: string
@@ -22,6 +23,8 @@ interface Props {
 const WidgetLink: FC<Props> = ({ className, data }) => {
   const { widgetTitle, lists } = data
   const { logo, description } = data
+  const { t } = useTranslation('footer')
+
 
   return (
     <div
@@ -30,7 +33,7 @@ const WidgetLink: FC<Props> = ({ className, data }) => {
       {!data?.isCompanyIntroduction ? (
         <>
           <h4 className='text-heading text-sm md:text-base xl:text-lg font-semibold mb-5 2xl:mb-6 3xl:mb-7'>
-            {(`${widgetTitle}`)}
+          {t(`${widgetTitle}`)}
           </h4>
           <ul className='text-xs lg:text-sm text-body flex flex-col space-y-3 lg:space-y-3.5'>
             {lists.map((list) => (
@@ -45,7 +48,7 @@ const WidgetLink: FC<Props> = ({ className, data }) => {
                 )}
                 <Link legacyBehavior href={list.path ? list.path : '#!'}>
                   <a className='transition-colors duration-200 hover:text-black'>
-                    {(`${list.title}`)}
+                  {t(`${list.title}`)}
                   </a>
                 </Link>
               </li>

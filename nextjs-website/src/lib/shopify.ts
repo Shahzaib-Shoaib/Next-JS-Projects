@@ -1,10 +1,12 @@
+import { useRouter } from "next/router";
+
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
 
-async function ShopifyData(query:string) {
+async function ShopifyData(query: string) {
   const URL = `https://${domain}/api/2022-10/graphql.json`;
 
-  const options:any = {
+  const options: any = {
     endpoint: URL,
     method: "POST",
     headers: {
@@ -27,6 +29,7 @@ async function ShopifyData(query:string) {
 }
 
 export async function getProductsInCollection() {
+ 
   const query = `
   {
     collectionByHandle(handle: "frontpage") {
@@ -86,7 +89,7 @@ export async function getAllProducts() {
   return slugs;
 }
 
-export async function getProduct(handle:string) {
+export async function getProduct(handle: string) {
   const query = `
   {
     productByHandle(handle: "${handle}") {
@@ -166,7 +169,7 @@ export async function getProduct(handle:string) {
   return product;
 }
 
-export async function createCheckout(id:any, quantity:any) {
+export async function createCheckout(id: any, quantity: any) {
   const query = `
     mutation {
       checkoutCreate(input: {
@@ -188,8 +191,8 @@ export async function createCheckout(id:any, quantity:any) {
   return checkout;
 }
 
-export async function updateCheckout(id:any, lineItems:any) {
-  const lineItemsObject = lineItems.map((item:any) => {
+export async function updateCheckout(id: any, lineItems: any) {
+  const lineItemsObject = lineItems.map((item: any) => {
     return `{
       variantId: "${item.id}",
       quantity:  ${item.variantQuantity}
@@ -220,13 +223,10 @@ export async function updateCheckout(id:any, lineItems:any) {
   const checkout = response.data.checkoutLineItemsReplace.checkout
     ? response.data.checkoutLineItemsReplace.checkout
     : [];
-    console.log(response);
-
+  console.log(response);
 
   return checkout;
-
 }
-
 
 export async function recursiveCatalog(cursor = "", initialRequest = true) {
   let data;
@@ -289,8 +289,6 @@ export async function recursiveCatalog(cursor = "", initialRequest = true) {
     }
   }
 }
-
-
 
 export async function getAllProductsFrench() {
   const query = `{

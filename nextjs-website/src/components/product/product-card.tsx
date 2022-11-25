@@ -14,16 +14,6 @@ const ProductCard = ({ product }:any) => {
 
   const price = product.node.priceRange.minVariantPrice.amount;
 
-  
-	function navigateToProductPage() {
-		router.push(`${ROUTES.PRODUCT}/${handle}`, undefined, {
-			locale: router.locale,
-      
-		});
-    // console.log("dd");
-
-    
-	}
   return (
     <Link legacyBehavior href={`${ROUTES.PRODUCT}/${handle}`}  >
       <div className='group'>

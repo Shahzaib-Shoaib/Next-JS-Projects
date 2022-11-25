@@ -3,6 +3,8 @@ import { IoIosArrowForward } from 'react-icons/io'
 import Link from './link'
 import MegaMenu from './mega-menu'
 import cn from 'classnames'
+import { useTranslation } from 'next-i18next'
+
 
 const ListMenu = ({
   dept,
@@ -13,6 +15,8 @@ const ListMenu = ({
   hasBanners,
   menuIndex,
 }: any) => {
+  const { t } = useTranslation('menu')
+
   return (
     <li className={cn(!hasMegaMenu ? 'group relative' : '')}>
       <Link
@@ -20,7 +24,7 @@ const ListMenu = ({
         className='flex items-center py-2 ps-5 xl:ps-7 pe-3 xl:pe-3.5 hover:text-heading hover:bg-gray-300'
       >
         {data.icon && <span className='inline-flex me-2'>{data.icon}</span>}
-        {(data.label)}
+        {t(data.label)}
         {data.subMenu && (
           <span className='text-sm mt-0.5 shrink-0 ml-auto'>
             <IoIosArrowForward className='transition duration-300 ease-in-out text-body group-hover:text-black' />

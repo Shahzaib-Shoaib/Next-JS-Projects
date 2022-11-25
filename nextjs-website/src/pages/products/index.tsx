@@ -4,27 +4,33 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { ROUTES } from "@utils/routes";
 import { GetStaticProps } from "next";
+import ProductList from "@components/product/product-list";
+import { getProductsInCollection } from "@lib/shopify";
 
-export default function Products() {
-	const { t } = useTranslation("common");
-	return (
-		<>
-			
-		</>
-	);
+export default function Products({ products }: any) {
+  const { t } = useTranslation("common");
+  
+  return (
+    <>
+      <ProductList products={products} />
+    </>
+  );
 }
 
 Products.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	return {
-		props: {
-			...(await serverSideTranslations(locale!, [
-				"common",
-				"forms",
-				"menu",
-				"footer",
-			])),
-		},
-	};
+  const products = await getProductsInCollection();
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale!, [
+        "common",
+        "forms",
+        "menu",
+        "footer",
+      ])),
+      products,
+    },
+  };
 };

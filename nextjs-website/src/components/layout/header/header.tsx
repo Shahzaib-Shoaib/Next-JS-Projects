@@ -25,7 +25,6 @@ const Header: React.FC = () => {
     setModalView,
     isAuthorized,
   } = useUI()
-  // const { t } = useTranslation('common')
   const siteHeaderRef = useRef() as DivElementRef
   addActiveScroll(siteHeaderRef)
 
@@ -88,8 +87,6 @@ const Header: React.FC = () => {
                     onClick: handleLogin,
                 }}
               >
-                {t('text-account')}
-                {/* {('text-account')} */}
               </AuthMenu>
             </div>
             <CartButton />
