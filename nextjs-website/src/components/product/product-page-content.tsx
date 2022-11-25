@@ -32,7 +32,7 @@ export default function ProductPageContent({ product }:any) {
               navigation
               pagination={{ clickable: true }}
               className='h-96 rounded-2xl text-[#262626]'
-              loop='true'
+              loop={true}
             >
               {images}
             </Swiper>
