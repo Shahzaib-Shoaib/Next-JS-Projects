@@ -112,7 +112,7 @@ const LoginForm: React.FC = () => {
 							type="submit"
 							loading={isLoading}
 							disabled={isLoading}
-							className="h-11 md:h-12 w-full mt-1.5"
+							className="h-11 md:h-12 w-full mt-1.5 bg-[#262626]"
 						>
 							{t("common:text-login")}
 						</Button>
@@ -121,7 +121,7 @@ const LoginForm: React.FC = () => {
 			</form>
 			<div className="flex flex-col items-center justify-center relative text-sm text-heading mt-6 mb-3.5">
 				<hr className="w-full border-gray-600" />
-				<span className="absolute -top-2.5 px-2 bg-[#262626]">
+				<span className="absolute -top-2.5 px-2 text-[#262626] bg-white">
 					{t("common:text-or")}
 				</span>
 			</div>
@@ -147,7 +147,7 @@ const LoginForm: React.FC = () => {
 				{t("common:text-no-account")}{" "}
 				<button
 					type="button"
-					className="text-sm sm:text-base text-heading underline font-bold hover:no-underline focus:outline-none"
+					className="text-sm sm:text-base text-[#262626] underline font-bold hover:no-underline focus:outline-none"
 					onClick={handleSignUp}
 				>
 					{t("common:text-register")}
