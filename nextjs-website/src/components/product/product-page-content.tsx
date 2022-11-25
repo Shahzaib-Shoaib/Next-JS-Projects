@@ -3,6 +3,7 @@ import ProductForm from "./product-form";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import RecommendedList from "./recommended-list";
+
 export default function ProductPageContent({ product }:any) {
   const images:any = [];
 
