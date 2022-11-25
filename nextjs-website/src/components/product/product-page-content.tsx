@@ -29,13 +29,9 @@ export default function ProductPageContent({ product }:any) {
         <div className='w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2'>
           <div className='relative h-96 w-full'>
             <Swiper
-              style={{
-                "--swiper-navigation-color": "#262626",
-                "--swiper-pagination-color": "#262626",
-              }}
               navigation
               pagination={{ clickable: true }}
-              className='h-96 rounded-2xl'
+              className='h-96 rounded-2xl text-[#262626]'
               loop='true'
             >
               {images}
