@@ -1,7 +1,8 @@
 import { createContext, useState, useEffect } from "react";
 import { createCheckout, updateCheckout } from "../lib/shopify";
+const defaultValue = {};
 
-const CartContext = createContext();
+const CartContext = createContext(defaultValue);
 
 export default function ShopProvider({ children }:any) {
   const [cart, setCart] :any= useState([]);
