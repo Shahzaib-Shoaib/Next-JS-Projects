@@ -58,6 +58,7 @@ export async function getProductsInCollection() {
   }`;
 
   const response = await ShopifyData(query);
+// console.log(response);
 
   const allProducts = response.data.collectionByHandle.products.edges
     ? response.data.collectionByHandle.products.edges
@@ -306,4 +307,113 @@ export async function getAllProductsFrench() {
     : [];
 
   return slugs;
+}
+
+
+// export async function getBlogs() {
+ 
+//   const query = `
+//   {
+//     blog (handle: "news") {
+//       articles(first: 5) {
+//         edges {
+//           node {
+
+//             contentHtml
+//             handle
+//             id
+//             image {
+//               id
+//               altText
+//               url
+//               width
+//               height
+//             }
+//             publishedAt
+//             title
+//           }
+//         }
+//       }
+//     }
+//   }`;
+
+//   const response = await ShopifyData(query);
+
+//   const allBlogs = response.data.blog.articles.edges
+//     ? response.data.blog.articles.edges
+//     : [];
+//     console.log(allBlogs);
+
+//   return allBlogs;
+// }
+
+
+export async function getAllBlogs() {
+  const query = `
+  {
+    blog (handle:"news") {
+      articles(first:5) {
+        edges {
+          node {
+
+            contentHtml
+            handle
+            id
+            image {
+              id
+              altText
+              url
+              width
+              height
+            }
+            publishedAt
+            title
+          }
+        }
+      }
+    }
+  }`;
+
+  const response = await ShopifyData(query);
+console.log(response,"all blog");
+
+  const slugs = response.data.blog.articles.edges
+    ? response.data.blog.articles.edges
+    : [];
+
+  return slugs;
+}
+
+export async function getBlog(handle:string) {
+  const query = `
+  {
+    blog(handle: "news") {
+      articleByHandle(handle: "${handle}") {
+        title
+        contentHtml
+        handle
+        publishedAt
+        author: authorV2 {
+          name
+        }
+        image {
+          id
+          altText
+          url
+          width
+          height
+        }
+      }
+    }
+  }`;
+
+  const response = await ShopifyData(query);
+  console.log(response.data,"specific");
+  
+
+  const blog = response.data.blog.articleByHandle
+  ? response.data.blog.articleByHandle
+  : [];
+
+  return blog;
 }

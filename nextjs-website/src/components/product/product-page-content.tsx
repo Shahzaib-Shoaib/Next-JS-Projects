@@ -5,6 +5,7 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import RecommendedList from "./recommended-list";
 
 export default function ProductPageContent({ product }:any) {
+  
   const images:any = [];
 
   product.images.edges.map((image:any, i:any) => {

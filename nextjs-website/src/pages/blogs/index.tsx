@@ -4,24 +4,25 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { ROUTES } from "@utils/routes";
 import { GetStaticProps } from "next";
-import ProductList from "@components/product/product-list";
-import { getProductsInCollection } from "@lib/shopify";
+import BlogList from "@components/blog/blog-list";
+import { getAllBlogs } from "@lib/shopify";
 
 
-export default function Products({ products }: any) {
+export default function Blogs({ blogs }: any) {
   const { t } = useTranslation("common");
   
   return (
     <>
-      <ProductList products={products} />
+          <BlogList blogs={blogs} />
+
     </>
   );
 }
 
-Products.Layout = Layout;
+Blogs.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const products = await getProductsInCollection();
+    const blogs = await getAllBlogs();
 
   return {
     props: {
@@ -31,7 +32,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         "menu",
         "footer",
       ])),
-      products,
+      blogs,
     },
   };
 };

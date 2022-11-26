@@ -2,8 +2,8 @@
 export const HomePage = [
     {
       id: 1,
-      title: 'Winter Collection of Kid Items',
-      slug: 'winter-collection',
+      title: 'Banner 1',
+      slug: '',
       image: {
         mobile: {
           url: '/assets/images/banner/homepage-mobile.webp',
@@ -19,8 +19,8 @@ export const HomePage = [
     },
     {
       id: 2,
-      title: 'Winter Collection of Kid Items',
-      slug: 'winter-collection',
+      title: 'Banner 2',
+      slug: '',
       image: {
         mobile: {
           url: '/assets/images/banner/home-page-mobile-2.jpg',

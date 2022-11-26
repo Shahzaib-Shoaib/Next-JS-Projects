@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { getProductsInCollection } from "@lib/shopify";
+import { getProductsInCollection,getAllBlogs, getBlog } from "@lib/shopify";
 import ProductList from "@components/product/product-list";
 import Image from "next/legacy/image";
 import HeroSlider from '@containers/hero-slider';
@@ -12,9 +12,6 @@ import { GetStaticProps } from "next";
 
 export default function Home ({ products }:any) {
   const sectionCommonStyle = 'mb-7 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-[75px]';
-
-  // console.log(products);
-
   return (
     <div className=''>
       <Head>
@@ -59,6 +56,8 @@ Home.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const products = await getProductsInCollection();
+  // const blogs = await getAllBlogs();
+
   console.log(locale);
   
   return {
@@ -69,7 +68,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 				"menu",
 				"footer",
 			])),
-        products
+        products,
 
 		},
 }
