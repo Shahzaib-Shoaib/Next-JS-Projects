@@ -59,7 +59,8 @@ Home.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const products = await getProductsInCollection();
-
+  console.log(locale);
+  
   return {
 		props: {
 			...(await serverSideTranslations(locale!, [
@@ -68,8 +69,8 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 				"menu",
 				"footer",
 			])),
-      products
-		},
+        products
 
-	};
+		},
+}
 };
