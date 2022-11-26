@@ -227,7 +227,6 @@ export async function updateCheckout(id: any, lineItems: any) {
 
   return checkout;
 }
-
 export async function recursiveCatalog(cursor = "", initialRequest = true) {
   let data;
 
