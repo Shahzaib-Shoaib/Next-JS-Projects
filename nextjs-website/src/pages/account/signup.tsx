@@ -1,18 +1,18 @@
 import Container from "@components/ui/container";
 import Layout from "@components/layout/layout";
-import Subscription from "@components/common/subscription";
-import LoginForm from "@components/auth/login-form";
+import SignUpForm from "@components/auth/sign-up-form";
 import PageHeader from "@components/ui/page-header";
+import Subscription from "@components/common/subscription";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
 
-export default function LogInPage() {
+export default function SignUpPage() {
 	return (
 		<>
-			<PageHeader pageHeader="Log In" />
+			<PageHeader pageHeader="Register" />
 			<Container>
 				<div className="py-16 lg:py-20">
-					<LoginForm />
+					<SignUpForm />
 				</div>
 				<Subscription />
 			</Container>
@@ -20,7 +20,7 @@ export default function LogInPage() {
 	);
 }
 
-LogInPage.Layout = Layout;
+SignUpPage.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
 	return {
