@@ -23,36 +23,44 @@ function onSubmit({ email, password, firstName, lastName }: SignUpInputType) {
 
   async function createCustomer() {
     const query = `
-  
-	  mutation customerCreate {
-		customerCreate(input: {email: "${email}", password: "${password}", firstName: "${firstName}", lastName:"${lastName}"}) {
-		  customer {
-			email
-			firstName
-			lastName
-		  }
-		  customerUserErrors {
-	  message    }
-		}
-	  }
+    mutation {
+      customerCreate(input:{email: "${email}", password: "${password}", firstName: "${firstName}", lastName:"${lastName}"}) {
+        customerUserErrors {
+          code
+          field
+          message
+        }
+        customer {
+          id
+          email
+          firstName
+          lastName
+        }
+      }
+    }
 	  `;
 
     const response = await ShopifyData(query);
-    createCustomerAccesToken();
+    console.log(query);
+
     console.log(response, "res");
   }
 
-  async function createCustomerAccesToken() {
+  async function createCustomerAccessToken() {
     const query = `
   
 
 mutation customerAccessTokenCreate {
-	customerAccessTokenCreate(input: {email: "${email}",password: "${password}"
+	customerAccessTokenCreate(input: {email: "${email}", password: "${password}"
 		}) {
 	  customerAccessToken {
 		accessToken
+    expiresAt
+
 	  }
 	  customerUserErrors {
+    code
+    field
 		message
 	  }
 	}
@@ -61,13 +69,18 @@ mutation customerAccessTokenCreate {
 	  `;
 
     const response = await ShopifyData(query);
+    console.log(query);
+
+    console.log(response, "..");
+
     const customerAccessToken =
       response.data.customerAccessTokenCreate.customerAccessToken.accessToken;
-    console.log("customerAccessToken:",customerAccessToken);
-
+   // console.log("customerAccessToken:", customerAccessToken);
   }
 
-  createCustomer();
+  //createCustomer();
+  createCustomerAccessToken();
+
 }
 
 const SignUpForm: React.FC = () => {
@@ -170,7 +183,7 @@ const SignUpForm: React.FC = () => {
         {t("common:text-have-account")}{" "}
         <button
           type="button"
-          className="text-sm sm:text-base text-heading underline font-bold hover:no-underline focus:outline-none"
+          className="text-sm sm:text-base text-black underline font-bold hover:no-underline focus:outline-none"
         >
           {t("common:text-login")}
         </button>

@@ -1,5 +1,9 @@
+import { i18n } from "next-i18next";
+
+
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
+
 
 export async function ShopifyData(query: string) {
   const URL = `https://${domain}/api/2022-10/graphql.json`;
@@ -27,38 +31,40 @@ export async function ShopifyData(query: string) {
 }
 
 export async function getProductsInCollection() {
- 
+
   const query = `
-  {
-    collectionByHandle(handle: "frontpage") {
-      title
-      products(first: 25) {
-        edges {
-          node {
-            id
-            title
-            handle
-            priceRange {
-              minVariantPrice {
-                amount
-              }
+query Localization @inContext(language: EN) {
+ 
+  collectionByHandle(handle: "frontpage") {
+    title
+    products(first: 25) {
+      edges {
+        node {
+          id
+          title
+          handle
+          priceRange {
+            minVariantPrice {
+              amount
             }
-            images(first: 5) {
-              edges {
-                node {
-                  originalSrc
-                  altText
-                }
+          }
+          images(first: 5) {
+            edges {
+              node {
+                originalSrc
+                altText
               }
             }
           }
         }
       }
     }
-  }`;
+  }
+}
+
+`;
 
   const response = await ShopifyData(query);
-// console.log(response);
 
   const allProducts = response.data.collectionByHandle.products.edges
     ? response.data.collectionByHandle.products.edges
@@ -68,7 +74,9 @@ export async function getProductsInCollection() {
 }
 
 export async function getAllProducts() {
-  const query = `{
+  const query = `
+  
+    {
     products(first: 250) {
       edges {
         node {
@@ -89,8 +97,10 @@ export async function getAllProducts() {
 }
 
 export async function getProduct(handle: string) {
+
   const query = `
-  {
+  query Localization @inContext(language: EN) {
+  
     productByHandle(handle: "${handle}") {
     	collections(first: 1) {
       	edges {
@@ -157,7 +167,11 @@ export async function getProduct(handle: string) {
         }
       }
     }
-  }`;
+  }
+
+
+
+`;
 
   const response = await ShopifyData(query);
 
@@ -227,7 +241,7 @@ export async function updateCheckout(id: any, lineItems: any) {
   return checkout;
 }
 export async function recursiveCatalog(cursor = "", initialRequest = true) {
-  let data;
+  let data: any;
 
   if (cursor !== "") {
     const query = `{
@@ -288,65 +302,6 @@ export async function recursiveCatalog(cursor = "", initialRequest = true) {
   }
 }
 
-export async function getAllProductsFrench() {
-  const query = `{
-    products(first: 250) {
-      edges {
-        node {
-          handle
-          id
-        }
-      }
-    }
-  }`;
-
-  const response = await ShopifyData(query);
-
-  const slugs = response.data.products.edges
-    ? response.data.products.edges
-    : [];
-
-  return slugs;
-}
-
-
-// export async function getBlogs() {
- 
-//   const query = `
-//   {
-//     blog (handle: "news") {
-//       articles(first: 5) {
-//         edges {
-//           node {
-
-//             contentHtml
-//             handle
-//             id
-//             image {
-//               id
-//               altText
-//               url
-//               width
-//               height
-//             }
-//             publishedAt
-//             title
-//           }
-//         }
-//       }
-//     }
-//   }`;
-
-//   const response = await ShopifyData(query);
-
-//   const allBlogs = response.data.blog.articles.edges
-//     ? response.data.blog.articles.edges
-//     : [];
-//     console.log(allBlogs);
-
-//   return allBlogs;
-// }
-
 
 export async function getAllBlogs() {
   const query = `
@@ -375,7 +330,6 @@ export async function getAllBlogs() {
   }`;
 
   const response = await ShopifyData(query);
-console.log(response,"all blog");
 
   const slugs = response.data.blog.articles.edges
     ? response.data.blog.articles.edges
@@ -384,7 +338,7 @@ console.log(response,"all blog");
   return slugs;
 }
 
-export async function getBlog(handle:string) {
+export async function getBlog(handle: string) {
   const query = `
   {
     blog(handle: "news") {
@@ -408,12 +362,10 @@ export async function getBlog(handle:string) {
   }`;
 
   const response = await ShopifyData(query);
-  console.log(response.data,"specific");
-  
 
   const blog = response.data.blog.articleByHandle
-  ? response.data.blog.articleByHandle
-  : [];
+    ? response.data.blog.articleByHandle
+    : [];
 
   return blog;
 }

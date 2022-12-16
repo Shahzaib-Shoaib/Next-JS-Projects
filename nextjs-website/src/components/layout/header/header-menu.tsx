@@ -3,6 +3,8 @@ import { FaChevronDown } from "react-icons/fa";
 import MegaMenu from "@components/ui/mega-menu";
 import classNames from "classnames";
 import ListMenu from "@components/ui/list-menu";
+import { useTranslation } from "next-i18next";
+
 
 interface MenuProps {
 	data: any;
@@ -10,6 +12,8 @@ interface MenuProps {
 }
 
 const HeaderMenu: React.FC<MenuProps> = ({ data, className }) => {
+	const { t } = useTranslation("menu");
+
 	return (
 		<nav className={classNames(`headerMenu flex w-full relative`, className)}>
 			{data?.map((item: any) => (
@@ -23,7 +27,7 @@ const HeaderMenu: React.FC<MenuProps> = ({ data, className }) => {
 						href={item.path}
 						className="relative inline-flex items-center px-3 py-2 text-sm font-normal xl:text-base text-heading xl:px-4 group-hover:text-black"
 					>
-						{(item.label)}
+						{t(item.label)}
 						{(item?.columns || item.subMenu) && (
 							<span className="opacity-30 text-xs mt-1 xl:mt-0.5 w-4 flex justify-end">
 								<FaChevronDown className="transition duration-300 ease-in-out transform group-hover:-rotate-180" />

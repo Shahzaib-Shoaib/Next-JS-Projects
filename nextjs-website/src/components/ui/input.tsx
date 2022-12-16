@@ -14,10 +14,10 @@ export interface Props extends InputHTMLAttributes<HTMLInputElement> {
   variant?: 'normal' | 'solid' | 'outline';
 }
 const classes = {
-  root: 'py-2 px-4 md:px-5 w-full appearance-none transition duration-150 ease-in-out border text-input text-xs lg:text-sm font-body placeholder-body min-h-12 transition duration-200 ease-in-out',
+  root: 'py-2 px-4 md:px-5 w-full appearance-none transition duration-150 ease-in-out border text-input text-xs lg:text-sm font-body placeholder-body min-h-12 transition duration-200 ease-in-out focus:border-gray-700 ',
   normal: 'bg-gray-100 border-gray-300 focus:shadow focus:bg-white focus:border-primary',
-  solid: 'bg-white border-gray-300 focus:outline-none focus:border-heading h-11 md:h-12',
-  outline: 'border-gray-300 focus:border-primary',
+  solid: 'bg-white border-gray-300 focus:outline-none focus:border-gray-900 h-11 md:h-12',
+  outline: 'border-gray-300 focus:border-gray-300',
   shadow: 'focus:shadow',
 };
 const Input = React.forwardRef<HTMLInputElement, Props>(

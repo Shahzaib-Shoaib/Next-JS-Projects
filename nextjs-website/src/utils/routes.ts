@@ -13,10 +13,10 @@ export const ROUTES = {
   CHANGE_PASSWORD: "/my-account/change-password",
   SHOPS: "/shops",
   LOGIN: "/account/login",
-  SIGN_UP: "/signup",
+  SIGN_UP: "/account/signup",
   SEARCH: "/search",
   COLLECTIONS: "/collections",
   CATEGORY: "/category",
   ORDER: "/order",
-  BLOG:"/blogs"
+  BLOG:"/blogs",
 };

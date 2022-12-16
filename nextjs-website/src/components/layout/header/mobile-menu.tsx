@@ -5,6 +5,9 @@ import Scrollbar from "@components/common/scrollbar";
 import { IoIosArrowDown } from "react-icons/io";
 import Logo from "@components/ui/logo";
 import { useUI } from "@contexts/ui.context";
+import { useTranslation } from 'next-i18next'
+
+
 import {
 	IoLogoInstagram,
 	IoLogoTwitter,
@@ -45,6 +48,7 @@ const social = [
 ];
 
 export default function MobileMenu() {
+	const { t } = useTranslation('menu')
 	const [activeMenus, setActiveMenus] = useState<any>([]);
 	const { site_header } = siteSettings;
 	const { closeSidebar } = useUI();
@@ -79,7 +83,7 @@ export default function MobileMenu() {
 						className="w-full text-[15px] menu-item relative py-3 ps-5 md:ps-6 pe-4 transition duration-300 ease-in-out"
 					>
 						<span className="block w-full" onClick={closeSidebar}>
-							{(`${data.label}`)}
+							 {t(data.label)}
 						</span>
 					</Link>
 					{hasSubMenu && (

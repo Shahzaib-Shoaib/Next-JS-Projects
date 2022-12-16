@@ -4,7 +4,7 @@ import { ESFlag } from '@components/icons/ESFlag'
 import { FRFlag } from '@components/icons/FRFlag'
 import { ITFlag } from '@components/icons/ITFlag'
 export const siteSettings = {
-  name: 'ChawkBazar',
+  name: 'Fester Store',
   description:
     'Fastest E-commerce template built with React, NextJS, TypeScript, React-Query and Tailwind CSS.',
   author: {
@@ -728,7 +728,7 @@ export const siteSettings = {
                 id: 1,
                 path: '/',
                 // label: 'Beginners Drawing Guide',
-                label: 'beginners-drawing-guide',
+                label: 'text-beginners-drawing-guide',
                 columnItemItems: [
                       {
                         id: 1,

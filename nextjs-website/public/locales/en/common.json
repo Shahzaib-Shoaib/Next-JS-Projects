@@ -3,7 +3,7 @@
   "text-sign-in": "Sign In",
   "text-products": "Products",
   "text-account": "Account",
-  "text-page-explore": "explore",
+  "text-page-explore": "Explore",
   "login-helper": "Login with your email & password",
   "text-forgot-password": "Forgot password?",
   "text-login": "Login",
@@ -15,15 +15,5 @@
   "text-subscribe-heading": "Get Expert Tips In Your Inbox",
   "text-subscribe-description": "Subscribe to our newsletter and stay updated.",
   "button-subscribe": "Subscribe"
-
-
-
-
-
-
-
-
-
-
-
 }
+ 

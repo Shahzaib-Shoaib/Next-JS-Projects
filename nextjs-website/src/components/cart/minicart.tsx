@@ -5,6 +5,8 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { CartContext } from "@contexts/shopContext";
 import { formatter } from "@utils/helper";
+import Scrollbar from "@components/common/scrollbar";
+
 
 export default function MiniCart({ cart }:any) {
 //   const cancelButtonRef = useRef();
@@ -78,7 +80,7 @@ const cancelButtonRef = useRef<HTMLButtonElement>(null);
                         </button>
                       </div>
                     </div>
-
+                    <Scrollbar className="cart-scrollbar w-full flex-grow">
                     <div className='mt-8'>
                       <div className='flow-root'>
                         {cart.length > 0 ? (
@@ -146,6 +148,8 @@ const cancelButtonRef = useRef<HTMLButtonElement>(null);
                         )}
                       </div>
                     </div>
+                    </Scrollbar>
+
                   </div>
                   {cart.length > 0 ? (
                     <div className='border-t border-gray-200 py-6 px-4 sm:px-6'>
