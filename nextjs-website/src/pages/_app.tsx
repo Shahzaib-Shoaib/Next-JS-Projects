@@ -48,10 +48,8 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
     document.documentElement.dir = dir;
   }, [dir]);
   const Layout = (Component as any).Layout || Noop;
-  //   console.log(router,"ddddddd");
 
   return (
-    <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
 
     <QueryClientProvider client={queryClientRef.current}>
       <ManagedUIContext>
@@ -60,7 +58,6 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
         </Layout>
       </ManagedUIContext>
     </QueryClientProvider>
-    </AnimatePresence>
   );
 };
 
