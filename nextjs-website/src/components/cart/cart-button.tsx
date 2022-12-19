@@ -5,9 +5,6 @@ import { CartContext } from "@contexts/shopContext";
 
 import MiniCart from "./minicart";
 const CartButton = () => {
-  
-
-  
   const { cart }: any = useContext(CartContext);
   const { cartOpen }: any = useContext(CartContext);
   const { setCartOpen }: any = useContext(CartContext);

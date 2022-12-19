@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 {t('text-account')}
               </AuthMenu>
             </div>
-            <CartButton />
+            {/* <CartButton /> */}
           </div>
         </div>
       </div>
