@@ -8,8 +8,7 @@ import MobileNavigation from "@components/layout/mobile-navigation/mobile-naviga
 const Layout: React.FC = ({ children }:any) => {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* <BannerTop/> */}
-      {/* <Nav /> */}
+    
       <Header />
       <main
         className="relative flex-grow"
@@ -23,7 +22,6 @@ const Layout: React.FC = ({ children }:any) => {
       <Footer />
       <MobileNavigation />
 
-      {/* <Search /> */}
 
     </div>
   );

@@ -18,7 +18,7 @@ export default class CustomDocument extends Document {
 		// 	i18n!.reloadResources(locale);
 		// }
 		return (
-			<Html dir={getDirection(locale)}>
+			<Html dir={getDirection(locale)} style={{overflow:"auto"}}>
 				<Head />
 				<body>
 					<Main />

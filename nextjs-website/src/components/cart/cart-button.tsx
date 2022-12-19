@@ -28,9 +28,9 @@ const CartButton = () => {
         <MiniCart cart={cart} />
         <CartIcon />
 
-        {/* <span className="cart-counter-badge flex items-center justify-center text-white absolute -top-2.5 xl:-top-3 -end-2.5 xl:-end-3 rounded-full font-bold">
+        <span className="cart-counter-badge flex items-center justify-center text-white absolute -top-2.5 xl:-top-3 -end-2.5 xl:-end-3 rounded-full font-bold bg-[#262626]">
           {cartQuantity}
-        </span> */}
+        </span>
       </button>
     </>
   );

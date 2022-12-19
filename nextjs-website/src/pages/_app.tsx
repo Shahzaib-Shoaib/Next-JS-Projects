@@ -13,6 +13,8 @@ import "@styles/custom-plugins.css";
 import "@styles/themes.scss";
 import "swiper/scss";
 import "swiper/scss/navigation";
+import { AnimatePresence } from "framer-motion";
+
 import "swiper/scss/pagination";
 // import Layout from "@components/layout/layout";
 import { useRouter } from "next/router";
@@ -21,6 +23,13 @@ import { getDirection } from "@utils/get-direction";
 import { appWithTranslation } from "next-i18next";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useRef } from "react";
+
+
+function handleExitComplete() {
+	if (typeof window !== "undefined") {
+		window.scrollTo({ top: 0 });
+	}
+}
 
 type Props = {
   children?: React.ReactNode;
@@ -42,6 +51,8 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
   //   console.log(router,"ddddddd");
 
   return (
+    <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
+
     <QueryClientProvider client={queryClientRef.current}>
       <ManagedUIContext>
         <Layout pageProps={pageProps}>
@@ -49,6 +60,7 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
         </Layout>
       </ManagedUIContext>
     </QueryClientProvider>
+    </AnimatePresence>
   );
 };
 

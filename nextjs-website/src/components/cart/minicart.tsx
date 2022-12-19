@@ -33,7 +33,7 @@ const cancelButtonRef = useRef<HTMLButtonElement>(null);
       <Dialog
         initialFocus={cancelButtonRef}
         as='div'
-        className='fixed z-50 inset-0 overflow-hidden'
+        className='fixed z-50 inset-0 overflow-auto'
         onClose={() => {
           setCartOpen(!cartOpen);
         }}
