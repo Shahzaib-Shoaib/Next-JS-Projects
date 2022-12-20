@@ -1,5 +1,4 @@
 {
-  
   "text-sign-in": "Sign In",
   "text-products": "Products",
   "text-account": "Account",
@@ -15,6 +14,12 @@
   "text-subscribe-heading": "Get Expert Tips In Your Inbox",
   "text-subscribe-description": "Subscribe to our newsletter and stay updated.",
   "button-subscribe": "Subscribe",
-  "EN" : "EN"
+  "feature-title-one": "Free Shipping",
+  "feature-description-one": "US Free shipping on orders over 29.99$ Free returns.",
+  "feature-title-two": "100% Happiness Guarantee",
+  "feature-description-two": "With our 365-days guarantee we ensure that you get the best product.",
+  "feature-title-three": "Trusted & Reviewed",
+  "feature-description-three": "★ ★ ★ ★ ★ - A loved product with over 67,000 verified reviews.",
+  "feature-title-four": "Top Customer Service",
+  "feature-description-four": "Your full satisfaction is our priority. We will reply within 24 hours."
 }
- 

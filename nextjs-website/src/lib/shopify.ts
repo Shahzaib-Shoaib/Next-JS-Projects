@@ -1,13 +1,11 @@
 import { i18n, useTranslation } from "next-i18next";
-import { Router, useRouter } from "next/router";
-
-
+import { useRouter } from "next/router";
 
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
 
-export async function ShopifyData(query: string) {
 
+export async function ShopifyData(query: string) {
   const URL = `https://${domain}/api/2022-10/graphql.json`;
   const options: any = {
     endpoint: URL,
@@ -30,7 +28,6 @@ export async function ShopifyData(query: string) {
     throw new Error("Products not fetched");
   }
 }
-
 
 export async function getProductsInCollection() {
   const query = `
@@ -98,7 +95,6 @@ export async function getAllProducts() {
 }
 
 export async function getProduct(handle: string) {
-
   const query = `
   query Localization @inContext(language: EN) {
   
@@ -302,7 +298,6 @@ export async function recursiveCatalog(cursor = "", initialRequest = true) {
     }
   }
 }
-
 
 export async function getAllBlogs() {
   const query = `
