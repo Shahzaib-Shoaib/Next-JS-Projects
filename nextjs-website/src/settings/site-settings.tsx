@@ -17,7 +17,7 @@ export const siteSettings = {
     alt: "ChawkBazar",
     href: "/",
     width: 95,
-    height: 30,
+    height: 10,
   },
   defaultLanguage: "en",
   currencyCode: "USD",

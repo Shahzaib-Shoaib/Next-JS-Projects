@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { IoIosArrowForward } from 'react-icons/io'
 import Link from './link'
 import MegaMenu from './mega-menu'

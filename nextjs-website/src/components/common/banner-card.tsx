@@ -1,5 +1,5 @@
 import Link from '@components/ui/link'
-import Image from 'next/image'
+import Image from "next/image";
 import type { FC } from 'react'
 import { useWindowSize } from '@utils/use-window-size'
 import cn from 'classnames'
@@ -47,7 +47,7 @@ const BannerCard: FC<BannerProps> = ({
           width={selectedImage.width}
           height={selectedImage.height}
           alt={title}
-          // quality={100}
+          quality={100}
           className={cn('bg-gray-300 object-cover w-full', {
             'rounded-md': variant === 'rounded' && !disableBorderRadius,
           })}
