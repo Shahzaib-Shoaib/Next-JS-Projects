@@ -23,12 +23,29 @@ export const HomePage = [
       slug: '',
       image: {
         mobile: {
-          url: '/assets/images/banner/home-page-mobile-2.jpg',
+          url: '/assets/images/banner/homepage-mobile-2.webp',
           width: 375,
           height: 220,
         },
         desktop: {
-          url: '/assets/images/banner/home-page-desktop-2.webp',
+          url: '/assets/images/banner/homepage-desktop-2.webp',
+          width: 1920,
+          height: 900,
+        },
+      },
+    },
+    {
+      id: 3,
+      title: 'Banner 3',
+      slug: '',
+      image: {
+        mobile: {
+          url: '/assets/images/banner/homepage-mobile-3.webp',
+          width: 375,
+          height: 220,
+        },
+        desktop: {
+          url: '/assets/images/banner/homepage-desktop-3.webp',
           width: 1920,
           height: 900,
         },

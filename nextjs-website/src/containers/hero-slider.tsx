@@ -4,6 +4,7 @@ import { ROUTES } from '@utils/routes'
 import { SwiperSlide } from "swiper/react";
 import cn from "classnames";
 
+
 interface Props {
   data: any;
   className?: string;
@@ -59,7 +60,7 @@ const HeroSlider: React.FC<Props> = ({
           >
             <BannerCard
               banner={banner}
-              href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
+              href={``}
               variant={variantRounded}
             />
           </SwiperSlide>

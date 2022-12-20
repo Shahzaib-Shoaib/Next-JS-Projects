@@ -37,24 +37,26 @@ type Props = {
 
 const Noop: React.FC<Props> = ({ children }) => <>{children}</>;
 
-const CustomApp = ({ Component, pageProps }: AppProps) => {
+const CustomApp = ({ Component, pageProps, router }: AppProps) => {
   const queryClientRef = useRef<any>();
   if (!queryClientRef.current) {
     queryClientRef.current = new QueryClient();
   }
-  const router = useRouter();
+  // let router = useRouter();
   const dir = getDirection(router.locale);
   useEffect(() => {
     document.documentElement.dir = dir;
   }, [dir]);
   const Layout = (Component as any).Layout || Noop;
+// console.log(pageProps._nextI18Next.initialLocale);
+// console.log(router.locale);
 
   return (
 
     <QueryClientProvider client={queryClientRef.current}>
       <ManagedUIContext>
-        <Layout pageProps={pageProps}>
-          <Component {...pageProps} />
+        <Layout pageProps={pageProps} language={router.locale}>
+          <Component {...pageProps} language={router.locale} />
         </Layout>
       </ManagedUIContext>
     </QueryClientProvider>
@@ -62,3 +64,4 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
 };
 
 export default appWithTranslation(CustomApp);
+

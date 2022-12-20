@@ -5,7 +5,9 @@ import Header from "@components/layout/header/header";
 // import Search from "@components/common/search";
 import MobileNavigation from "@components/layout/mobile-navigation/mobile-navigation";
 
-const Layout: React.FC = ({ children }:any) => {
+const Layout: React.FC = ({ children,language }:any) => {
+  // console.log(language,"sssss");
+  
   return (
     <div className="flex flex-col min-h-screen">
     

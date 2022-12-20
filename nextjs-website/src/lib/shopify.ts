@@ -1,14 +1,14 @@
 import { i18n, useTranslation } from "next-i18next";
+import { Router, useRouter } from "next/router";
+
 
 
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
 
-
-
 export async function ShopifyData(query: string) {
-  const URL = `https://${domain}/api/2022-10/graphql.json`;
 
+  const URL = `https://${domain}/api/2022-10/graphql.json`;
   const options: any = {
     endpoint: URL,
     method: "POST",
@@ -31,12 +31,8 @@ export async function ShopifyData(query: string) {
   }
 }
 
+
 export async function getProductsInCollection() {
-
-  
-
-  // const { t } = useTranslation();
-  // const language = t('EN')
   const query = `
 query Localization @inContext(language: EN) {
  

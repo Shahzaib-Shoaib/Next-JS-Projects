@@ -11,6 +11,7 @@ import { GetStaticProps } from "next";
 
 
 export default function Home ({ products }:any) {
+  
   const sectionCommonStyle = 'mb-7 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-[75px]';
   return (
     <div className=''>
@@ -40,7 +41,6 @@ export default function Home ({ products }:any) {
         <meta property='og:site_name' content='Modern eCommerce Course' />
       </Head>
 
-      {/* <Hero /> */}
       <HeroSlider
         data={HomePage}
         variantRounded="default"
