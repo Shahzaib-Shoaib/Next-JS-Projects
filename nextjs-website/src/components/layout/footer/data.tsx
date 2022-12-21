@@ -204,6 +204,22 @@ export const footer = {
       width: 39,
       height: 20,
     },
+    {
+      id: 6,
+      path: '/',
+      image: '/assets/images/payment/amazon.svg',
+      name: 'payment-amazon',
+      width: 100,
+      height: 0,
+    },
+    {
+      id: 7,
+      path: '/',
+      image: '/assets/images/payment/amex.svg',
+      name: 'payment-amex',
+      width: 70,
+      height: 0,
+    },
   ],
 }
 

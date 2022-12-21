@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-
 import Head from "next/head";
 import { getProductsInCollection, getAllBlogs, getBlog } from "@lib/shopify";
 import ProductList from "@components/product/product-list";
@@ -11,6 +10,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
 import FeatureBlock from "@containers/feature-block";
 import Container from "@components/ui/container";
+import SocialMedia from "@components/common/socialmedia";
 
 const FeatureCarousel = dynamic(
   () => import("@components/common/featured-carousel"),
@@ -57,6 +57,7 @@ export default function Home({ products }: any) {
       <FeatureCarousel />
 
       <ProductList products={products} />
+     
     </div>
   );
 }

@@ -744,6 +744,12 @@ export const siteSettings = {
           },
         ],
       },
+      ,
+      {
+        id: 8,
+        path: "/products",
+        label: "text-products",
+      }
     ],
     mobileMenu: [
       {
@@ -887,7 +893,7 @@ export const siteSettings = {
             label: "text-view-all-bundles",
           },
         ],
-      },
+      }
     ],
     languageMenu: [
       {

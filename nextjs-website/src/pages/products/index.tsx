@@ -6,6 +6,8 @@ import { ROUTES } from "@utils/routes";
 import { GetStaticProps } from "next";
 import ProductList from "@components/product/product-list";
 import { getProductsInCollection } from "@lib/shopify";
+import SocialMedia from "@components/common/socialmedia";
+
 
 
 export default function Products({ products }: any) {
@@ -14,6 +16,10 @@ export default function Products({ products }: any) {
   return (
     <>
       <ProductList products={products} />
+
+      <Container>
+        <SocialMedia />
+      </Container>
     </>
   );
 }
