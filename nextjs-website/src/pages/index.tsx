@@ -1,4 +1,5 @@
-import type { NextPage } from "next";
+import dynamic from "next/dynamic";
+
 import Head from "next/head";
 import { getProductsInCollection, getAllBlogs, getBlog } from "@lib/shopify";
 import ProductList from "@components/product/product-list";
@@ -10,6 +11,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
 import FeatureBlock from "@containers/feature-block";
 import Container from "@components/ui/container";
+
+const FeatureCarousel = dynamic(
+  () => import("@components/common/featured-carousel"),
+  { ssr: false }
+);
 
 export default function Home({ products }: any) {
   const sectionCommonStyle = "mb-7 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-[75px]";
@@ -44,10 +50,11 @@ export default function Home({ products }: any) {
         data={HomePage}
         variantRounded="default"
         variant="fullWidth"
-        className={sectionCommonStyle}
+        // className={sectionCommonStyle}
         buttonGroupClassName="hidden"
       />
-      <FeatureBlock />
+      {/* <FeatureBlock /> */}
+      <FeatureCarousel />
 
       <ProductList products={products} />
     </div>

@@ -15,7 +15,8 @@ interface Props {
 }
 
 const HeroSlider: React.FC<Props> = ({
-  className = "mb-12 md:mb-14 xl:mb-[60px]",
+  // className = "mb-12 md:mb-14 xl:mb-[60px]",
+  className="-mb-1",
   variant = "box",
   variantRounded = "rounded",
   buttonGroupClassName = "",
@@ -25,7 +26,7 @@ const HeroSlider: React.FC<Props> = ({
   return (
     <div
       className={cn(
-        "relative mb-5 md:mb-8",
+        "relative ",
         {
           "mx-auto max-w-[1920px]": variant === "fullWidth",
         },
