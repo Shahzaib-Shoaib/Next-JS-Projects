@@ -2,15 +2,15 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { getProductsInCollection, getAllBlogs, getBlog } from "@lib/shopify";
 import ProductList from "@components/product/product-list";
-import Image from "next/legacy/image";
 import HeroSlider from "@containers/hero-slider";
 import { HomePage } from "@framework/static/banner";
 import Layout from "@components/layout/layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
-import FeatureBlock from "@containers/feature-block";
+import CollectionBlock from "@containers/collection-block";
+import { collectionData as collection } from "@framework/static/collection";
 import Container from "@components/ui/container";
-import SocialMedia from "@components/common/socialmedia";
+import Divider from "@components/ui/divider";
 
 const FeatureCarousel = dynamic(
   () => import("@components/common/featured-carousel"),
@@ -53,11 +53,13 @@ export default function Home({ products }: any) {
         // className={sectionCommonStyle}
         buttonGroupClassName="hidden"
       />
-      {/* <FeatureBlock /> */}
       <FeatureCarousel />
-
+    
       <ProductList products={products} />
-     
+      <Divider/>
+      <Container>
+        <CollectionBlock data={collection} />
+      </Container>
     </div>
   );
 }
