@@ -42,6 +42,7 @@ function onSubmit({ email, password, firstName, lastName }: SignUpInputType) {
 
     const response = await ShopifyData(query);
     console.log(query);
+    createCustomerAccessToken();
 
     console.log(response, "res");
   }
@@ -78,8 +79,7 @@ mutation customerAccessTokenCreate {
    // console.log("customerAccessToken:", customerAccessToken);
   }
 
-  //createCustomer();
-  createCustomerAccessToken();
+  createCustomer();
 
 }
 
@@ -101,14 +101,14 @@ const SignUpForm: React.FC = () => {
           {t("common:registration-helper")}{" "}
           <Link
             href={ROUTES.TERMS}
-            className="text-heading underline hover:no-underline focus:outline-none"
+            className="text-body underline hover:no-underline focus:outline-none"
           >
             {t("common:text-terms")}
           </Link>{" "}
           &amp;{" "}
           <Link
             href={ROUTES.POLICY}
-            className="text-heading underline hover:no-underline focus:outline-none"
+            className="text-body underline hover:no-underline focus:outline-none"
           >
             {t("common:text-policy")}
           </Link>
@@ -174,7 +174,7 @@ const SignUpForm: React.FC = () => {
       </form>
       <div className="flex flex-col items-center justify-center relative text-sm text-heading mt-6 mb-3.5">
         <hr className="w-full border-gray-300" />
-        <span className="absolute -top-2.5 px-2 bg-white">
+        <span className="absolute -top-2.5 px-2 bg-[#262626]">
           {t("common:text-or")}
         </span>
       </div>
