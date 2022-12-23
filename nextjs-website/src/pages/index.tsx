@@ -25,15 +25,15 @@ const FeatureCarousel = dynamic(
 export default function Home({ products }: any) {
   // const sectionCommonStyle = "mb-7 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-[75px]";
 
-  // const { openModal, setModalView } = useUI();
-  // useEffect(() => {
-  //   setModalView("NEWSLETTER_VIEW");
-  //   console.log("done");
+  const { openModal, setModalView } = useUI();
+  useEffect(() => {
+    setModalView("NEWSLETTER_VIEW");
+    console.log("done");
 
-  //   setTimeout(() => {
-  //     openModal();
-  //   }, 2000);
-  // }, []);
+    setTimeout(() => {
+      openModal();
+    }, 2000);
+  }, []);
   return (
     <>
       <HeroSlider

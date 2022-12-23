@@ -67,7 +67,7 @@ const Modal: FC<ModalProps> = ({
 
 	return (
 		<Portal>
-			<AnimatePresence>
+			{/* <AnimatePresence> */}
 				{open && (
 					<motion.div
 						ref={modalRootRef}
@@ -118,7 +118,7 @@ const Modal: FC<ModalProps> = ({
 						</motion.div>
 					</motion.div>
 				)}
-			</AnimatePresence>
+			{/* </AnimatePresence> */}
 		</Portal>
 	);
 };
