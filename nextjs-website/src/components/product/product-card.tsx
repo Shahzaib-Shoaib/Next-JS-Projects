@@ -9,7 +9,6 @@ const ProductCard = ({ product }: any) => {
   const { handle, title } = product.node;
   const router = useRouter();
 
-  
   const { altText, originalSrc } = product.node.images.edges[0].node;
 
   const price = product.node.priceRange.minVariantPrice.amount;
@@ -20,6 +19,7 @@ const ProductCard = ({ product }: any) => {
         <div className="w-full bg-gray-200 rounded-3xl overflow-hidden ">
           <div className="relative object-fill group-hover:opacity-75 h-72 ">
             <Image
+              priority={true}
               src={originalSrc}
               alt={title}
               layout="fill"

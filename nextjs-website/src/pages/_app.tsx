@@ -13,8 +13,8 @@ import "@styles/custom-plugins.css";
 import "@styles/themes.scss";
 import "swiper/scss";
 import "swiper/scss/navigation";
-import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from "@components/common/default-seo";
+import ManagedModal from "@components/common/modal/managed-modal";
 
 import "swiper/scss/pagination";
 // import Layout from "@components/layout/layout";
@@ -56,6 +56,8 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
           <DefaultSeo />
           <Component {...pageProps} language={router.locale} />
         </Layout>
+        <ManagedModal />
+
       </ManagedUIContext>
     </QueryClientProvider>
   );
