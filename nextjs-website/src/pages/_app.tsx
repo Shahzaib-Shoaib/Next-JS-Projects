@@ -17,7 +17,7 @@ import { AnimatePresence } from "framer-motion";
 
 import "swiper/scss/pagination";
 // import Layout from "@components/layout/layout";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import { ManagedUIContext } from "@contexts/ui.context";
 import { getDirection } from "@utils/get-direction";
 import { appWithTranslation } from "next-i18next";
@@ -48,8 +48,7 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
     document.documentElement.dir = dir;
   }, [dir]);
   const Layout = (Component as any).Layout || Noop;
-// console.log(pageProps._nextI18Next.initialLocale);
-// console.log(router.locale);
+
 
   return (
 
@@ -64,4 +63,3 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
 };
 
 export default appWithTranslation(CustomApp);
-

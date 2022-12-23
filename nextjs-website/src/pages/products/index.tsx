@@ -27,7 +27,7 @@ export default function Products({ products }: any) {
 Products.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const products = await getProductsInCollection();
+  const products = await getProductsInCollection(locale);
 
   return {
     props: {

@@ -36,7 +36,7 @@ export async function idk() {
 
 
 export const getServerSideProps: GetServerSideProps = async ({ locale,params }:any) => {
-	const product = await getProduct(params.product);
+	const product = await getProduct(params.product,locale);
 
 	return {
 		props: {

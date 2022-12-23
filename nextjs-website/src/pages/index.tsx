@@ -17,7 +17,8 @@ const FeatureCarousel = dynamic(
   { ssr: false }
 );
 
-export default function Home({ products }: any) {
+export default function Home({ products,language }: any) {
+  
   const sectionCommonStyle = "mb-7 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-[75px]";
   return (
     <div className="">
@@ -55,7 +56,7 @@ export default function Home({ products }: any) {
       />
       <FeatureCarousel />
     
-      <ProductList products={products} />
+      <ProductList products={products} language={language} />
       <Divider/>
       <Container>
         <CollectionBlock data={collection} />
@@ -66,7 +67,7 @@ export default function Home({ products }: any) {
 Home.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const products = await getProductsInCollection();
+  const products = await getProductsInCollection(locale);
   return {
     props: {
       ...(await serverSideTranslations(locale!, [
