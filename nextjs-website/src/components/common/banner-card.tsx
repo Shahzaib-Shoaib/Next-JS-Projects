@@ -46,6 +46,7 @@ const BannerCard: FC<BannerProps> = ({
         )}
       >
         <Image
+        priority={true}
           src={selectedImage.url}
           width={selectedImage.width}
           height={selectedImage.height}

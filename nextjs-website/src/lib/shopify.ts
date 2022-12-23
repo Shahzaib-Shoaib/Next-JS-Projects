@@ -6,6 +6,8 @@ const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
 
 export async function ShopifyData(query: string) {
   const URL = `https://${domain}/api/2022-10/graphql.json`;
+  console.log(URL);
+  
   const options: any = {
     endpoint: URL,
     method: "POST",
@@ -19,14 +21,20 @@ export async function ShopifyData(query: string) {
 
   try {
     const data = await fetch(URL, options).then((response) => {
+
       return response.json();
+      
     });
 
     return data;
+    
+    
   } catch (error) {
     throw new Error("Products not fetched");
   }
+  
 }
+
 
 export async function getProductsInCollection(locale: any) {
   const language = locale.toUpperCase();
