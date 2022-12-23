@@ -9,7 +9,7 @@ export const siteSettings = {
     "Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results.",
   author: {
     name: "Fester",
-    websiteUrl: "",
+    websiteUrl: "https://fester-924622.netlify.app/",
     address: "",
   },
   logo: {
