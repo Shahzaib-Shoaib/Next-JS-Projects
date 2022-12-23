@@ -31,7 +31,7 @@ export default function ProductPageContent({ product }: any) {
           <div className="relative h-96 w-full">
             <Swiper
               navigation
-              pagination={{ clickable: true }}
+              // pagination={{ clickable: true }}
               className="h-96 rounded-2xl text-[#262626]"
               loop={true}
             >

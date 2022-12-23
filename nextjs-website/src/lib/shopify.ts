@@ -6,7 +6,6 @@ const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
 
 export async function ShopifyData(query: string) {
   const URL = `https://${domain}/api/2022-10/graphql.json`;
-  console.log(URL);
   
   const options: any = {
     endpoint: URL,

@@ -4,17 +4,17 @@ import { ESFlag } from "@components/icons/ESFlag";
 import { FRFlag } from "@components/icons/FRFlag";
 import { ITFlag } from "@components/icons/ITFlag";
 export const siteSettings = {
-  name: "ChawkBazar",
+  name: "Paintigo",
   description:
-    "Fastest E-commerce template built with React, NextJS, TypeScript, React-Query and Tailwind CSS.",
+    "Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results.",
   author: {
-    name: "RedQ, Inc.",
-    websiteUrl: "https://redq.io",
+    name: "Fester",
+    websiteUrl: "",
     address: "",
   },
   logo: {
     url: "/assets/images/logo.avif",
-    alt: "ChawkBazar",
+    alt: "Paintigo",
     href: "/",
     width: 95,
     height: 10,
@@ -749,7 +749,7 @@ export const siteSettings = {
         id: 8,
         path: "/products",
         label: "text-products",
-      }
+      },
     ],
     mobileMenu: [
       {
@@ -893,7 +893,7 @@ export const siteSettings = {
             label: "text-view-all-bundles",
           },
         ],
-      }
+      },
     ],
     languageMenu: [
       {

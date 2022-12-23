@@ -14,6 +14,7 @@ import "@styles/themes.scss";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import { AnimatePresence } from "framer-motion";
+import { DefaultSeo } from "@components/common/default-seo";
 
 import "swiper/scss/pagination";
 // import Layout from "@components/layout/layout";
@@ -24,11 +25,10 @@ import { appWithTranslation } from "next-i18next";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useRef } from "react";
 
-
 function handleExitComplete() {
-	if (typeof window !== "undefined") {
-		window.scrollTo({ top: 0 });
-	}
+  if (typeof window !== "undefined") {
+    window.scrollTo({ top: 0 });
+  }
 }
 
 type Props = {
@@ -49,12 +49,11 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
   }, [dir]);
   const Layout = (Component as any).Layout || Noop;
 
-
   return (
-
     <QueryClientProvider client={queryClientRef.current}>
       <ManagedUIContext>
         <Layout pageProps={pageProps} language={router.locale}>
+          <DefaultSeo />
           <Component {...pageProps} language={router.locale} />
         </Layout>
       </ManagedUIContext>
