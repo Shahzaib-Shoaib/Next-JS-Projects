@@ -15,6 +15,7 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import { DefaultSeo } from "@components/common/default-seo";
 import ManagedModal from "@components/common/modal/managed-modal";
+import { Analytics } from '@vercel/analytics/react';
 
 import "swiper/scss/pagination";
 // import Layout from "@components/layout/layout";
@@ -55,6 +56,8 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
         <Layout pageProps={pageProps} language={router.locale}>
           <DefaultSeo />
           <Component {...pageProps} language={router.locale} />
+          <Analytics />
+
         </Layout>
         <ManagedModal />
 
