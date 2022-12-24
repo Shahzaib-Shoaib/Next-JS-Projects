@@ -30,7 +30,7 @@ export default function Newsletter() {
 				<div className="flex items-center">
 					<div className="flex-shrink-0 items-center justify-center bg-gray-200 hidden lg:flex lg:w-[520px] xl:w-auto">
 						<Image
-							src="/assets/images/logo.jpg"
+							src="/assets/images/logo.avif"
 							alt="Thumbnail"
 							width={655}
 							height={655}

@@ -1,7 +1,13 @@
 const { i18n } = require("./next-i18next.config");
+const runtimeCaching = require("next-pwa/cache");
 
-/** @type {import('next').NextConfig} */
-module.exports = {
+const withPWA = require("next-pwa")({
+  // disable: process.env.NODE_ENV !== "production",
+  dest: "public",
+  runtimeCaching,
+});
+
+module.exports = withPWA({
   i18n,
   reactStrictMode: true,
   env: {
@@ -11,4 +17,4 @@ module.exports = {
   images: {
     domains: ["cdn.shopify.com"],
   },
-};
+});

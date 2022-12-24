@@ -30,16 +30,16 @@ export const DefaultSeo = () => {
           content: "#ffffff",
         },
       ]}
-      // additionalLinkTags={[
-      //   {
-      //     rel: "apple-touch-icon",
-      //     href: "icons/apple-icon-180.png",
-      //   },
-      //   {
-      //     rel: "manifest",
-      //     href: "/manifest.json",
-      //   },
-      // ]}
+      additionalLinkTags={[
+        {
+          rel: "apple-touch-icon",
+          href: "icons/apple-icon-180.png",
+        },
+        {
+          rel: "manifest",
+          href: "/manifest.json",
+        },
+      ]}
     />
   );
 };
