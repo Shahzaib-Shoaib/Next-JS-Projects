@@ -53,7 +53,7 @@
 }
 @media screen and (min-width: 480px) {
   .carouselWrapper .swiper .swiper-pagination-bullets {
-    bottom: 24px;
+    display:none;
   }
   .carouselWrapper
     .swiper
@@ -71,7 +71,8 @@
 }
 @media screen and (min-width: 1025px) {
   .carouselWrapper .swiper .swiper-pagination-bullets {
-    bottom: 28px;
+    bottom: -4px;
+    display: block;
   }
   .carouselWrapper.pagination-left .swiper-pagination-bullets {
     bottom: 52px;

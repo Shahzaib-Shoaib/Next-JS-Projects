@@ -64,17 +64,22 @@ const breakpoints = {
 };
 
 const FeatureCarousel: React.FC<Props> = ({
-  className = "mb-7 md:mb-10 bg-[#262626] xl:py-8",
+  className = "mb-7 md:mb-10 bg-[#262626] ",
 }) => {
   return (
     <div className={` ${className}`}>
       <Carousel
         autoplay={false}
         breakpoints={breakpoints}
-        prevActivateId="featured-carousel-button-prev"
-        nextActivateId="featured-carousel-button-next"
-        prevButtonClasses="start-3  3xl:top-auto 3xl:-translate-y-2 4xl:-translate-y-10 bg-transparent text-gray-100"
-        nextButtonClasses={`end-3  3xl:top-auto transform 2xl:translate-x-0 3xl:-translate-y-2 bg-transparent text-gray-100`}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        paginationVariant="circle"
+        // prevActivateId="featured-carousel-button-prev"
+        // nextActivateId="featured-carousel-button-next"
+        // prevButtonClasses="start-3  3xl:top-auto 3xl:-translate-y-2 4xl:-translate-y-10 bg-transparent text-gray-100"
+        // nextButtonClasses={`end-3  3xl:top-auto transform 2xl:translate-x-0 3xl:-translate-y-2 bg-transparent text-gray-100`}
         className={"rounded-md border border-black/10 py-5 "}
       >
         <Swiper>
