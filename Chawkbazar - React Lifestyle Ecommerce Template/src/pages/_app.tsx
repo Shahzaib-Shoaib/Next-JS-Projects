@@ -11,6 +11,7 @@ import { ToastContainer } from "react-toastify";
 // import { ReactQueryDevtools } from "react-query/devtools";
 import { appWithTranslation } from "next-i18next";
 import { DefaultSeo } from "@components/common/default-seo";
+import { Analytics } from '@vercel/analytics/react';
 
 // Load Open Sans and satisfy typeface font
 import "@fontsource/open-sans";
@@ -67,6 +68,8 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
 						<Layout pageProps={pageProps}>
 							<DefaultSeo />
 							<Component {...pageProps} key={router.route} />
+							<Analytics />
+
 							<ToastContainer />
 						</Layout>
 						<ManagedModal />
