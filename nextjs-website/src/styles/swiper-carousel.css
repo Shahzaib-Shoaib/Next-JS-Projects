@@ -43,6 +43,7 @@
 }
 .carouselWrapper .swiper .swiper-pagination-bullets {
   bottom: 20px;
+  display:none;
 }
 .carouselWrapper
   .swiper
