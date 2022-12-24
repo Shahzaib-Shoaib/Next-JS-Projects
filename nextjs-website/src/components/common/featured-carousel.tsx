@@ -1,4 +1,3 @@
-// razor
 import FeaturedCard from "@components/cards/featured-card";
 import Carousel from "@components/ui/carousel/carousel";
 import { SwiperSlide, Swiper } from "@components/ui/carousel/slider";
@@ -76,10 +75,8 @@ const FeatureCarousel: React.FC<Props> = ({
         }}
         navigation={false}
         paginationVariant="circle"
-        // prevActivateId="featured-carousel-button-prev"
-        // nextActivateId="featured-carousel-button-next"
-        // prevButtonClasses="start-3  3xl:top-auto 3xl:-translate-y-2 4xl:-translate-y-10 bg-transparent text-gray-100"
-        // nextButtonClasses={`end-3  3xl:top-auto transform 2xl:translate-x-0 3xl:-translate-y-2 bg-transparent text-gray-100`}
+        prevActivateId="featured-carousel-button-prev"
+        nextActivateId="featured-carousel-button-next"
         className={"rounded-md border border-black/10 py-[2.5rem] sm:pb-[1.5rem] "}
       >
         <Swiper>

@@ -23,6 +23,7 @@ export default function Newsletter() {
 		console.log(values, "news letter");
 		closeModal();
 	}
+	
 	const { t } = useTranslation();
 	return (
 		<div className="flex items-center justify-center">
@@ -41,7 +42,7 @@ export default function Newsletter() {
 						<h4 className="uppercase font-semibold text-xs sm:text-sm text-body mb-2 lg:mb-4">
 							{t("common:text-subscribe-now")}
 						</h4>
-						<h2 className="text-heading text-lg sm:text-xl md:text-2xl leading-8 font-bold mb-5 sm:mb-7 md:mb-9">
+						<h2 className="text-[#262626] text-lg sm:text-xl md:text-2xl leading-8 font-bold mb-5 sm:mb-7 md:mb-9">
 							{t("common:text-newsletter-title")}
 						</h2>
 						<p className="text-body text-sm leading-6 md:leading-7">
@@ -67,7 +68,7 @@ export default function Newsletter() {
 								})}
 								errorKey={errors.email?.message}
 							/>
-							<Button className="w-full h-12 lg:h-14 mt-3 sm:mt-4">
+							<Button className="w-full h-12 lg:h-14 mt-3 sm:mt-4 bg-[#262626]">
 								{t("common:button-subscribe")}
 							</Button>
 						</form>

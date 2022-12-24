@@ -32,7 +32,7 @@ export default function Home({ products }: any) {
 
     setTimeout(() => {
       openModal();
-    }, 2000);
+    }, 1000);
   }, []);
   return (
     <>

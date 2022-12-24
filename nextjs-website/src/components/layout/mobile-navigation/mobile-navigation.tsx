@@ -61,7 +61,7 @@ const BottomNavigation: React.FC = () => {
 				>
 					<SearchIcon />
 				</button>
-				<Link href="/" className="flex-shrink-0">
+				<Link href="/" className="flex-shrink-0" aria-label="Home Icon">
 					<HomeIcon />
 				</Link>
 				<CartButton />

@@ -35,7 +35,7 @@ const WidgetLink: FC<Props> = ({ className, data }) => {
           <h4 className='text-heading text-sm md:text-base xl:text-lg font-semibold mb-5 2xl:mb-6 3xl:mb-7'>
           {t(`${widgetTitle}`)}
           </h4>
-          <ul className='text-xs lg:text-sm text-white flex flex-col space-y-3 lg:space-y-3.5'>
+          <ul className='text-sm lg:text-sm text-white flex flex-col space-y-3 lg:space-y-3.5'>
             {lists.map((list) => (
               <li
                 key={`widget-list--key${list.id}`}
