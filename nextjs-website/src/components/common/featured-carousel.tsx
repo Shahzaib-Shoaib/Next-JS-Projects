@@ -80,7 +80,7 @@ const FeatureCarousel: React.FC<Props> = ({
         // nextActivateId="featured-carousel-button-next"
         // prevButtonClasses="start-3  3xl:top-auto 3xl:-translate-y-2 4xl:-translate-y-10 bg-transparent text-gray-100"
         // nextButtonClasses={`end-3  3xl:top-auto transform 2xl:translate-x-0 3xl:-translate-y-2 bg-transparent text-gray-100`}
-        className={"rounded-md border border-black/10 py-5 "}
+        className={"rounded-md border border-black/10 py-[2.5rem] sm:pb-[1.5rem] "}
       >
         <Swiper>
           {data?.map((item) => (
