@@ -1,6 +1,5 @@
 import BannerCard from "@components/common/banner-card";
 import Carousel from "@components/ui/carousel/carousel";
-import { ROUTES } from '@utils/routes'
 import { SwiperSlide } from "swiper/react";
 import cn from "classnames";
 

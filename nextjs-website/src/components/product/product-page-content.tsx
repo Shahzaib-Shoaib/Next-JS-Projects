@@ -16,7 +16,7 @@ export default function ProductPageContent({ product }: any) {
           src={image.node.originalSrc}
           alt={image.node.altText}
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
         />
       </SwiperSlide>
     );
@@ -47,22 +47,7 @@ export default function ProductPageContent({ product }: any) {
           className=""
           dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
         />
-        <a
-          href={`//www.facebook.com/sharer.php?u=https://artistro-clone-924622.vercel.app/products/${product.handle}`}
-        >
-          <FaFacebook className="text-blue-800 text-lg" />
-        </a>
-        <a
-          href={`//twitter.com/share?text=${product.title}&url=https://artistro-clone-924622.vercel.app/products/${product.handle}`}
-        >
-          <FaTwitter className="text-blue-800 text-lg" />
-        </a>
-        {/* "//pinterest.com/pin/create/button/?url=https://paintigo.com/products/paintigo-premium-acrylic-pens&description=Paintigo%20Premium%20Acrylic%20Pens" */}
-        <a
-          href={`//pinterest.com/pin/create/button/?url=https://artistro-clone-924622.vercel.app/products/${product.handle}&description=${product.title}`}
-          >
-          <FaPinterest className="text-blue-800 text-lg" />
-        </a>
+
       </div>
 
       <RecommendedList

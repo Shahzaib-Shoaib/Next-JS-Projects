@@ -1,5 +1,4 @@
-import type { AppProps } from "next/app";
-import { useEffect } from "react";
+// Base CSS File
 import "@styles/globals.css";
 import "@fontsource/open-sans";
 import "@fontsource/open-sans/600.css";
@@ -7,30 +6,24 @@ import "@fontsource/open-sans/700.css";
 import "@fontsource/satisfy";
 import "@styles/scrollbar.css";
 import "@styles/tailwind.css";
-// base css file
 import "@styles/swiper-carousel.css";
 import "@styles/custom-plugins.css";
 import "@styles/themes.scss";
 import "swiper/scss";
 import "swiper/scss/navigation";
+import "swiper/scss/pagination";
+
+// Other Files
+import type { AppProps } from "next/app";
+import { useEffect } from "react";
 import { DefaultSeo } from "@components/common/default-seo";
 import ManagedModal from "@components/common/modal/managed-modal";
-import { Analytics } from '@vercel/analytics/react';
-
-import "swiper/scss/pagination";
-// import Layout from "@components/layout/layout";
-import Router, { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 import { ManagedUIContext } from "@contexts/ui.context";
 import { getDirection } from "@utils/get-direction";
 import { appWithTranslation } from "next-i18next";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useRef } from "react";
-
-function handleExitComplete() {
-  if (typeof window !== "undefined") {
-    window.scrollTo({ top: 0 });
-  }
-}
 
 type Props = {
   children?: React.ReactNode;
@@ -43,7 +36,6 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
   if (!queryClientRef.current) {
     queryClientRef.current = new QueryClient();
   }
-  // let router = useRouter();
   const dir = getDirection(router.locale);
   useEffect(() => {
     document.documentElement.dir = dir;
@@ -57,10 +49,8 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
           <DefaultSeo />
           <Component {...pageProps} language={router.locale} />
           <Analytics />
-
         </Layout>
         <ManagedModal />
-
       </ManagedUIContext>
     </QueryClientProvider>
   );
