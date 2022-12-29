@@ -35,6 +35,7 @@ const Subscription: React.FC<Props> = ({ className = 'px-5 sm:px-8 md:px-16 2xl:
   const { title, description, buttonText } = data;
   async function onSubmit(input: FormValues) {
     console.log(input, 'data');
+  
   }
   return (
     <div
@@ -44,7 +45,7 @@ const Subscription: React.FC<Props> = ({ className = 'px-5 sm:px-8 md:px-16 2xl:
         <Text
           variant="mediumHeading"
           // className='mb-2 md:mb-2.5 lg:mb-3 xl:mb-3.5'
-          className="sm:mb-0 md:mb-2.5 lg:mb-3 xl:mb-3.5"
+          className="sm:mb-0 md:mb-2.5 lg:mb-3 xl:mb-3.5 text-[#262626]"
         >
           {t(`${title}`)}
         </Text>

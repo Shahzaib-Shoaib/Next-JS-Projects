@@ -12,6 +12,7 @@ import Container from "@components/ui/container";
 import Divider from "@components/ui/divider";
 import { useUI } from "@contexts/ui.context";
 import { useEffect } from "react";
+import Subscription from "@components/common/subscription";
 
 const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
   ssr: false,
@@ -50,6 +51,7 @@ export default function Home({ products }: any) {
       <Container>
         <CollectionBlock data={collection} />
       </Container>
+      <Subscription/>
     </>
   );
 }
