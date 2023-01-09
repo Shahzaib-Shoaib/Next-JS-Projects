@@ -22,7 +22,7 @@ export default function Footer() {
             <p className='text-xl font-bold'>Fester</p>
           </div>
           <p className='text-sm leading-none text-gray-800 mt-4'>
-            Copyright © 2022 Fester
+            Copyright © 2023 Fester
           </p>
           <p className='text-sm leading-none text-gray-800 mt-4'>
             All rights reserved
@@ -178,7 +178,7 @@ export default function Footer() {
         </div>
       </div>
       <p className='mt-8 text-center text-gray-400 '>
-        &copy; 2022 Fester, All rights reserved.{" "}
+        &copy; 2023 Fester, All rights reserved.{" "}
       </p>
     </footer>
 

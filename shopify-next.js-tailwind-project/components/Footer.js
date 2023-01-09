@@ -22,7 +22,7 @@ export default function Footer() {
             <p className='text-xl font-bold'>BerryBerri</p>
           </div>
           <p className='text-sm leading-none text-gray-800 mt-4'>
-            Copyright © 2022 BerryBerri
+            Copyright © 2023 BerryBerri
           </p>
           <p className='text-sm leading-none text-gray-800 mt-4'>
             All rights reserved
@@ -178,7 +178,7 @@ export default function Footer() {
         </div>
       </div>
       <p className='mt-8 text-center text-gray-400 '>
-        &copy; 2022 BerryBerri, All rights reserved.{" "}
+        &copy; 2023 BerryBerri, All rights reserved.{" "}
       </p>
     </footer>
 
@@ -194,7 +194,7 @@ export default function Footer() {
     //       ))}
     //     </nav>
     //     <p className='mt-8 text-center text-gray-400 '>
-    //       &copy; 2022 Fester, All rights reserved.
+    //       &copy; 2023 Fester, All rights reserved.
     //     </p>
     //   </div>
     // </footer>
